@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FMA-lC-CNS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-187" y="1506"/>
+            <point key="canvasLocation" x="-187" y="1487"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gkd-he-sa3">
@@ -56,7 +56,7 @@
             </objects>
             <point key="canvasLocation" x="1341" y="1465"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="IgI-9q-oc9">
             <objects>
                 <viewController id="hyP-ZJ-nsQ" sceneMemberID="viewController">
@@ -66,16 +66,16 @@
                         <viewLayoutGuide key="safeArea" id="NET-Bh-kT3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vBc-wc-BzQ"/>
+                    <navigationItem key="navigationItem" title="Settings" id="vBc-wc-BzQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeT-Iy-J16" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-927" y="1494"/>
+            <point key="canvasLocation" x="-927.48091603053433" y="1486.6197183098593"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Container Tab Bar Controller-->
         <scene sceneID="u6Z-ti-SBr">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pcg-wb-6JS" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pcg-wb-6JS" customClass="ContainerTabBarController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iD7-cw-hMd">
                         <autoresizingMask key="autoresizingMask"/>
@@ -130,10 +130,10 @@
             </objects>
             <point key="canvasLocation" x="2267.93893129771" y="734.50704225352115"/>
         </scene>
-        <!--settings-->
+        <!-- Settings-->
         <scene sceneID="4TV-AD-NfG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q6H-UG-VBQ" sceneMemberID="viewController">
+                <navigationController title=" Settings" automaticallyAdjustsScrollViewInsets="NO" id="q6H-UG-VBQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="settings" image="gear" catalog="system" id="b3g-fT-hNi"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b1b-XY-ass">
