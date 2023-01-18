@@ -1,19 +1,18 @@
 //
-//  ContainerTabBarController.swift
+//  settingsViewController.swift
 //  newsapplication
 //
-//  Created by mac on 17/01/2023.
+//  Created by mac on 18/01/2023.
 //
 
 import UIKit
 
-class ContainerTabBarController: UITabBarController, UITabBarControllerDelegate{
+class settingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tabBarController!.delegate = self
-    selectedIndex = 3
+        // Do any additional setup after loading the view.
     }
     
 
