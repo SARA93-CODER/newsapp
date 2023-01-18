@@ -16,6 +16,7 @@
 		043CB12F2976A6D0008B6FA7 /* newsapplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CB12E2976A6D0008B6FA7 /* newsapplicationTests.swift */; };
 		043CB1392976A6D0008B6FA7 /* newsapplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CB1382976A6D0008B6FA7 /* newsapplicationUITests.swift */; };
 		043CB13B2976A6D0008B6FA7 /* newsapplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CB13A2976A6D0008B6FA7 /* newsapplicationUITestsLaunchTests.swift */; };
+		047784BF2977E81D009ADCCE /* settingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047784BE2977E81D009ADCCE /* settingVC.swift */; };
 		04CDFA9A2976DA66006AF7CC /* ContainerTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDFA992976DA66006AF7CC /* ContainerTabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		043CB1342976A6D0008B6FA7 /* newsapplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newsapplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043CB1382976A6D0008B6FA7 /* newsapplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsapplicationUITests.swift; sourceTree = "<group>"; };
 		043CB13A2976A6D0008B6FA7 /* newsapplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsapplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		047784BE2977E81D009ADCCE /* settingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingVC.swift; sourceTree = "<group>"; };
 		04CDFA992976DA66006AF7CC /* ContainerTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 			children = (
 				043CB11B2976A6CE008B6FA7 /* ViewController.swift */,
 				04CDFA992976DA66006AF7CC /* ContainerTabBarController.swift */,
+				047784BE2977E81D009ADCCE /* settingVC.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				043CB11C2976A6CE008B6FA7 /* ViewController.swift in Sources */,
+				047784BF2977E81D009ADCCE /* settingVC.swift in Sources */,
 				04CDFA9A2976DA66006AF7CC /* ContainerTabBarController.swift in Sources */,
 				043CB1182976A6CE008B6FA7 /* AppDelegate.swift in Sources */,
 				043CB11A2976A6CE008B6FA7 /* SceneDelegate.swift in Sources */,
