@@ -12,7 +12,7 @@ class ContainerTabBarController: UITabBarController, UITabBarControllerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tabBarController!.delegate = self
+//        tabBarController!.delegate = self
     selectedIndex = 3
     }
     
