@@ -18,10 +18,10 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39D-oK-XMC">
                                 <rect key="frame" x="8" y="67" width="369" height="724"/>
-                                <mutableString key="text">موقع أخباري تأسس عام 2015، وهو إحدى علامات الشركة "العالمية للاستثمارات الإعلامية منطقة حرة ذ.م.م." (مقرها الرئيسي) في أبوظبي - الإمارات العربية المتحدة ويرأس تحريرها أحمد سعيد العلوي.
+                                <string key="text">موقع أخباري تأسس عام 2015، وهو إحدى علامات الشركة "العالمية للاستثمارات الإعلامية منطقة حرة ذ.م.م." (مقرها الرئيسي) في أبوظبي - الإمارات العربية المتحدة ويرأس تحريرها أحمد سعيد العلوي.
 تهدف رؤية العين الإخبارية إلى العمل على الوصول إلى الريادة العالمية في الصحافة الرقمية، وتتوجه للمتلقي بلغات متعددة، تشمل العربية، والفارسية، والتركية، والفرنسية، والأمهرية.
 وتحظى بوجود إقليمي متمثل بمكاتبها في القاهرة، والإسكندرية، فضلا عن شبكة واسعة من المراسلين الصحفيين حول العالم يغطون كافة المستجدات والأحداث العالمية، بصورة لحظية.
-تقدم "العين الإخبارية" تغطية شاملة ولحظية لقضايا العالم، تجمع بين المصداقية والسرعة والحرفية في عرض المحتوى الرقمي المميز وتقديم التقارير والبحوث والتحليلات المعمقة، وإثرائها بمقالات الرأي التي تشمل طيفاً واسعاً منهم المفكرين والسياسيين وكتّاب الرأي أهل الاختصاص حول العالم.</mutableString>
+تقدم "العين الإخبارية" تغطية شاملة ولحظية لقضايا العالم، تجمع بين المصداقية والسرعة والحرفية في عرض المحتوى الرقمي المميز وتقديم التقارير والبحوث والتحليلات المعمقة، وإثرائها بمقالات الرأي التي تشمل طيفاً واسعاً منهم المفكرين والسياسيين وكتّاب الرأي أهل الاختصاص حول العالم.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                                 <rect key="frame" x="0.0" y="-12" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingOption" rowHeight="95" id="BjO-jG-PB6" customClass="settingTableViewCell" customModule="newsapplication" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" rowHeight="95" id="BjO-jG-PB6" customClass="settingTableViewCell" customModule="newsapplication" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BjO-jG-PB6" id="1tE-wq-U7A" customClass="settingTableViewCell" customModule="newsapplication" customModuleProvider="target">
@@ -194,7 +194,7 @@
                     <connections>
                         <segue destination="UOO-6S-gy0" kind="relationship" relationship="viewControllers" id="tdR-ht-Nhe"/>
                         <segue destination="9qd-4y-4ze" kind="relationship" relationship="viewControllers" id="inL-Bz-S2u"/>
-                        <segue destination="QwQ-P8-Dns" kind="relationship" relationship="viewControllers" id="rQC-dx-z26"/>
+                        <segue destination="33N-zP-BEY" kind="relationship" relationship="viewControllers" id="rQC-dx-z26"/>
                         <segue destination="kev-KH-g10" kind="relationship" relationship="viewControllers" id="wod-Q8-ck5"/>
                     </connections>
                 </tabBarController>
@@ -202,21 +202,59 @@
             </objects>
             <point key="canvasLocation" x="961" y="-51"/>
         </scene>
-        <!--شاهد-->
+        <!--Vidoes View Controller-->
         <scene sceneID="Hcg-rQ-bJc">
             <objects>
-                <viewController id="QwQ-P8-Dns" customClass="vidoesViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="QwQ-P8-Dns" customClass="vidoesViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RAc-ya-1kF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FwV-XP-SRB">
+                                <rect key="frame" x="0.0" y="103" width="393" height="32"/>
+                                <segments>
+                                    <segment title="فيديو"/>
+                                    <segment title="صور"/>
+                                </segments>
+                                <connections>
+                                    <action selector="customSegmentedControll:" destination="QwQ-P8-Dns" eventType="valueChanged" id="LKq-Lf-rBm"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sld-dE-F0x">
+                                <rect key="frame" x="0.0" y="150" width="393" height="654"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="I6i-eZ-IVT">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I6i-eZ-IVT" id="pnC-aS-rYT">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="A7j-UX-ZSZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FwV-XP-SRB" firstAttribute="trailing" secondItem="sld-dE-F0x" secondAttribute="trailing" id="3lt-5W-i0C"/>
+                            <constraint firstItem="FwV-XP-SRB" firstAttribute="leading" secondItem="A7j-UX-ZSZ" secondAttribute="leading" id="OLs-WL-wIn"/>
+                            <constraint firstItem="sld-dE-F0x" firstAttribute="top" secondItem="FwV-XP-SRB" secondAttribute="bottom" constant="16" id="cbE-F1-7gR"/>
+                            <constraint firstItem="FwV-XP-SRB" firstAttribute="leading" secondItem="sld-dE-F0x" secondAttribute="leading" id="eMI-L2-RNZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="sld-dE-F0x" secondAttribute="bottom" constant="-35" id="gPr-td-0h9"/>
+                            <constraint firstItem="FwV-XP-SRB" firstAttribute="top" secondItem="A7j-UX-ZSZ" secondAttribute="top" id="p01-xs-ysf"/>
+                            <constraint firstItem="FwV-XP-SRB" firstAttribute="centerX" secondItem="RAc-ya-1kF" secondAttribute="centerX" id="yk9-lv-4XG"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="شاهد" image="play.rectangle" catalog="system" id="wvm-wt-yQW"/>
+                    <navigationItem key="navigationItem" id="KvC-xH-bm5"/>
+                    <connections>
+                        <outlet property="tableView" destination="sld-dE-F0x" id="MH9-te-9n3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="adz-oL-mar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="715"/>
+            <point key="canvasLocation" x="1209.9236641221373" y="1443.661971830986"/>
         </scene>
         <!--الرئيسية-->
         <scene sceneID="VfA-qB-tZZ">
@@ -232,7 +270,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLS-zn-afq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2131" y="710"/>
+            <point key="canvasLocation" x="2092" y="710"/>
+        </scene>
+        <!--شاهد-->
+        <scene sceneID="I8X-23-Ryt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="33N-zP-BEY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="شاهد" image="play.rectangle" catalog="system" id="wvm-wt-yQW"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oZ3-Gy-CQf">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QwQ-P8-Dns" kind="relationship" relationship="rootViewController" id="lVH-Uj-RRc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RSO-Oa-JI4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1211.4503816793892" y="714.78873239436621"/>
         </scene>
     </scenes>
     <resources>
