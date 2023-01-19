@@ -6,12 +6,32 @@
 //
 
 import UIKit
+import RealmSwift
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-  
+  var window: UIWindow?
+    
+    
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+//        print(Realm.Configuration.defaultConfiguration.fileURL)
+        
+//        let videov = Videov()
+//        videov.title = "sara"
+//        
+//        do{
+//            let realm = try Realm()
+//            try realm.write{
+//                realm.add(videov)
+//            }
+//        }catch{
+//            print("ERROR INITIALIZING Realm \(error)")
+//        }
+//        
         
         return true
     }

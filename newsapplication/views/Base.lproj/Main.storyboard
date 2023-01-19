@@ -61,26 +61,24 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yug-Fn-fik">
-                                                    <rect key="frame" x="164" y="30" width="178" height="65"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="عن العين الاخبارية"/>
-                                                    <connections>
-                                                        <action selector="btnAboutUI:" destination="Ikf-so-pXN" eventType="touchUpInside" id="I5s-Ux-e5x"/>
-                                                        <action selector="btnAboutUI:" destination="UOO-6S-gy0" eventType="touchUpInside" id="Zdh-dq-ppW"/>
-                                                        <action selector="btnAoutUI:" destination="BjO-jG-PB6" eventType="touchUpInside" id="wCD-Q3-a88"/>
-                                                        <segue destination="UmQ-9T-Jcr" kind="show" id="EMT-Yl-hys"/>
-                                                    </connections>
-                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عن العين الاخبارية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slc-s7-GBz">
+                                                    <rect key="frame" x="30" y="21" width="353" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="dfN-I7-kJg"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="yug-Fn-fik" firstAttribute="centerY" secondItem="1tE-wq-U7A" secondAttribute="centerY" id="KCY-4T-Qoi"/>
-                                                <constraint firstItem="yug-Fn-fik" firstAttribute="centerX" secondItem="1tE-wq-U7A" secondAttribute="centerX" id="Tf0-BW-f9I"/>
+                                                <constraint firstItem="slc-s7-GBz" firstAttribute="top" secondItem="1tE-wq-U7A" secondAttribute="topMargin" constant="10" id="6b4-44-gLh"/>
+                                                <constraint firstItem="slc-s7-GBz" firstAttribute="trailing" secondItem="1tE-wq-U7A" secondAttribute="trailingMargin" constant="10" id="7Kb-Cg-Vgi"/>
+                                                <constraint firstItem="slc-s7-GBz" firstAttribute="leading" secondItem="1tE-wq-U7A" secondAttribute="leadingMargin" constant="10" id="q1S-Oj-HO6"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="btnOption" destination="yug-Fn-fik" id="hBd-9N-Eb6"/>
-                                            <outlet property="lblOptionTitle" destination="yug-Fn-fik" id="biL-op-TOA"/>
+                                            <outlet property="lblOptionCell" destination="slc-s7-GBz" id="6GT-Lh-Zbz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -102,7 +100,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Z1-i6-IGj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="Ikf-so-pXN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-364.12213740458014" y="714.78873239436621"/>
         </scene>
@@ -224,12 +221,18 @@
                                 <rect key="frame" x="0.0" y="150" width="393" height="654"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="I6i-eZ-IVT">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="246" id="I6i-eZ-IVT">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="246"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I6i-eZ-IVT" id="pnC-aS-rYT">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="246"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsI-Uu-13R">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="246"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
