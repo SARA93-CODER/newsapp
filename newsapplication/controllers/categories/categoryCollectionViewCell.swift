@@ -18,3 +18,7 @@ class categoryCollectionViewCell: UICollectionViewCell {
         lblNewsTitle.text = title
     }
 }
+
+
+
+

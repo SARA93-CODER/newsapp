@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0401361A297AA0540094668E /* optionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04013619297AA0540094668E /* optionTableViewCell.swift */; };
+		0401361C297AA28F0094668E /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401361B297AA28F0094668E /* settingViewController.swift */; };
+		0401361F297AB7000094668E /* pictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401361E297AB7000094668E /* pictureTableViewCell.swift */; };
+		0413F9D6297A88F300F05461 /* pagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413F9D5297A88F300F05461 /* pagesViewController.swift */; };
+		0413F9D8297A893B00F05461 /* savedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413F9D7297A893B00F05461 /* savedViewController.swift */; };
+		0413F9DB297A8B3800F05461 /* pageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413F9DA297A8B3800F05461 /* pageTableViewCell.swift */; };
 		043CB1182976A6CE008B6FA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CB1172976A6CE008B6FA7 /* AppDelegate.swift */; };
 		043CB11A2976A6CE008B6FA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CB1192976A6CE008B6FA7 /* SceneDelegate.swift */; };
 		043CB11F2976A6CE008B6FA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043CB11D2976A6CE008B6FA7 /* Main.storyboard */; };
@@ -16,7 +22,6 @@
 		0449DEB32979545400EAE1E2 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0449DEB12979545300EAE1E2 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0449DEB62979546500EAE1E2 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0449DEB52979546500EAE1E2 /* RealmSwift.framework */; };
 		0449DEB72979546500EAE1E2 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0449DEB52979546500EAE1E2 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0449DEBC297975D600EAE1E2 /* settingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DEBB297975D600EAE1E2 /* settingTableViewCell.swift */; };
 		0449DEC02979886B00EAE1E2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DEBF2979886B00EAE1E2 /* Item.swift */; };
 		0449DEC22979893300EAE1E2 /* Vidoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DEC12979893300EAE1E2 /* Vidoe.swift */; };
 		0449DEC62979A5CE00EAE1E2 /* videoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DEC52979A5CE00EAE1E2 /* videoTableViewCell.swift */; };
@@ -25,7 +30,6 @@
 		0459320B29791B99008B172A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459320A29791B99008B172A /* Settings.storyboard */; };
 		0459321629793A3E008B172A /* aboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049962CD2978863D00915182 /* aboutVC.swift */; };
 		0497EE022978344100F0CF76 /* categoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE012978344100F0CF76 /* categoriesViewController.swift */; };
-		0497EE042978352900F0CF76 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE032978352900F0CF76 /* settingsViewController.swift */; };
 		0497EE062978354100F0CF76 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE052978354100F0CF76 /* homeViewController.swift */; };
 		0497EE082978356300F0CF76 /* vidoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE072978356300F0CF76 /* vidoesViewController.swift */; };
 		0497EE0A2978362D00F0CF76 /* categoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE092978362D00F0CF76 /* categoryCollectionViewCell.swift */; };
@@ -65,6 +69,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04013619297AA0540094668E /* optionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionTableViewCell.swift; sourceTree = "<group>"; };
+		0401361B297AA28F0094668E /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
+		0401361E297AB7000094668E /* pictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pictureTableViewCell.swift; sourceTree = "<group>"; };
+		0413F9D5297A88F300F05461 /* pagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagesViewController.swift; sourceTree = "<group>"; };
+		0413F9D7297A893B00F05461 /* savedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedViewController.swift; sourceTree = "<group>"; };
+		0413F9DA297A8B3800F05461 /* pageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageTableViewCell.swift; sourceTree = "<group>"; };
 		043CB1142976A6CE008B6FA7 /* newsapplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsapplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043CB1172976A6CE008B6FA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043CB1192976A6CE008B6FA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +86,6 @@
 		0449DEAF297953E000EAE1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0449DEB12979545300EAE1E2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		0449DEB52979546500EAE1E2 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
-		0449DEBB297975D600EAE1E2 /* settingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingTableViewCell.swift; sourceTree = "<group>"; };
 		0449DEBF2979886B00EAE1E2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0449DEC12979893300EAE1E2 /* Vidoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vidoe.swift; sourceTree = "<group>"; };
 		0449DEC52979A5CE00EAE1E2 /* videoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoTableViewCell.swift; sourceTree = "<group>"; };
@@ -84,7 +93,6 @@
 		0449DECB2979B9D600EAE1E2 /* shahidVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shahidVC.swift; sourceTree = "<group>"; };
 		0459320A29791B99008B172A /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		0497EE012978344100F0CF76 /* categoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesViewController.swift; sourceTree = "<group>"; };
-		0497EE032978352900F0CF76 /* settingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		0497EE052978354100F0CF76 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		0497EE072978356300F0CF76 /* vidoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vidoesViewController.swift; sourceTree = "<group>"; };
 		0497EE092978362D00F0CF76 /* categoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -119,6 +127,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0401361D297AB6170094668E /* saved */ = {
+			isa = PBXGroup;
+			children = (
+				0413F9D7297A893B00F05461 /* savedViewController.swift */,
+			);
+			path = saved;
+			sourceTree = "<group>";
+		};
+		0413F9D9297A8AFB00F05461 /* pages */ = {
+			isa = PBXGroup;
+			children = (
+				0413F9D5297A88F300F05461 /* pagesViewController.swift */,
+				0413F9DA297A8B3800F05461 /* pageTableViewCell.swift */,
+			);
+			path = pages;
+			sourceTree = "<group>";
+		};
 		043CB10B2976A6CE008B6FA7 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +207,8 @@
 		043CB14A2976ABD2008B6FA7 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0401361D297AB6170094668E /* saved */,
+				0413F9D9297A8AFB00F05461 /* pages */,
 				0449DECA2979B95800EAE1E2 /* shahid */,
 				0459321529793A31008B172A /* settings */,
 				0459321429793A19008B172A /* home */,
@@ -213,6 +240,7 @@
 				0449DEC52979A5CE00EAE1E2 /* videoTableViewCell.swift */,
 				0497EE072978356300F0CF76 /* vidoesViewController.swift */,
 				0449DEC82979B10400EAE1E2 /* pictureViewController.swift */,
+				0401361E297AB7000094668E /* pictureTableViewCell.swift */,
 				0449DECB2979B9D600EAE1E2 /* shahidVC.swift */,
 			);
 			path = shahid;
@@ -239,8 +267,8 @@
 			isa = PBXGroup;
 			children = (
 				049962CD2978863D00915182 /* aboutVC.swift */,
-				0497EE032978352900F0CF76 /* settingsViewController.swift */,
-				0449DEBB297975D600EAE1E2 /* settingTableViewCell.swift */,
+				04013619297AA0540094668E /* optionTableViewCell.swift */,
+				0401361B297AA28F0094668E /* settingViewController.swift */,
 			);
 			path = settings;
 			sourceTree = "<group>";
@@ -526,10 +554,12 @@
 			files = (
 				0459321629793A3E008B172A /* aboutVC.swift in Sources */,
 				0497EE0A2978362D00F0CF76 /* categoryCollectionViewCell.swift in Sources */,
-				0497EE042978352900F0CF76 /* settingsViewController.swift in Sources */,
+				0413F9D8297A893B00F05461 /* savedViewController.swift in Sources */,
+				0413F9D6297A88F300F05461 /* pagesViewController.swift in Sources */,
 				0449DEC22979893300EAE1E2 /* Vidoe.swift in Sources */,
-				0449DEBC297975D600EAE1E2 /* settingTableViewCell.swift in Sources */,
+				0401361A297AA0540094668E /* optionTableViewCell.swift in Sources */,
 				0449DECC2979B9D600EAE1E2 /* shahidVC.swift in Sources */,
+				0413F9DB297A8B3800F05461 /* pageTableViewCell.swift in Sources */,
 				0497EE062978354100F0CF76 /* homeViewController.swift in Sources */,
 				0449DEC62979A5CE00EAE1E2 /* videoTableViewCell.swift in Sources */,
 				0497EE022978344100F0CF76 /* categoriesViewController.swift in Sources */,
@@ -539,6 +569,8 @@
 				04CDFA9A2976DA66006AF7CC /* ContainerTabBarController.swift in Sources */,
 				043CB1182976A6CE008B6FA7 /* AppDelegate.swift in Sources */,
 				043CB11A2976A6CE008B6FA7 /* SceneDelegate.swift in Sources */,
+				0401361F297AB7000094668E /* pictureTableViewCell.swift in Sources */,
+				0401361C297AA28F0094668E /* settingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

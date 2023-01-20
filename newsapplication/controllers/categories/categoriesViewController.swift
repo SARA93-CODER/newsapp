@@ -19,9 +19,9 @@ class categoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionView.dataSource = self
         
         arrNews.append(News(photo: UIImage(named: "culture")!, title: "ثقافة"))
-        arrNews.append(News(photo: UIImage(named: "sports")!, title: "رياضة"))
+//        arrNews.append(News(photo: UIImage(named: "sports")!, title: "رياضة"))
         arrNews.append(News(photo: UIImage(named: "politics")!, title: "سياسة"))
-        //arrNews.append(News(photo: UIImage(named: "science")!, title: "علوم و فضاء"))
+//        arrNews.append(News(photo: UIImage(named: "science")!, title: "علوم و فضاء"))
         arrNews.append(News(photo: UIImage(named: "celebrities")!, title: "فن"))
         arrNews.append(News(photo: UIImage(named: "economy")!, title: "اقتصاد"))
            }

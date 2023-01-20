@@ -1,15 +1,16 @@
 //
-//  settingTableViewCell.swift
+//  pageTableViewCell.swift
 //  newsapplication
 //
-//  Created by mac on 19/01/2023.
+//  Created by mac on 20/01/2023.
 //
 
 import UIKit
 
-class settingTableViewCell: UITableViewCell {
+class pageTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var lblOptionCell: UILabel!
+    
+    @IBOutlet weak var lblPageTitle: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,10 +22,9 @@ class settingTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setupOptionCell(title: String){
-       
-        lblOptionCell.text = title
-    }
     
+    func setupCell(title: String){
+      
+    }
 
 }

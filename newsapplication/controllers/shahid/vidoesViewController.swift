@@ -10,9 +10,10 @@ import UIKit
 
 class vidoesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
-    var arrVideos = [VidNews]()
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var arrVideos = [VidNews]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
