@@ -217,28 +217,28 @@
                                 <rect key="frame" x="0.0" y="12.666666666666686" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pictureCell" rowHeight="279" id="TAn-0C-qWj" customClass="pictureTableViewCell" customModule="newsapplication" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="279"/>
+                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pictureCell" rowHeight="227" id="TAn-0C-qWj" customClass="pictureTableViewCell" customModule="newsapplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="227"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TAn-0C-qWj" id="sk6-Xh-QBt">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="279"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="227"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tourism" translatesAutoresizingMaskIntoConstraints="NO" id="hFz-By-YAa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="279"/>
+                                                    <rect key="frame" x="0.0" y="5" width="393" height="217"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أجمل المدن السياحية في البرازيل.. 5 ألوان في عملاق أمريكا اللاتينية" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KZ-sC-NRI">
-                                                    <rect key="frame" x="20" y="202" width="353" height="66"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="أجمل المدن السياحية في البرازيل.. 5 ألوان في عملاق أمريكا اللاتينية" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9KZ-sC-NRI">
+                                                    <rect key="frame" x="60" y="167" width="313" height="40"/>
                                                     <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="0.82114046852060607" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="66" id="kRm-hZ-YcD"/>
+                                                        <constraint firstAttribute="height" constant="40" id="SBK-PO-8ZX"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <fontDescription key="fontDescription" name=".SFArabic-Regular" family=".SF Arabic" pointSize="17"/>
                                                     <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9o9-DM-XyM">
-                                                    <rect key="frame" x="35" y="40" width="47" height="35"/>
+                                                    <rect key="frame" x="20" y="28" width="47" height="35"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system">
                                                         <color key="baseForegroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -249,15 +249,15 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="hFz-By-YAa" firstAttribute="centerX" secondItem="sk6-Xh-QBt" secondAttribute="centerX" id="F6c-YE-i88"/>
-                                                <constraint firstItem="hFz-By-YAa" firstAttribute="width" secondItem="sk6-Xh-QBt" secondAttribute="width" id="PPC-rV-PGO"/>
-                                                <constraint firstItem="9KZ-sC-NRI" firstAttribute="centerX" secondItem="hFz-By-YAa" secondAttribute="centerX" id="Um0-MF-ffv"/>
-                                                <constraint firstItem="9o9-DM-XyM" firstAttribute="leading" secondItem="sk6-Xh-QBt" secondAttribute="leadingMargin" constant="15" id="Wyu-xO-RsY"/>
-                                                <constraint firstItem="9KZ-sC-NRI" firstAttribute="bottom" secondItem="sk6-Xh-QBt" secondAttribute="bottomMargin" id="asV-zF-woh"/>
-                                                <constraint firstItem="hFz-By-YAa" firstAttribute="height" secondItem="sk6-Xh-QBt" secondAttribute="height" id="bLm-CP-LFP"/>
-                                                <constraint firstItem="hFz-By-YAa" firstAttribute="centerY" secondItem="sk6-Xh-QBt" secondAttribute="centerY" id="eUB-sj-dlZ"/>
-                                                <constraint firstItem="9o9-DM-XyM" firstAttribute="top" secondItem="sk6-Xh-QBt" secondAttribute="topMargin" constant="29" id="hTA-6V-8AQ"/>
-                                                <constraint firstItem="9KZ-sC-NRI" firstAttribute="leading" secondItem="sk6-Xh-QBt" secondAttribute="leadingMargin" id="jAi-ys-GaN"/>
+                                                <constraint firstItem="9o9-DM-XyM" firstAttribute="top" secondItem="sk6-Xh-QBt" secondAttribute="topMargin" constant="17" id="2C5-tj-Smu"/>
+                                                <constraint firstAttribute="bottom" secondItem="hFz-By-YAa" secondAttribute="bottom" constant="5" id="4Og-cH-CX4"/>
+                                                <constraint firstItem="hFz-By-YAa" firstAttribute="leading" secondItem="sk6-Xh-QBt" secondAttribute="leading" id="HeI-19-wbV"/>
+                                                <constraint firstAttribute="trailing" secondItem="hFz-By-YAa" secondAttribute="trailing" id="J84-jj-QK7"/>
+                                                <constraint firstAttribute="bottom" secondItem="9KZ-sC-NRI" secondAttribute="bottom" constant="20" id="SIF-tH-BGV"/>
+                                                <constraint firstAttribute="trailing" secondItem="9KZ-sC-NRI" secondAttribute="trailing" constant="20" id="cvT-CW-KPp"/>
+                                                <constraint firstItem="9o9-DM-XyM" firstAttribute="leading" secondItem="sk6-Xh-QBt" secondAttribute="leadingMargin" id="dX7-zW-Akj"/>
+                                                <constraint firstItem="9KZ-sC-NRI" firstAttribute="leading" secondItem="sk6-Xh-QBt" secondAttribute="leading" constant="60" id="oyt-gg-ago"/>
+                                                <constraint firstItem="hFz-By-YAa" firstAttribute="top" secondItem="sk6-Xh-QBt" secondAttribute="top" constant="5" id="pUV-7X-f6J"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -285,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQd-OK-eDq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="845" y="1467"/>
+            <point key="canvasLocation" x="843.51145038167931" y="1466.9014084507044"/>
         </scene>
         <!--Vidoes View Controller-->
         <scene sceneID="Hcg-rQ-bJc">
