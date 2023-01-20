@@ -16,6 +16,7 @@ class pictureViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
 
         picTableView.delegate = self
         picTableView.dataSource = self
