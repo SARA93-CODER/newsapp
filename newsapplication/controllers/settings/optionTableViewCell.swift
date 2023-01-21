@@ -12,31 +12,29 @@ protocol NavigationDelegate {
 }
 
 class optionTableViewCell: UITableViewCell {
-
+    
     @IBOutlet weak var lblOptionSetting: UILabel!
+//    var cellLabel: String?
     
     //Add a delegate property now to hold a reference to the optionTableViewCell that conforms to the protocol
-     var delegate: NavigationDelegate?
-       
+    
+    
+    
     
     override func awakeFromNib() {
-            super.awakeFromNib()
-            let tapGesture = UITapGestureRecognizer(target: self, action: #selector(labelTapped))
-        lblOptionSetting.addGestureRecognizer(tapGesture)
+      
+                }
+        
+        override func setSelected(_ selected: Bool, animated: Bool) {
+            super.setSelected(selected, animated: animated)
+            
+            // Configure the view for the selected state
         }
-        @objc func labelTapped() {
-            delegate?.navigateToViewController(withIdentifier: "home")
+        
+        
+        func setupOption(title: String) {
+            lblOptionSetting.text = title
         }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+        
     
-    
-    func setupOption(title: String) {
-        lblOptionSetting.text = title
-    }
-
 }

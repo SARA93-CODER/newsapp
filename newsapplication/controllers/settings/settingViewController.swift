@@ -7,66 +7,64 @@
 
 import UIKit
 
-class settingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, NavigationDelegate{
+class settingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
     
     
     @IBOutlet weak var tableView: UITableView!
-    var arrOptions = [SettingOption]()
+    var arrOptions: [String] = ["الرئيسية", "الأقسام", "فيديو", "عن العين الاخبارية"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         tableView.delegate = self
         tableView.dataSource = self
         
-        arrOptions.append(SettingOption(title:"الرئيسية"))
-        arrOptions.append(SettingOption(title:"الأقسام"))
-        arrOptions.append(SettingOption(title:"فيديو"))
-        arrOptions.append(SettingOption(title:"المحفوظات"))
-        arrOptions.append(SettingOption(title:"عن العين الاخبارية"))
-        
-        
-        //register the table view cell with a reuse identifier, so each tableView cell navigate us to it's corresponding VC:
-                tableView.register(optionTableViewCell.self, forCellReuseIdentifier: "CELL")
-        
-            }
-        
-        
-        //Implement the UITableViewDelegate method:
-        func navigateToViewController(withIdentifier identifier: String) {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: identifier)
-            navigationController?.pushViewController(vc, animated: true)
-        }
-        
-        
-        
-        
-        
-        
-        //Implement the UITableViewDataSource methods:
+//        arrOptions.append(SettingOption(title:"الرئيسية"))
+//        arrOptions.append(SettingOption(title:"الأقسام"))
+//        arrOptions.append(SettingOption(title:"فيديو"))
+//        arrOptions.append(SettingOption(title:"المحفوظات"))
+//        arrOptions.append(SettingOption(title:"عن العين الاخبارية"))
+    }
+    
+    
+//MARK: - TableView DataSource functions:
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return arrOptions.count
+            arrOptions.count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "optionCell", for: indexPath) as! optionTableViewCell
             
-            
             let option = arrOptions[indexPath.row]
-            //        cell.tag = indexPath.row
-            cell.delegate = self
+            cell.lblOptionSetting.text = arrOptions[indexPath.row]
+//            cell.setupOption(title: option.title)
             
-            cell.setupOption(title: option.title)
             return cell
         }
+    
+//MARK: - TableView Delegate functions:
+    //making each cell in tableView navigatable to it's corresponding UI.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let aboutVC = storyboard?.instantiateViewController(withIdentifier: "aboutVC") as! aboutVC
         
+        aboutVC.detailText = arrOptions[indexPath.row]
         
-        
+        navigationController?.pushViewController(aboutVC, animated: true)
     }
+
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+        
     
     
-    struct SettingOption {
-        let title: String
-    }
+}
+    
+    
+//    struct SettingOption {
+//        let title: String
+//    }
 
