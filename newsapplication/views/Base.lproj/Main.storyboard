@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fr9-yA-yix">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -37,12 +37,39 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lblAbout" destination="QVy-p9-q3A" id="2Hz-Ax-4n1"/>
+                        <outlet property="lblAbout" destination="QVy-p9-q3A" id="t5n-wX-1sT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkH-b4-KNt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1214.5038167938931" y="2257.0422535211269"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NiU-B7-xX3">
+            <objects>
+                <viewController id="vFD-lS-0X2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rkA-qQ-j7y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3cR-wX-wxJ">
+                                <rect key="frame" x="0.0" y="97.666666666666686" width="393" height="681.66666666666652"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2nZ-bn-MD9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3cR-wX-wxJ" firstAttribute="centerX" secondItem="2nZ-bn-MD9" secondAttribute="centerX" id="049-IX-393"/>
+                            <constraint firstItem="3cR-wX-wxJ" firstAttribute="centerY" secondItem="2nZ-bn-MD9" secondAttribute="centerY" id="KRb-XZ-NPY"/>
+                            <constraint firstItem="3cR-wX-wxJ" firstAttribute="height" secondItem="rkA-qQ-j7y" secondAttribute="height" multiplier="0.8" id="QMI-JC-rNu"/>
+                            <constraint firstItem="3cR-wX-wxJ" firstAttribute="width" secondItem="rkA-qQ-j7y" secondAttribute="width" id="U68-fR-eFT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lad-wR-nwu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420.61068702290072" y="2257.0422535211269"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="N8q-ha-5Ge">
@@ -56,7 +83,7 @@
                                 <rect key="frame" x="0.0" y="10" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" restorationIdentifier="CELL" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="optionCell" rowHeight="90" id="GLM-qb-heH" customClass="optionTableViewCell" customModule="newsapplication" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="optionCell" rowHeight="90" id="GLM-qb-heH" customClass="optionTableViewCell" customModule="newsapplication" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GLM-qb-heH" id="TW9-VW-ERn">
@@ -78,7 +105,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="lblOptionSetting" destination="TMs-NG-okc" id="nm2-Ef-lJl"/>
+                                            <outlet property="lblOption" destination="TMs-NG-okc" id="Moq-VL-uUB"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -181,6 +208,7 @@
         <!--شاهد-->
         <scene sceneID="bRx-jh-OON">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PRa-7b-lgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="fr9-yA-yix" customClass="shahidVC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pgk-v6-5c8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -196,14 +224,19 @@
                                     <segment title="فيديو"/>
                                 </segments>
                                 <connections>
-                                    <action selector="segmenDidChanges:" destination="fr9-yA-yix" eventType="valueChanged" id="XR8-yG-fr0"/>
                                     <action selector="segmentDidChanges:" destination="fr9-yA-yix" eventType="valueChanged" id="0mx-gN-16s"/>
                                 </connections>
                             </segmentedControl>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAD-MF-pb6">
-                                <rect key="frame" x="0.0" y="129" width="393" height="623"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dke-7O-jwr">
+                                <rect key="frame" x="0.0" y="129" width="393" height="625"/>
                                 <connections>
-                                    <segue destination="CgU-Iu-yXz" kind="embed" id="tQI-zS-Vgd"/>
+                                    <segue destination="K9b-Vg-7yO" kind="show" id="63d-vp-0OT"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xq2-ra-K2R">
+                                <rect key="frame" x="0.0" y="129" width="393" height="640"/>
+                                <connections>
+                                    <segue destination="QwQ-P8-Dns" kind="show" id="um0-XY-Zjr"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -211,21 +244,25 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tck-tE-Vrx" firstAttribute="trailing" secondItem="V2z-IY-bpm" secondAttribute="trailing" id="4IW-my-L2W"/>
-                            <constraint firstAttribute="trailing" secondItem="hAD-MF-pb6" secondAttribute="trailing" id="IYt-yi-Sio"/>
+                            <constraint firstItem="Xq2-ra-K2R" firstAttribute="leading" secondItem="V2z-IY-bpm" secondAttribute="leading" id="EIm-wo-kyD"/>
+                            <constraint firstItem="V2z-IY-bpm" firstAttribute="bottom" secondItem="Dke-7O-jwr" secondAttribute="bottom" constant="15" id="Fnt-Z0-zZM"/>
+                            <constraint firstItem="Xq2-ra-K2R" firstAttribute="top" secondItem="tck-tE-Vrx" secondAttribute="bottom" constant="5" id="RzT-jZ-e0C"/>
                             <constraint firstItem="tck-tE-Vrx" firstAttribute="top" secondItem="V2z-IY-bpm" secondAttribute="top" constant="35" id="WvH-6Z-Cff"/>
-                            <constraint firstAttribute="bottom" secondItem="hAD-MF-pb6" secondAttribute="bottom" constant="100" id="iFP-Xy-01E"/>
-                            <constraint firstItem="hAD-MF-pb6" firstAttribute="top" secondItem="tck-tE-Vrx" secondAttribute="bottom" constant="5" id="p8e-2H-BkY"/>
+                            <constraint firstItem="Xq2-ra-K2R" firstAttribute="bottom" secondItem="V2z-IY-bpm" secondAttribute="bottom" id="au8-FU-LaV"/>
+                            <constraint firstItem="Xq2-ra-K2R" firstAttribute="trailing" secondItem="V2z-IY-bpm" secondAttribute="trailing" id="gX1-wv-n4X"/>
+                            <constraint firstItem="Dke-7O-jwr" firstAttribute="leading" secondItem="V2z-IY-bpm" secondAttribute="leading" id="jnH-1r-bD3"/>
+                            <constraint firstItem="Dke-7O-jwr" firstAttribute="trailing" secondItem="V2z-IY-bpm" secondAttribute="trailing" id="l7s-KP-mJl"/>
                             <constraint firstItem="tck-tE-Vrx" firstAttribute="leading" secondItem="V2z-IY-bpm" secondAttribute="leading" id="qGx-Pr-O16"/>
-                            <constraint firstItem="hAD-MF-pb6" firstAttribute="leading" secondItem="pgk-v6-5c8" secondAttribute="leading" id="rDy-DD-IKu"/>
+                            <constraint firstItem="Dke-7O-jwr" firstAttribute="top" secondItem="tck-tE-Vrx" secondAttribute="bottom" constant="5" id="vON-ik-DKW"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="شاهد" image="play.rectangle" catalog="system" id="5jA-Tx-Ox7"/>
                     <connections>
-                        <outlet property="containerView" destination="hAD-MF-pb6" id="xXq-oj-Uk9"/>
+                        <outlet property="pictureContainerView" destination="Dke-7O-jwr" id="e3x-cH-sq5"/>
                         <outlet property="segmentChanged" destination="tck-tE-Vrx" id="i2Y-HL-7LN"/>
+                        <outlet property="videosContainerView" destination="Xq2-ra-K2R" id="NbR-Dh-S2n"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PRa-7b-lgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2223.6641221374043" y="709.85915492957747"/>
         </scene>
@@ -254,11 +291,11 @@
             <objects>
                 <viewController storyboardIdentifier="picture" id="K9b-Vg-7yO" customClass="pictureViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNx-iK-v7l">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Qgm-RU-aoq">
-                                <rect key="frame" x="0.0" y="12.666666666666686" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="29.666666666666682" width="393" height="783"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pictureCell" rowHeight="227" id="TAn-0C-qWj" customClass="pictureTableViewCell" customModule="newsapplication" customModuleProvider="target">
@@ -329,14 +366,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQd-OK-eDq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057" y="1453"/>
+            <point key="canvasLocation" x="1749" y="1561"/>
         </scene>
         <!--Vidoes View Controller-->
         <scene sceneID="Hcg-rQ-bJc">
             <objects>
                 <viewController storyboardIdentifier="video" automaticallyAdjustsScrollViewInsets="NO" id="QwQ-P8-Dns" customClass="vidoesViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RAc-ya-1kF">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sld-dE-F0x">
@@ -408,7 +445,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="adz-oL-mar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="1467"/>
+            <point key="canvasLocation" x="2950" y="1561"/>
         </scene>
         <!--الرئيسية-->
         <scene sceneID="VfA-qB-tZZ">
@@ -424,22 +461,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLS-zn-afq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3857.2519083969464" y="709.85915492957747"/>
-        </scene>
-        <!--Vidoes View Controller-->
-        <scene sceneID="hNz-qK-alV">
-            <objects>
-                <viewController id="CgU-Iu-yXz" customClass="vidoesViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="18t-0N-A4o">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="623"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="5J5-Uv-E6Q"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="908-Rw-PgG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2991.6030534351144" y="809.50704225352115"/>
+            <point key="canvasLocation" x="3248" y="710"/>
         </scene>
         <!--الاعدادات-->
         <scene sceneID="pkK-RL-dlx">

@@ -10,9 +10,7 @@
 		0401361A297AA0540094668E /* optionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04013619297AA0540094668E /* optionTableViewCell.swift */; };
 		0401361C297AA28F0094668E /* settingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401361B297AA28F0094668E /* settingViewController.swift */; };
 		0401361F297AB7000094668E /* pictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401361E297AB7000094668E /* pictureTableViewCell.swift */; };
-		0413F9D6297A88F300F05461 /* pagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413F9D5297A88F300F05461 /* pagesViewController.swift */; };
 		0413F9D8297A893B00F05461 /* savedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413F9D7297A893B00F05461 /* savedViewController.swift */; };
-		0413F9DB297A8B3800F05461 /* pageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0413F9DA297A8B3800F05461 /* pageTableViewCell.swift */; };
 		043CB1182976A6CE008B6FA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CB1172976A6CE008B6FA7 /* AppDelegate.swift */; };
 		043CB11A2976A6CE008B6FA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CB1192976A6CE008B6FA7 /* SceneDelegate.swift */; };
 		043CB11F2976A6CE008B6FA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043CB11D2976A6CE008B6FA7 /* Main.storyboard */; };
@@ -71,9 +69,7 @@
 		04013619297AA0540094668E /* optionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionTableViewCell.swift; sourceTree = "<group>"; };
 		0401361B297AA28F0094668E /* settingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingViewController.swift; sourceTree = "<group>"; };
 		0401361E297AB7000094668E /* pictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pictureTableViewCell.swift; sourceTree = "<group>"; };
-		0413F9D5297A88F300F05461 /* pagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagesViewController.swift; sourceTree = "<group>"; };
 		0413F9D7297A893B00F05461 /* savedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedViewController.swift; sourceTree = "<group>"; };
-		0413F9DA297A8B3800F05461 /* pageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageTableViewCell.swift; sourceTree = "<group>"; };
 		043CB1142976A6CE008B6FA7 /* newsapplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsapplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		043CB1172976A6CE008B6FA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		043CB1192976A6CE008B6FA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,8 +132,6 @@
 		0413F9D9297A8AFB00F05461 /* pages */ = {
 			isa = PBXGroup;
 			children = (
-				0413F9D5297A88F300F05461 /* pagesViewController.swift */,
-				0413F9DA297A8B3800F05461 /* pageTableViewCell.swift */,
 			);
 			path = pages;
 			sourceTree = "<group>";
@@ -551,11 +545,9 @@
 				0459321629793A3E008B172A /* aboutVC.swift in Sources */,
 				0497EE0A2978362D00F0CF76 /* categoryCollectionViewCell.swift in Sources */,
 				0413F9D8297A893B00F05461 /* savedViewController.swift in Sources */,
-				0413F9D6297A88F300F05461 /* pagesViewController.swift in Sources */,
 				0449DEC22979893300EAE1E2 /* Vidoe.swift in Sources */,
 				0401361A297AA0540094668E /* optionTableViewCell.swift in Sources */,
 				0449DECC2979B9D600EAE1E2 /* shahidVC.swift in Sources */,
-				0413F9DB297A8B3800F05461 /* pageTableViewCell.swift in Sources */,
 				0497EE062978354100F0CF76 /* homeViewController.swift in Sources */,
 				0449DEC62979A5CE00EAE1E2 /* videoTableViewCell.swift in Sources */,
 				0497EE022978344100F0CF76 /* categoriesViewController.swift in Sources */,
