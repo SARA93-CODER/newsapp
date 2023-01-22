@@ -7,7 +7,7 @@
 
 import UIKit
 
-class pictureViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+class pictureViewController: UIViewController, UITableViewDataSource{
     
 
     @IBOutlet weak var picTableView: UITableView!
@@ -18,7 +18,7 @@ class pictureViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
      
 
-        picTableView.delegate = self
+//        picTableView.delegate = self
         picTableView.dataSource = self
         
         arrPictures.append(PictureInfo(title: "أجمل المدن السياحية في البرازيل.. 5 ألوان في عملاق أمريكا اللاتينية", photo: UIImage(named: "tourism")!))

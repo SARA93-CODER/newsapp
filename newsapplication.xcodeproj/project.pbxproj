@@ -20,8 +20,6 @@
 		0449DEB32979545400EAE1E2 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0449DEB12979545300EAE1E2 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0449DEB62979546500EAE1E2 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0449DEB52979546500EAE1E2 /* RealmSwift.framework */; };
 		0449DEB72979546500EAE1E2 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0449DEB52979546500EAE1E2 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0449DEC02979886B00EAE1E2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DEBF2979886B00EAE1E2 /* Item.swift */; };
-		0449DEC22979893300EAE1E2 /* Vidoe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DEC12979893300EAE1E2 /* Vidoe.swift */; };
 		0449DEC62979A5CE00EAE1E2 /* videoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DEC52979A5CE00EAE1E2 /* videoTableViewCell.swift */; };
 		0449DEC92979B10400EAE1E2 /* pictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DEC82979B10400EAE1E2 /* pictureViewController.swift */; };
 		0449DECC2979B9D600EAE1E2 /* shahidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DECB2979B9D600EAE1E2 /* shahidVC.swift */; };
@@ -81,8 +79,6 @@
 		0449DEAF297953E000EAE1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0449DEB12979545300EAE1E2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		0449DEB52979546500EAE1E2 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
-		0449DEBF2979886B00EAE1E2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		0449DEC12979893300EAE1E2 /* Vidoe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vidoe.swift; sourceTree = "<group>"; };
 		0449DEC52979A5CE00EAE1E2 /* videoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoTableViewCell.swift; sourceTree = "<group>"; };
 		0449DEC82979B10400EAE1E2 /* pictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = pictureViewController.swift; path = newsapplication/controllers/shahid/pictureViewController.swift; sourceTree = SOURCE_ROOT; };
 		0449DECB2979B9D600EAE1E2 /* shahidVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shahidVC.swift; sourceTree = "<group>"; };
@@ -172,8 +168,6 @@
 		043CB1472976AB6A008B6FA7 /* dataModels */ = {
 			isa = PBXGroup;
 			children = (
-				0449DEC429798CF000EAE1E2 /* pictures */,
-				0449DEC329798CDA00EAE1E2 /* video */,
 			);
 			path = dataModels;
 			sourceTree = "<group>";
@@ -207,22 +201,6 @@
 				04CDFA992976DA66006AF7CC /* ContainerTabBarController.swift */,
 			);
 			path = controllers;
-			sourceTree = "<group>";
-		};
-		0449DEC329798CDA00EAE1E2 /* video */ = {
-			isa = PBXGroup;
-			children = (
-				0449DEBF2979886B00EAE1E2 /* Item.swift */,
-				0449DEC12979893300EAE1E2 /* Vidoe.swift */,
-			);
-			path = video;
-			sourceTree = "<group>";
-		};
-		0449DEC429798CF000EAE1E2 /* pictures */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = pictures;
 			sourceTree = "<group>";
 		};
 		0449DECA2979B95800EAE1E2 /* shahid */ = {
@@ -545,13 +523,11 @@
 				0459321629793A3E008B172A /* aboutVC.swift in Sources */,
 				0497EE0A2978362D00F0CF76 /* categoryCollectionViewCell.swift in Sources */,
 				0413F9D8297A893B00F05461 /* savedViewController.swift in Sources */,
-				0449DEC22979893300EAE1E2 /* Vidoe.swift in Sources */,
 				0401361A297AA0540094668E /* optionTableViewCell.swift in Sources */,
 				0449DECC2979B9D600EAE1E2 /* shahidVC.swift in Sources */,
 				0497EE062978354100F0CF76 /* homeViewController.swift in Sources */,
 				0449DEC62979A5CE00EAE1E2 /* videoTableViewCell.swift in Sources */,
 				0497EE022978344100F0CF76 /* categoriesViewController.swift in Sources */,
-				0449DEC02979886B00EAE1E2 /* Item.swift in Sources */,
 				0449DEC92979B10400EAE1E2 /* pictureViewController.swift in Sources */,
 				0497EE082978356300F0CF76 /* vidoesViewController.swift in Sources */,
 				04CDFA9A2976DA66006AF7CC /* ContainerTabBarController.swift in Sources */,

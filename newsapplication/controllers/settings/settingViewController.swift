@@ -1,25 +1,27 @@
 
 import UIKit
 
+
+
 class settingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     
     @IBOutlet weak var tableView: UITableView!
     
     
-    var arrOptions = [SettingOption]()
+    var arrOptions: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         
-//        tableView.register(optionTableViewCell.self, forCellReuseIdentifier: "optionCell")
         
-        arrOptions.append(SettingOption(title:"الرئيسية"))
-        arrOptions.append(SettingOption(title:"الأقسام"))
-        arrOptions.append(SettingOption(title:"فيديو"))
-        arrOptions.append(SettingOption(title:"المحفوظات"))
-        arrOptions.append(SettingOption(title:"عن العين الاخبارية"))
+        arrOptions.append("الرئيسية")
+        arrOptions.append("الأقسام")
+        arrOptions.append("فيديو")
+        arrOptions.append("المحفوظات")
+        arrOptions.append("عن العين الاخبارية")
     }
     
     
@@ -31,28 +33,33 @@ class settingViewController: UIViewController, UITableViewDelegate, UITableViewD
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "optionCell", for: indexPath) as! optionTableViewCell
             
-            let option = arrOptions[indexPath.row]
-            cell.setupOption(title: option.title)
+            cell.lblOption?.text = arrOptions[indexPath.row]
+           
+           
+            
+           
            
             return cell
         }
     
 //MARK: - TableView Delegate functions:
     
-    
-    
-    
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
         
     
+        
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "aboutVC") as! aboutVC
+            
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+       
+    
+    
     
 }
     
     
-    struct SettingOption {
-        let title: String
-    }
-
+    
