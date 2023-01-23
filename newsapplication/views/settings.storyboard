@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pages View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="pagesViewController" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="pagesViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Nle-ut-nX1">
+                                <rect key="frame" x="0.0" y="139" width="393" height="654"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pageTableViewCell" rowHeight="80" id="74Y-an-XvM" customClass="pageTableViewCell" customModule="newsapplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="74Y-an-XvM" id="KG0-iU-vQH">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="علوم وتكنولوجيا" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn0-rh-UMF">
+                                                    <rect key="frame" x="131" y="11" width="234" height="49"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="jn0-rh-UMF" firstAttribute="centerX" secondItem="KG0-iU-vQH" secondAttribute="centerX" id="3jR-FU-gjO"/>
+                                                <constraint firstItem="jn0-rh-UMF" firstAttribute="height" secondItem="KG0-iU-vQH" secondAttribute="height" multiplier="0.6125" id="TJ6-I0-CFe"/>
+                                                <constraint firstItem="jn0-rh-UMF" firstAttribute="width" secondItem="KG0-iU-vQH" secondAttribute="width" multiplier="0.59542" id="Zj5-ry-od7"/>
+                                                <constraint firstItem="jn0-rh-UMF" firstAttribute="centerY" secondItem="KG0-iU-vQH" secondAttribute="centerY" id="cax-AE-tbk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblPage" destination="jn0-rh-UMF" id="cAL-xN-WI9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nle-ut-nX1" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="1tm-ag-Ejf"/>
+                            <constraint firstItem="Nle-ut-nX1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="EUo-LI-9KB"/>
+                            <constraint firstItem="Nle-ut-nX1" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="YXC-w7-CaP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Nle-ut-nX1" secondAttribute="bottom" constant="25" id="aFF-jC-bHJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Nle-ut-nX1" id="wfA-T8-6fx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.2900763358778624" y="3.5211267605633805"/>
+        </scene>
+        <!--Saved View Controller-->
+        <scene sceneID="XhZ-Gp-jpE">
+            <objects>
+                <viewController storyboardIdentifier="savedViewController" modalPresentationStyle="fullScreen" id="V5R-VJ-pLF" customClass="savedViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Hah-2O-d7S">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6K4-OM-BD6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lE-NJ-BrQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="-9"/>
+        </scene>
+        <!--AboutVC-->
+        <scene sceneID="r0A-qu-bA1">
+            <objects>
+                <viewController storyboardIdentifier="aboutVC" modalPresentationStyle="fullScreen" id="LQB-3B-R0k" customClass="aboutVC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QX2-it-VN3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdf-fQ-nrh">
+                                <rect key="frame" x="10" y="114" width="373" height="684"/>
+                                <string key="text">موقع أخباري تأسس عام 2015، وهو إحدى علامات الشركة "العالمية للاستثمارات الإعلامية منطقة حرة ذ.م.م." (مقرها الرئيسي) في أبوظبي - الإمارات العربية المتحدة ويرأس تحريرها أحمد سعيد العلوي.
+تهدف رؤية العين الإخبارية إلى العمل على الوصول إلى الريادة العالمية في الصحافة الرقمية، وتتوجه للمتلقي بلغات متعددة، تشمل العربية، والفارسية، والتركية، والفرنسية، والأمهرية.
+وتحظى بوجود إقليمي متمثل بمكاتبها في القاهرة، والإسكندرية، فضلا عن شبكة واسعة من المراسلين الصحفيين حول العالم يغطون كافة المستجدات والأحداث العالمية، بصورة لحظية.
+تقدم "العين الإخبارية" تغطية شاملة ولحظية لقضايا العالم، تجمع بين المصداقية والسرعة والحرفية في عرض المحتوى الرقمي المميز وتقديم التقارير والبحوث والتحليلات المعمقة، وإثرائها بمقالات الرأي التي تشمل طيفاً واسعاً منهم المفكرين والسياسيين وكتّاب الرأي أهل الاختصاص حول العالم.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Gb-t5-tbp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Gb-t5-tbp" firstAttribute="bottom" secondItem="hdf-fQ-nrh" secondAttribute="bottom" constant="20" id="4VI-Wv-VzM"/>
+                            <constraint firstItem="hdf-fQ-nrh" firstAttribute="top" secondItem="0Gb-t5-tbp" secondAttribute="top" constant="55" id="Qq2-iZ-ycN"/>
+                            <constraint firstItem="hdf-fQ-nrh" firstAttribute="leading" secondItem="0Gb-t5-tbp" secondAttribute="leading" constant="10" id="SaU-jS-5iN"/>
+                            <constraint firstItem="0Gb-t5-tbp" firstAttribute="trailing" secondItem="hdf-fQ-nrh" secondAttribute="trailing" constant="10" id="oxT-ZI-FVk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblAbout" destination="hdf-fQ-nrh" id="Byi-fG-31Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ot1-TC-qSw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-805" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

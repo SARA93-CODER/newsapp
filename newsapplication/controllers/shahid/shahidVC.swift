@@ -23,7 +23,7 @@ class shahidVC: UIViewController {
         
 //        setup()
         
-        UIView.animate(withDuration: 0.5, delay: 0) {
+        UIView.animate(withDuration: 0, delay: 0) {
 //display picture's UI at beginning using alpha attribute
             self.picture.alpha = 1
             self.video.alpha = 0

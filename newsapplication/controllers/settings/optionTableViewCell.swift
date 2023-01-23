@@ -8,12 +8,18 @@
 import UIKit
 
 
-class optionTableViewCell: UITableViewCell {
-    
-    @IBOutlet weak var lblOption: UILabel!
 
+
+class optionTableViewCell: UITableViewCell{
     
+  
+    @IBOutlet weak var lblOption: UILabel!
+        var labelDelagate: LabelDelegate?
+   
     
+    func initCell(title: String){
+        lblOption.text = title
+    }
         
     
 }

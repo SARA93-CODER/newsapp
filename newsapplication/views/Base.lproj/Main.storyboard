@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FsI-nC-70u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rJE-at-Yyl">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -8,52 +8,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--AboutVC-->
-        <scene sceneID="rIu-H4-9QY">
+        <!--aboutVC-->
+        <scene sceneID="t1x-C6-hNe">
             <objects>
-                <viewController storyboardIdentifier="aboutVC" id="wVc-8e-a7b" customClass="aboutVC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dMY-Ze-x0u">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVy-p9-q3A">
-                                <rect key="frame" x="10" y="114" width="373" height="684"/>
-                                <string key="text">موقع أخباري تأسس عام 2015، وهو إحدى علامات الشركة "العالمية للاستثمارات الإعلامية منطقة حرة ذ.م.م." (مقرها الرئيسي) في أبوظبي - الإمارات العربية المتحدة ويرأس تحريرها أحمد سعيد العلوي.
-تهدف رؤية العين الإخبارية إلى العمل على الوصول إلى الريادة العالمية في الصحافة الرقمية، وتتوجه للمتلقي بلغات متعددة، تشمل العربية، والفارسية، والتركية، والفرنسية، والأمهرية.
-وتحظى بوجود إقليمي متمثل بمكاتبها في القاهرة، والإسكندرية، فضلا عن شبكة واسعة من المراسلين الصحفيين حول العالم يغطون كافة المستجدات والأحداث العالمية، بصورة لحظية.
-تقدم "العين الإخبارية" تغطية شاملة ولحظية لقضايا العالم، تجمع بين المصداقية والسرعة والحرفية في عرض المحتوى الرقمي المميز وتقديم التقارير والبحوث والتحليلات المعمقة، وإثرائها بمقالات الرأي التي تشمل طيفاً واسعاً منهم المفكرين والسياسيين وكتّاب الرأي أهل الاختصاص حول العالم.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="JrL-sI-S7v"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="QVy-p9-q3A" firstAttribute="top" secondItem="JrL-sI-S7v" secondAttribute="top" constant="55" id="8EU-Ee-qyt"/>
-                            <constraint firstItem="QVy-p9-q3A" firstAttribute="leading" secondItem="JrL-sI-S7v" secondAttribute="leading" constant="10" id="ZXV-ot-7ms"/>
-                            <constraint firstItem="JrL-sI-S7v" firstAttribute="bottom" secondItem="QVy-p9-q3A" secondAttribute="bottom" constant="20" id="r39-NG-hL3"/>
-                            <constraint firstItem="JrL-sI-S7v" firstAttribute="trailing" secondItem="QVy-p9-q3A" secondAttribute="trailing" constant="10" id="wFH-H8-Pea"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="lblAbout" destination="QVy-p9-q3A" id="t5n-wX-1sT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkH-b4-KNt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="settings" referencedIdentifier="aboutVC" id="EOa-SE-HGz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0Iu-7v-ZaT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AeV-2a-2xE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-105" y="2169"/>
+            <point key="canvasLocation" x="-150" y="1831"/>
         </scene>
-        <!--Setting View Controller-->
+        <!--الاعدادات-->
         <scene sceneID="N8q-ha-5Ge">
             <objects>
-                <viewController id="wi9-iI-TFx" customClass="settingViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settingsVC" id="wi9-iI-TFx" customClass="settingViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K9S-xk-lKG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zU4-1F-5vw">
-                                <rect key="frame" x="0.0" y="10" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="-12" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="optionCell" rowHeight="90" id="GLM-qb-heH" customClass="optionTableViewCell" customModule="newsapplication" customModuleProvider="target">
@@ -78,7 +52,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="lblOption" destination="TMs-NG-okc" id="Moq-VL-uUB"/>
+                                            <outlet property="lblOption" destination="TMs-NG-okc" id="eN7-y1-Q0r"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -93,6 +67,7 @@
                             <constraint firstItem="zU4-1F-5vw" firstAttribute="centerY" secondItem="sgP-Ep-NIS" secondAttribute="centerY" id="veM-hc-JSO"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="الاعدادات" image="play.rectangle" catalog="system" id="EjB-c3-Mqg"/>
                     <navigationItem key="navigationItem" id="9HQ-zV-aJa"/>
                     <connections>
                         <outlet property="tableView" destination="zU4-1F-5vw" id="YEc-45-mkI"/>
@@ -100,12 +75,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TL1-xm-QO6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="268" y="1463"/>
+            <point key="canvasLocation" x="262" y="1563"/>
         </scene>
         <!--الاقسام-->
         <scene sceneID="to3-Kv-OzL">
             <objects>
-                <viewController id="9qd-4y-4ze" customClass="categoriesViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="categoriesVC" id="9qd-4y-4ze" customClass="categoriesViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PZA-Dp-2IV">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +156,7 @@
         <!--شاهد-->
         <scene sceneID="bRx-jh-OON">
             <objects>
-                <viewController id="fr9-yA-yix" customClass="shahidVC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="shahidVC" id="fr9-yA-yix" customClass="shahidVC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pgk-v6-5c8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,12 +228,12 @@
                         <segue destination="9qd-4y-4ze" kind="relationship" relationship="viewControllers" id="inL-Bz-S2u"/>
                         <segue destination="fr9-yA-yix" kind="relationship" relationship="viewControllers" id="zEr-bC-6ef"/>
                         <segue destination="kev-KH-g10" kind="relationship" relationship="viewControllers" id="wod-Q8-ck5"/>
-                        <segue destination="FsI-nC-70u" kind="relationship" relationship="viewControllers" id="M1D-wG-vYb"/>
+                        <segue destination="wi9-iI-TFx" kind="relationship" relationship="viewControllers" id="Zl4-O7-EZJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Cf-lL-1Kj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961" y="-51"/>
+            <point key="canvasLocation" x="2685" y="-44"/>
         </scene>
         <!--Picture View Controller-->
         <scene sceneID="M3V-Rk-u1b">
@@ -436,25 +411,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLS-zn-afq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4173.2824427480919" y="709.85915492957747"/>
-        </scene>
-        <!--الاعدادات-->
-        <scene sceneID="9t3-27-LKU">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FsI-nC-70u" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="الاعدادات" image="play.rectangle" catalog="system" id="dCH-Ka-4Cd"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tXH-vM-v1e">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="wi9-iI-TFx" kind="relationship" relationship="rootViewController" id="O55-u2-hqW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W6o-fZ-UhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="267.93893129770993" y="709.85915492957747"/>
         </scene>
     </scenes>
     <resources>
