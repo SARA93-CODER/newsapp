@@ -9,6 +9,8 @@ import UIKit
 
 class post2VC: UIViewController {
 
+    @IBOutlet weak var lblDetails: UILabel!
+    @IBOutlet weak var imgDetails: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
