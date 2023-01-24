@@ -9,21 +9,46 @@ import UIKit
 
 class homeViewController: UIViewController {
 
+    @IBOutlet weak var latestNews: UIView!
+    @IBOutlet weak var segmentControll: UISegmentedControl!
+    
+    @IBOutlet weak var todayNews: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        UIView.animate(withDuration: 0, delay: 0) {
+//display latestNews UI at beginning using alpha attribute
+            self.latestNews.alpha = 1
+            self.todayNews.alpha = 0
+        }
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func segmentDidChanged(_ sender: UISegmentedControl) {
+        
+        switch sender.selectedSegmentIndex {
+ case 0:
+     UIView.animate(withDuration: 0.5, delay: 0) {
+         self.latestNews.alpha = 1
+         self.todayNews.alpha = 0
+     }
+ case 1:
+     UIView.animate(withDuration: 0.5, delay: 0) {
+         self.latestNews.alpha = 0
+         self.todayNews.alpha = 1
+     }
+ default:
+     break
+ }
     }
-    */
+    
+    
+
+
+    
+  
+     
 
 }

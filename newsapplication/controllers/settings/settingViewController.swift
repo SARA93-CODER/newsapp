@@ -98,7 +98,7 @@ class settingViewController: UIViewController, UITableViewDelegate, UITableViewD
             navigationController?.pushViewController(vc6, animated: true)
             
         default:
-            return
+            break
         }
     }
   

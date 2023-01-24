@@ -15,6 +15,10 @@
 		043CB11A2976A6CE008B6FA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043CB1192976A6CE008B6FA7 /* SceneDelegate.swift */; };
 		043CB11F2976A6CE008B6FA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043CB11D2976A6CE008B6FA7 /* Main.storyboard */; };
 		043CB1242976A6CF008B6FA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043CB1222976A6CF008B6FA7 /* LaunchScreen.storyboard */; };
+		04473A9C2980153A00D6ABC0 /* todayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04473A9B2980153A00D6ABC0 /* todayVC.swift */; };
+		04473A9E2980155700D6ABC0 /* latestNewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04473A9D2980155700D6ABC0 /* latestNewsVC.swift */; };
+		04473AA0298018B100D6ABC0 /* latestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04473A9F298018B100D6ABC0 /* latestTableViewCell.swift */; };
+		04473AA2298018C500D6ABC0 /* todayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04473AA1298018C500D6ABC0 /* todayTableViewCell.swift */; };
 		0449DEB0297953E000EAE1E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0449DEAF297953E000EAE1E2 /* Assets.xcassets */; };
 		0449DEB22979545400EAE1E2 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0449DEB12979545300EAE1E2 /* Realm.framework */; };
 		0449DEB32979545400EAE1E2 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0449DEB12979545300EAE1E2 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -80,6 +84,10 @@
 		043CB1252976A6CF008B6FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		043CB12A2976A6D0008B6FA7 /* newsapplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newsapplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		043CB1342976A6D0008B6FA7 /* newsapplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newsapplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04473A9B2980153A00D6ABC0 /* todayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayVC.swift; sourceTree = "<group>"; };
+		04473A9D2980155700D6ABC0 /* latestNewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = latestNewsVC.swift; sourceTree = "<group>"; };
+		04473A9F298018B100D6ABC0 /* latestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = latestTableViewCell.swift; sourceTree = "<group>"; };
+		04473AA1298018C500D6ABC0 /* todayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayTableViewCell.swift; sourceTree = "<group>"; };
 		0449DEAF297953E000EAE1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0449DEB12979545300EAE1E2 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		0449DEB52979546500EAE1E2 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
@@ -240,6 +248,10 @@
 			isa = PBXGroup;
 			children = (
 				0497EE052978354100F0CF76 /* homeViewController.swift */,
+				04473A9B2980153A00D6ABC0 /* todayVC.swift */,
+				04473A9D2980155700D6ABC0 /* latestNewsVC.swift */,
+				04473A9F298018B100D6ABC0 /* latestTableViewCell.swift */,
+				04473AA1298018C500D6ABC0 /* todayTableViewCell.swift */,
 			);
 			path = home;
 			sourceTree = "<group>";
@@ -544,10 +556,14 @@
 				04F7F6C0297E6B9300279425 /* aboutVC.swift in Sources */,
 				0497EE022978344100F0CF76 /* categoriesViewController.swift in Sources */,
 				0449DEC92979B10400EAE1E2 /* pictureViewController.swift in Sources */,
+				04473A9E2980155700D6ABC0 /* latestNewsVC.swift in Sources */,
+				04473A9C2980153A00D6ABC0 /* todayVC.swift in Sources */,
+				04473AA0298018B100D6ABC0 /* latestTableViewCell.swift in Sources */,
 				0497EE082978356300F0CF76 /* vidoesViewController.swift in Sources */,
 				04CDFA9A2976DA66006AF7CC /* ContainerTabBarController.swift in Sources */,
 				043CB1182976A6CE008B6FA7 /* AppDelegate.swift in Sources */,
 				04F7F6BE297E5FA000279425 /* pagesViewController.swift in Sources */,
+				04473AA2298018C500D6ABC0 /* todayTableViewCell.swift in Sources */,
 				043CB11A2976A6CE008B6FA7 /* SceneDelegate.swift in Sources */,
 				0401361F297AB7000094668E /* pictureTableViewCell.swift in Sources */,
 				0401361C297AA28F0094668E /* settingViewController.swift in Sources */,

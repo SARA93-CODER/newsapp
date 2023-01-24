@@ -1,28 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="s0d-6b-0kx">
+        <!--Latest NewsVC-->
+        <scene sceneID="wyd-6W-Kkh">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController storyboardIdentifier="latestNewsVC" id="Xfd-zd-fxe" customClass="latestNewsVC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gLX-8I-sl0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NNj-93-4F7">
+                                <rect key="frame" x="0.0" y="91" width="393" height="707"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="133" id="ZzZ-iB-8Xi" customClass="latestTableViewCell" customModule="newsapplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="133"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZzZ-iB-8Xi" id="epc-09-VFq">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="133"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDd-2N-dFy">
+                                                    <rect key="frame" x="235" y="11" width="138" height="111"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="138" id="JH1-Aj-cVd"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تركيا.. أردوغان يرد على &quot;طاولة الستة&quot; بإجراء الانتخابات قبل موعدها" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flg-Ex-egr">
+                                                    <rect key="frame" x="33" y="27" width="194" height="63"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THz-X0-Weu">
+                                                    <rect key="frame" x="88" y="87" width="59" height="35"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system">
+                                                        <color key="baseForegroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="btnShareToPressed:" destination="ZzZ-iB-8Xi" eventType="touchUpInside" id="MZN-o1-nmn"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukf-cX-I0W">
+                                                    <rect key="frame" x="33" y="86" width="59" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="59" id="TQH-AF-ocp"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system">
+                                                        <color key="baseForegroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="btnSavePressed:" destination="ZzZ-iB-8Xi" eventType="touchUpInside" id="BX4-86-2AO"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ukf-cX-I0W" firstAttribute="leading" secondItem="epc-09-VFq" secondAttribute="leadingMargin" constant="13" id="32H-Eo-dKa"/>
+                                                <constraint firstItem="THz-X0-Weu" firstAttribute="bottom" secondItem="FDd-2N-dFy" secondAttribute="bottom" id="FjA-EH-R4F"/>
+                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="bottom" secondItem="epc-09-VFq" secondAttribute="bottomMargin" id="JIe-JM-INe"/>
+                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="leading" secondItem="flg-Ex-egr" secondAttribute="trailing" constant="8" id="MHu-zB-p0T"/>
+                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="top" secondItem="epc-09-VFq" secondAttribute="topMargin" id="Nza-uG-oEq"/>
+                                                <constraint firstItem="flg-Ex-egr" firstAttribute="leading" secondItem="Ukf-cX-I0W" secondAttribute="leading" id="OG7-Zq-aTt"/>
+                                                <constraint firstItem="flg-Ex-egr" firstAttribute="top" secondItem="epc-09-VFq" secondAttribute="topMargin" constant="16" id="P1q-rh-Mfq"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="flg-Ex-egr" secondAttribute="bottom" constant="32" id="YlZ-up-sa4"/>
+                                                <constraint firstItem="THz-X0-Weu" firstAttribute="leading" secondItem="epc-09-VFq" secondAttribute="leadingMargin" constant="68" id="jvZ-dL-s1A"/>
+                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="leading" secondItem="THz-X0-Weu" secondAttribute="trailing" constant="88" id="oL3-oK-AQG"/>
+                                                <constraint firstItem="Ukf-cX-I0W" firstAttribute="top" secondItem="epc-09-VFq" secondAttribute="topMargin" constant="75" id="q7i-Mc-Y9R"/>
+                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="trailing" secondItem="epc-09-VFq" secondAttribute="trailingMargin" id="wF4-oa-jOu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnSave" destination="Ukf-cX-I0W" id="NyC-4R-0ul"/>
+                                            <outlet property="btnShareTo" destination="THz-X0-Weu" id="kYH-Tg-kgA"/>
+                                            <outlet property="imgLatest" destination="FDd-2N-dFy" id="61Z-y6-tpP"/>
+                                            <outlet property="lblLatest" destination="flg-Ex-egr" id="0Ce-jo-YSJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="W6F-VZ-nWT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NNj-93-4F7" firstAttribute="leading" secondItem="W6F-VZ-nWT" secondAttribute="leading" id="cXO-Fs-hiT"/>
+                            <constraint firstItem="W6F-VZ-nWT" firstAttribute="bottom" secondItem="NNj-93-4F7" secondAttribute="bottom" constant="20" id="j4U-lg-UmU"/>
+                            <constraint firstItem="NNj-93-4F7" firstAttribute="centerX" secondItem="gLX-8I-sl0" secondAttribute="centerX" id="lFP-oS-Hx4"/>
+                            <constraint firstItem="NNj-93-4F7" firstAttribute="top" secondItem="W6F-VZ-nWT" secondAttribute="top" constant="32" id="yuP-wr-ybs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="NNj-93-4F7" id="zHL-c8-qra"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wCb-Nf-vxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367.17557251908397" y="761.61971830985919"/>
+        </scene>
+        <!--TodayVC-->
+        <scene sceneID="Zxy-d7-OCP">
+            <objects>
+                <viewController storyboardIdentifier="todayVC" id="8kE-2l-OBP" customClass="todayVC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kL4-Jb-eTu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="x20-Ph-gHh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hUE-0S-KsZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="622" y="762"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

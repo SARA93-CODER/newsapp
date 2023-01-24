@@ -402,14 +402,75 @@
                     <view key="view" contentMode="scaleToFill" id="vNf-Ir-uGN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ea0-yS-h9x">
+                                <rect key="frame" x="0.0" y="114" width="393" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BRz-P9-Vz4"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="اخر الاخبار"/>
+                                    <segment title="العالم اليوم"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentDidChanged:" destination="kev-KH-g10" eventType="valueChanged" id="tpF-yb-NZw"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6OG-cs-lve">
+                                <rect key="frame" x="0.0" y="162" width="393" height="607"/>
+                                <connections>
+                                    <segue destination="kbo-e8-PXJ" kind="embed" id="Zsc-lf-Lai"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srd-FJ-9WW">
+                                <rect key="frame" x="0.0" y="162" width="393" height="607"/>
+                                <connections>
+                                    <segue destination="ta6-Fv-aCv" kind="embed" id="muo-0K-WDK"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ft6-lU-Laj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ea0-yS-h9x" firstAttribute="trailing" secondItem="ft6-lU-Laj" secondAttribute="trailing" id="32x-eJ-Btg"/>
+                            <constraint firstItem="srd-FJ-9WW" firstAttribute="bottom" secondItem="6OG-cs-lve" secondAttribute="bottom" id="6pU-D2-x8g"/>
+                            <constraint firstItem="6OG-cs-lve" firstAttribute="leading" secondItem="ea0-yS-h9x" secondAttribute="leading" id="AAL-rS-PbP"/>
+                            <constraint firstItem="6OG-cs-lve" firstAttribute="trailing" secondItem="ea0-yS-h9x" secondAttribute="trailing" id="Dkv-NM-lJq"/>
+                            <constraint firstItem="ea0-yS-h9x" firstAttribute="top" secondItem="ft6-lU-Laj" secondAttribute="top" constant="55" id="FYd-BQ-Nsq"/>
+                            <constraint firstItem="6OG-cs-lve" firstAttribute="bottom" secondItem="ft6-lU-Laj" secondAttribute="bottom" id="IFL-v4-bAn"/>
+                            <constraint firstItem="srd-FJ-9WW" firstAttribute="top" secondItem="6OG-cs-lve" secondAttribute="top" id="R4L-wm-775"/>
+                            <constraint firstItem="srd-FJ-9WW" firstAttribute="leading" secondItem="6OG-cs-lve" secondAttribute="leading" id="cFz-eN-xOx"/>
+                            <constraint firstItem="srd-FJ-9WW" firstAttribute="trailing" secondItem="6OG-cs-lve" secondAttribute="trailing" id="hMJ-Mz-G9v"/>
+                            <constraint firstItem="ea0-yS-h9x" firstAttribute="leading" secondItem="ft6-lU-Laj" secondAttribute="leading" id="sa0-45-Y5A"/>
+                            <constraint firstItem="6OG-cs-lve" firstAttribute="top" secondItem="ea0-yS-h9x" secondAttribute="bottom" constant="8" id="sgx-MD-Tk9"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="الرئيسية" image="homekit" catalog="system" id="tiL-s4-M3x"/>
+                    <connections>
+                        <outlet property="latestNews" destination="6OG-cs-lve" id="7Iz-8K-Tlz"/>
+                        <outlet property="segmentControll" destination="ea0-yS-h9x" id="7ul-wf-Lr3"/>
+                        <outlet property="todayNews" destination="srd-FJ-9WW" id="Pa3-lg-SId"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLS-zn-afq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4173.2824427480919" y="709.85915492957747"/>
+        </scene>
+        <!--latestNewsVC-->
+        <scene sceneID="cwq-fU-1wA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="homePage" referencedIdentifier="latestNewsVC" id="kbo-e8-PXJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aqa-cq-wj2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4961" y="689"/>
+        </scene>
+        <!--todayVC-->
+        <scene sceneID="jlN-8l-wTc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="homePage" referencedIdentifier="todayVC" id="ta6-Fv-aCv" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="caM-kS-OzD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4996" y="744"/>
         </scene>
         <!--الاعدادات-->
         <scene sceneID="sya-VP-e0M">
