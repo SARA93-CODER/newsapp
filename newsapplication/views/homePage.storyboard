@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xfd-zd-fxe">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,40 +21,33 @@
                                 <rect key="frame" x="0.0" y="91" width="393" height="707"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="133" id="ZzZ-iB-8Xi" customClass="latestTableViewCell" customModule="newsapplication" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="133"/>
+                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="163" id="ZzZ-iB-8Xi" customClass="latestTableViewCell" customModule="newsapplication" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="163"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZzZ-iB-8Xi" id="epc-09-VFq">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="133"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="163"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDd-2N-dFy">
-                                                    <rect key="frame" x="235" y="11" width="138" height="111"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="latest-politics" translatesAutoresizingMaskIntoConstraints="NO" id="FDd-2N-dFy">
+                                                    <rect key="frame" x="248" y="5" width="140" height="150"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="138" id="JH1-Aj-cVd"/>
+                                                        <constraint firstAttribute="height" constant="150" id="fxm-Km-bf2"/>
+                                                        <constraint firstAttribute="width" constant="140" id="if0-Ka-HOh"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تركيا.. أردوغان يرد على &quot;طاولة الستة&quot; بإجراء الانتخابات قبل موعدها" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flg-Ex-egr">
-                                                    <rect key="frame" x="33" y="27" width="194" height="63"/>
+                                                    <rect key="frame" x="43" y="10" width="200" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="Ohj-uR-H2P"/>
+                                                        <constraint firstAttribute="height" constant="100" id="ZzQ-Vd-983"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="z2Q-PV-alP"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THz-X0-Weu">
-                                                    <rect key="frame" x="88" y="87" width="59" height="35"/>
-                                                    <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system">
-                                                        <color key="baseForegroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </buttonConfiguration>
-                                                    <connections>
-                                                        <action selector="btnShareToPressed:" destination="ZzZ-iB-8Xi" eventType="touchUpInside" id="MZN-o1-nmn"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukf-cX-I0W">
-                                                    <rect key="frame" x="33" y="86" width="59" height="35"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="59" id="TQH-AF-ocp"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="15.000000000000004" y="118" width="46.333333333333343" height="35"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system">
                                                         <color key="baseForegroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -62,20 +56,33 @@
                                                         <action selector="btnSavePressed:" destination="ZzZ-iB-8Xi" eventType="touchUpInside" id="BX4-86-2AO"/>
                                                     </connections>
                                                 </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THz-X0-Weu">
+                                                    <rect key="frame" x="49.666666666666657" y="118" width="48.333333333333343" height="35"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="square.and.arrow.up" catalog="system">
+                                                        <color key="baseForegroundColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="btnShareToPressed:" destination="ZzZ-iB-8Xi" eventType="touchUpInside" id="MZN-o1-nmn"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Ukf-cX-I0W" firstAttribute="leading" secondItem="epc-09-VFq" secondAttribute="leadingMargin" constant="13" id="32H-Eo-dKa"/>
-                                                <constraint firstItem="THz-X0-Weu" firstAttribute="bottom" secondItem="FDd-2N-dFy" secondAttribute="bottom" id="FjA-EH-R4F"/>
-                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="bottom" secondItem="epc-09-VFq" secondAttribute="bottomMargin" id="JIe-JM-INe"/>
-                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="leading" secondItem="flg-Ex-egr" secondAttribute="trailing" constant="8" id="MHu-zB-p0T"/>
-                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="top" secondItem="epc-09-VFq" secondAttribute="topMargin" id="Nza-uG-oEq"/>
-                                                <constraint firstItem="flg-Ex-egr" firstAttribute="leading" secondItem="Ukf-cX-I0W" secondAttribute="leading" id="OG7-Zq-aTt"/>
-                                                <constraint firstItem="flg-Ex-egr" firstAttribute="top" secondItem="epc-09-VFq" secondAttribute="topMargin" constant="16" id="P1q-rh-Mfq"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="flg-Ex-egr" secondAttribute="bottom" constant="32" id="YlZ-up-sa4"/>
-                                                <constraint firstItem="THz-X0-Weu" firstAttribute="leading" secondItem="epc-09-VFq" secondAttribute="leadingMargin" constant="68" id="jvZ-dL-s1A"/>
-                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="leading" secondItem="THz-X0-Weu" secondAttribute="trailing" constant="88" id="oL3-oK-AQG"/>
-                                                <constraint firstItem="Ukf-cX-I0W" firstAttribute="top" secondItem="epc-09-VFq" secondAttribute="topMargin" constant="75" id="q7i-Mc-Y9R"/>
-                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="trailing" secondItem="epc-09-VFq" secondAttribute="trailingMargin" id="wF4-oa-jOu"/>
+                                                <constraint firstItem="flg-Ex-egr" firstAttribute="top" secondItem="epc-09-VFq" secondAttribute="top" constant="10" id="31l-nl-q77"/>
+                                                <constraint firstItem="THz-X0-Weu" firstAttribute="height" secondItem="epc-09-VFq" secondAttribute="height" multiplier="0.214724" id="Lgt-p0-HPh"/>
+                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="leading" secondItem="flg-Ex-egr" secondAttribute="trailing" constant="8" id="QnK-zg-waf"/>
+                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="top" secondItem="epc-09-VFq" secondAttribute="top" constant="5" id="S3q-Lt-6vM"/>
+                                                <constraint firstAttribute="trailing" secondItem="FDd-2N-dFy" secondAttribute="trailing" constant="5" id="TBw-Z0-n8h"/>
+                                                <constraint firstItem="Ukf-cX-I0W" firstAttribute="leading" secondItem="epc-09-VFq" secondAttribute="leading" constant="15" id="UO4-LZ-YSb"/>
+                                                <constraint firstAttribute="bottom" secondItem="THz-X0-Weu" secondAttribute="bottom" constant="10" id="aY3-A5-E3Y"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ukf-cX-I0W" secondAttribute="bottom" constant="10" id="dG3-Qm-T43"/>
+                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="leading" secondItem="flg-Ex-egr" secondAttribute="trailing" constant="5" id="fRw-LR-28u"/>
+                                                <constraint firstItem="Ukf-cX-I0W" firstAttribute="height" secondItem="epc-09-VFq" secondAttribute="height" multiplier="0.214724" id="mBf-3I-10q"/>
+                                                <constraint firstItem="Ukf-cX-I0W" firstAttribute="width" secondItem="epc-09-VFq" secondAttribute="width" multiplier="0.117897" id="oq3-kR-P53"/>
+                                                <constraint firstItem="THz-X0-Weu" firstAttribute="width" secondItem="epc-09-VFq" secondAttribute="width" multiplier="0.122986" id="qTe-kn-4pc"/>
+                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="top" secondItem="epc-09-VFq" secondAttribute="top" constant="5" id="r1B-zx-wxh"/>
+                                                <constraint firstAttribute="trailing" secondItem="FDd-2N-dFy" secondAttribute="trailing" constant="5" id="rIa-8f-Pj8"/>
+                                                <constraint firstItem="FDd-2N-dFy" firstAttribute="leading" secondItem="THz-X0-Weu" secondAttribute="trailing" constant="150" id="yCq-Dj-MCy"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -103,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCb-Nf-vxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-367.17557251908397" y="761.61971830985919"/>
+            <point key="canvasLocation" x="-367.17557251908397" y="761.26760563380287"/>
         </scene>
         <!--TodayVC-->
         <scene sceneID="Zxy-d7-OCP">
@@ -112,18 +119,342 @@
                     <view key="view" contentMode="scaleToFill" id="kL4-Jb-eTu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3h0-tH-RbJ">
+                                <rect key="frame" x="5" y="109" width="383" height="230"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="230" id="13u-Be-sxa"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Z3Z-kW-5AR">
+                                    <size key="itemSize" width="289" height="217"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="cGL-Sw-d6y" customClass="todayNewsCell" customModule="newsapplication" customModuleProvider="target">
+                                        <rect key="frame" x="47" y="0.0" width="289" height="217"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Tiw-Ln-HEN">
+                                            <rect key="frame" x="0.0" y="0.0" width="289" height="217"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="today-sci" translatesAutoresizingMaskIntoConstraints="NO" id="zU8-pI-Tho">
+                                                    <rect key="frame" x="30" y="5" width="229" height="130"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="130" id="iFp-OO-KCg"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التلوّث الضوئي يتزايد بوتيرة سريعة" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfd-3z-HD3">
+                                                    <rect key="frame" x="30" y="145" width="229" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="8Ps-C7-4U0"/>
+                                                        <constraint firstAttribute="height" constant="40" id="eyI-fx-SLy"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="mfd-3z-HD3" firstAttribute="leading" secondItem="Tiw-Ln-HEN" secondAttribute="leading" constant="30" id="39Q-8r-0Mr"/>
+                                                <constraint firstItem="zU8-pI-Tho" firstAttribute="height" secondItem="Tiw-Ln-HEN" secondAttribute="height" multiplier="0.599078" id="6PB-Mh-iZp"/>
+                                                <constraint firstAttribute="trailing" secondItem="mfd-3z-HD3" secondAttribute="trailing" constant="30" id="8vM-vz-DOQ"/>
+                                                <constraint firstItem="zU8-pI-Tho" firstAttribute="top" secondItem="Tiw-Ln-HEN" secondAttribute="top" constant="5" id="ebG-Qw-AfT"/>
+                                                <constraint firstItem="zU8-pI-Tho" firstAttribute="width" secondItem="Tiw-Ln-HEN" secondAttribute="width" multiplier="0.792388" id="ga7-zC-Uet"/>
+                                                <constraint firstItem="mfd-3z-HD3" firstAttribute="width" secondItem="Tiw-Ln-HEN" secondAttribute="width" multiplier="0.792388" id="qmn-aI-Vev"/>
+                                                <constraint firstItem="mfd-3z-HD3" firstAttribute="height" secondItem="Tiw-Ln-HEN" secondAttribute="height" multiplier="0.184332" id="rYf-kv-uZO"/>
+                                                <constraint firstItem="zU8-pI-Tho" firstAttribute="leading" secondItem="Tiw-Ln-HEN" secondAttribute="leading" constant="30" id="yKf-gN-x7V"/>
+                                                <constraint firstAttribute="trailing" secondItem="zU8-pI-Tho" secondAttribute="trailing" constant="30" id="ylX-WW-zaq"/>
+                                                <constraint firstItem="mfd-3z-HD3" firstAttribute="top" secondItem="zU8-pI-Tho" secondAttribute="bottom" constant="10" id="zQt-Qy-uIa"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="289" height="217"/>
+                                        <connections>
+                                            <outlet property="imgNews" destination="zU8-pI-Tho" id="OuJ-tJ-26M"/>
+                                            <outlet property="lblTitle" destination="mfd-3z-HD3" id="HCD-Uc-72e"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="x20-Ph-gHh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="x20-Ph-gHh" firstAttribute="trailing" secondItem="3h0-tH-RbJ" secondAttribute="trailing" constant="5" id="5gd-Sz-icm"/>
+                            <constraint firstItem="3h0-tH-RbJ" firstAttribute="top" secondItem="x20-Ph-gHh" secondAttribute="top" constant="50" id="Drz-m7-f7P"/>
+                            <constraint firstItem="3h0-tH-RbJ" firstAttribute="leading" secondItem="x20-Ph-gHh" secondAttribute="leading" constant="5" id="IfZ-pq-0rf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="3h0-tH-RbJ" id="L9i-Tc-2sN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUE-0S-KsZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="622" y="762"/>
+            <point key="canvasLocation" x="620.61068702290072" y="761.97183098591552"/>
+        </scene>
+        <!--Post1VC-->
+        <scene sceneID="fXd-hf-41y">
+            <objects>
+                <viewController id="jIS-tU-tGq" customClass="post1VC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZAE-JC-DrZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SG4-le-VNd">
+                                <rect key="frame" x="16" y="182" width="361" height="561"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">يتزايد التلوّث الضوئي بوتيرة سريعة، في حين يُحتمل أن ينخفض عدد النجوم التي يمكن مشاهدتها بالعين المجردة ليلاً في بعض المناطق إلى النصف، في فترة لا تتعدى العشرين عاماً، على ما أفادت دراسة علمية نُشرت في مجلة «ساينس».
+    ولوحظ أن الارتفاع في هذا التلوث الناجم عن الإضاءة الصناعية أكبر مما رصدته الأقمار الصناعية ليلاً.
+    ومن أجل تقييم أثر الإضاءة الصناعية على السماء ليلاً، استند العلماء إلى عمليات مراقبة للنجوم أجراها بين عامي 2011 و2022 نحو 51 ألف شخص على اطلاع بالمسائل العلمية، تحديداً في الولايات المتحدة وأوروبا.
+    ومن خلال التغيير الذي شهده عدد النجوم المرصودة، استُنتج أنّ توهّج السماء زاد سنوياً بنسبة 9.6 في المائة في المتوسط في أماكن إقامة المشاركين في الدراسة، على ما أشار الباحثون.
+    ومع تزايد التلوث الضوئي، يُتوقع أن ينخفض عدد النجوم المرئية بالعين المجردة في إحدى المناطق من 250 نجماً إلى 100 نجم في غضون 18 سنة، حسب تقرير «وكالة الصحافة الفرنسية».
+    وأُجريت هذه الدراسة تزامناً مع استبدال مصابيح ثنائية باعثة للضوء (LED) بعدد كبير من وسائل الإنارة الخارجية، إلا أنّ تأثير هذا التحول في نوعية الإضاءة على توهج السماء، ليس واضحاً، بحسب الباحثين.
+    وأشار العلماء إلى أنّ رؤية النجوم تراجعت بسرعة رغم (أو ربما بسبب) استخدام المصابيح الثنائية الباعثة للضوء في الشوارع.
+    وأكدوا أنّ التقنيات المُعتمدة حالياً في إضاءة الشوارع لا تحدّ من التلوث الضوئي.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jGH-vj-dg2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0UG-hT-JVf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367.17557251908397" y="1595.7746478873241"/>
+        </scene>
+        <!--Post2VC-->
+        <scene sceneID="NTY-Za-eN9">
+            <objects>
+                <viewController id="fc1-WO-1eJ" customClass="post2VC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i0v-dt-Qdq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3l8-E4-E1B">
+                                <rect key="frame" x="16" y="359" width="361" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text"> كثرت خلال الأيام الماضية الأسئلة عن أخطار جراحات المعدة، بعد الإعلان عن وفاة وديع، ابن الفنان جورج وسوف، بسبب مضاعفات صحية أصابته عقب إجراء إحدى تلك العمليات، بعدّة أيام.
+
+    لم يصدر عن عائلة وسوف أي تأكيد أو نفي حول حدوث خطأ طبي أدى إلى وفاة ابن المغني السوري البكر. ولكن الأسئلة حول ظروف الجراحة ومخاطرها شغلت كثراً على مواقع التواصل، مع انتشار بعض المعلومات الصحية المغلوطة حولها.
+
+    الجراحات الهادفة لخسارة الوزن تطورت بشكل كبير خلال العقدين الماضيين، وباتت ضمن البروتوكول الذي يتبعه الأطباء لمساعدة المرضى في تحسين صحتهم ونوعية حياتهم.
+
+    ولكن كيف يحدّد الطب حسناتها أو مخاطرها؟ وما هي المعايير التي تؤهل المريض لإجراء تدخل جراحي في معدته؟ وكيف يقيّم الأطباء حالته الجسدية والنفسية قبل الجراحة وبعدها؟ وكيف يمكن تفادي المضاعفات؟
+
+    “ليست جراحة تجميلية”
+
+    بدأ إجراء جراحات المعدة في خمسينيات القرن الماضي، ومع تطوّر الطب وتقنيات الجراحة، يرى الأطباء أنها باتت من الجراحات الآمنة نسبياً، إذ تتراوح نسبة الوفيات عقبها بين 0.05-2.0 بالمئة، بحسب مجلة “جراحة السمنة” المحكّمة والمختصة بنشر دراسات طبية من حول العالم عن تقنيات جراحات السمنة.
+
+    هناك عدة أنواع من جراحات المعدة التي استخدمت خلال العقود الماضية، منها ربط المعدة، تكميم المعدة (Gastric Sleeve)، وتحويل مسار الأمعاء (Gastric Bypass)، ولكن أكثرها شيوعاً هي تكميم المعدة وتحويل المسار، بحسب الجراح جورج الخوري، رئيس قسم جراحة المنظار والسمنة المفرطة، في الجامعة اللبنانية الأمريكية، والتي تحتوي على مستشفى رزق الجامعي في العاصمة بيروت، ومستشفى سان جون الجامعي في مدينة جونيه.
+
+    يقول الخوري إن جراحة السمنة تقسم إلى قسمين “قسم لعلاج مرض السمنة المفرطة، وقسم لعلاج أمراض مثل السكري وتشمع الكبد ومضاعفاتهما”. ويوضح الخوري أن الجراحين المختصين بهذا النوع من الجراحات ليسوا “جرّاحي تجميل، بل نحن مختصون بعلاج مرض اسمه السمنة المفرطة، وهو مرض مزمن تماماً كالسكري وغيره من الأمراض المزمنة”.
+
+    ويشرح الخوري أنه علينا التمييز “بين البدانة والسمنة المفرطة، فليس كل شخص بدين أو لديه وزن زائد يحتاج لجراحة. حين تصير السمنة خطراً على حياة الإنسان، بمعنى أنها تسبب مضاعفات صحية خطرة، مثل ارتفاع ضغط الدم، صعوبة في التنفس، آلام في المفاصل والظهر، سكري، شحوم في الشرايين، عندها نسميها سمنة مفرطة وننصح بإجراء تدخل جراحي”.
+
+    يقول الجراح الذي عاين خلال مسيرته مئات المرضى: “إن زارنا شخص بدين، لا يعاني من مضاعفات خطرة بسبب الوزن، لا ننصحه على الفور بإجراء الجراحة، بل نطلب منه إحداث تغييرات في أسلوب حياته مثل التغذية الصحية والرياضة”.
+
+    كذلك يوضح أن الجراحة تجرى لمساعدة المصابين بالسكري أو بأمراض أخرى مثل تشمع الكبد، بغض النظر عن الوزن، لأنها تساعد في تقليل امتصاص الجسم للسكر وتمنع تكدس الدهون، وبالتالي تساعد في منع تدهور حالة المريض.
+
+    التقييم الشامل والاحتراز
+
+    ربما يوحي الحديث عن شيوع جراحات تصغير المعدة، بأن اتخاذ قرار اجرائها أسهل مما هو في الواقع، وذلك مع توثيق تجارب مرضى تشي بوجود فوضى في المعايير والإجراءات في بعض الأحيان، أو استسهال في التوجه إلى الخيار الجراحي، حتى وإن لم تكن حالة المريض تتطلب ذلك.
+
+    فكيف يقيّم المختصون الحالة قبل اتخاذ القرار بإجراء جراحة تكميم المعدة أو عدمه؟
+
+    يقول الطبيب جورج الخوري إن جراحة السمنة تقتضي استشارة فريق متكامل من الأطباء، إلى جانب الجراح المختص بجراحات المنظار والسمنة.
+
+    “يجب أن يتمتع الجراح بالخبرة اللازمة لاختيار الجراحة التي تتناسب مع حالة المريض، وذلك مع استشارة طبيب جهاز هضمي، طبيب جهاز تنفسي، طبيب بنج، وأخصائي تغذية، إلى جانب طبيب نفسي لكي يقيّم حالة الشخص النفسية ويتأكد من عدم وجود حالات قد تشكل خطراً عليه مثل إدمان الكحول أو المخدرات”.
+
+    ويشرح الطبيب أن المريض يحتاج إلى تحضير من قبل الفريق المختص قبل الجراحة، وإلى متابعة دقيقة بعد الجراحة. “كل شخص حالة مختلفة عن الآخر، لا يمكننا التعميم أو وضع الجميع في خانة واحدة، فكل مريض لديه حالة صحية نقيّمها على أساس حاجاته”.
+
+    فقبل الجراحة، يوضح الطبيب للشخص ما ينتظره من آلام ومن تغير في نمط الحياة وكميات الطعام التي سيكون قادراً على تناولها، ونوعيات الغذاء التي سيكون عليه تجنبها. فبعد الجراحة يطلب من المريض تناول السوائل لفترة محددة، وبعدها الأطعمة الهشة وسهلة الهضم لأسابيع، بحسب حاجة كل مريض واستجابة معدته للغذاء.
+
+    يقول الخوري: “إن كان الشخص يعاني مثلاً من إدمان على الكحول أو المخدرات، نطلب من الطبيب النفسي مساعدته على حل تلك المشاكل قبل الجراحة، كي نضمن تخلصه من عادات تشكل خطراً على حياته، وإن كان لدينا أي شكّ نتريث بإجراء الجراحة”.
+
+    وبعد الجراحة، يخضع المريض لمراقبة مكثفة لناحية قياس ضغط الدم، وطريقة التنفس، وحرارة الجسم، إلى جانب منحه إبراً مسيلة للدم لتفادي الجلطات.
+
+    يقول الطبيب إن الهدف من هذه الجراحات هو مساعدة المرضى، وليس تعريضهم للخطر، و”كل مريض يستعدّ بشكل جيد ويتبع الإرشادات تكون نسبة إصابته بمضاعفات أقل، ويبقى الاحتراز أولوية”.
+
+    صحيح أن أخطار حدوث مضاعفات بعد جراحة المعدة قائمة كأي عمل جراحي آخر، يوضح الخوري أن هناك عدة سيناريوهات قد تكون قاتلة، مثل عدم التزام المريض بالنظام الغذائي المحدد له بعد الجراحة، وتناوله أغذية أو مشروبات ممنوعة.
+
+    وهناك أيضاً إهمال بعض الأطباء، الذين يفتقرون للخبرة، ويتجاهلون بعض الأعراض الخطيرة، مثل تسارع دقات القلب، أو ارتفاع الحرارة، خلال الأيام التالية للجراحة.
+
+    يقول: “إن اتصل بي مريض قائلاً إنه يشعر بارتفاع حرارة بعد الجراحة، أطلب منه المجيء فوراً إلى المستشفى وأحيله إلى قسم التصوير الشعاعي، ولا أكتفي بأن أقول له أن يتناول حبتي مسكّن. هناك بروتوكول يجب الالتزام به عند حدوث أعراض مماثلة لتفادي أي مضاعفات لا تحمد عقباها”. لذلك ينصح المرضى باختيار المستشفى المناسب المجهز بفريق عمل متكامل يقدر على احتواء أي مضاعفات بالسرعة اللازمة.
+    هوس الوزن والشكل
+
+    يشدّد الجراح المختص على أهمية التقييم النفسي للشخص، قبل إجراء إحدى جراحات السمنة، وذلك ما توافق عليه أيضاً المعالجة النفسية المختصة بالاضطرابات الغذائية ميليسا رزق.
+
+    تقول رزق إن ما نعيشه في عصرنا الحالي من هوس اجتماعي وإعلامي بصورة الجسد، “له تأثير كبير على علاقة الأشخاص بأجسادهم، وبالطعام. نحن نعيش في زمن يشهد عبادة للمظهر الخارجي، ويربطه بالجمال، وبالإرادة، وبقدرة الأفراد على السيطرة على أنفسهم، وأحياناً حتى بالمكانة الاجتماعية، ما يشكل ضغطاً علينا جميعاً، لنكون بشكل معين ونخسر الوزن”.
+
+    تلاحظ رزق أن موضوع خسارة الوزن بات نقاشاً ثابتاً في حياتنا سواء خرجنا للتبضع، أو إلى السينما، أو دعينا إلى مناسبة اجتماعية “يبقى موضوع الوزن حاضراً”. ولكن، على المقلب الآخر، “هناك ترويج إعلاني دائم للأكل ولصناعة الغذاء التي تنفق مليارات الدولارات للترويج للوجبات السريعة، ونراها في كل مكان على شاشات هواتفنا طوال الوقت، وعلى التلفزيون، وفي اللوحات الإعلانية”.
+
+    إلى جانب التحضيرات الصحيّة اللازمة قبل أي جراحة سمنة، تقول المعالجة إنه ينبغي التأكد من أن الشخص لا يعاني من اضطراب غذائي.
+
+    تخبرنا: “أكثر اضطراب غذائي شائع لدى المرشحين لإجراء جراحة سمنة، هو “الشره المرضي” أو “اضطراب نهم الطعام” Binge Eating Disorder، ويعني أن الشخص يصاب بحلقة إفراط في تناول الطعام، قد تستمر لنحو ساعتين، يفقد خلالها السيطرة بالكامل، ويشعر بعدها بالندم والذنب، فيحاول التقليل من الأكل”.
+
+    يعيش المصابون باضطراب الشره المرضي في حالة اتباع حمية غذائية دائمة، ولكنهم يفشلون في إنقاص أوزانهم، لأنهم يمرون بحلقات شره تكون خارج السيطرة، وتحتاج إلى تدخل من معالج مختص لحلّها.
+
+    تقول المعالجة إن هناك عدداً من الاضطرابات الغذائية المختلفة، ولكن بشكل عام فإن ما يجمعها هو الهوس بالوزن والشكل ومحاولة السيطرة عليهما. “هناك أشخاص بدناء غير مصابين باضطراب غذائي، وربما يطلبون استشارة طبية قلقاً على حالتهم الصحية إن شعروا بآلام في المفاصل أو تدهورت صحة القلب والشرايين لديهم”.
+
+    توضح: “ليس كل شخص بدين مصاباً بالشره المرضي، ولكن حين نلاحظ وجود علاقة إشكالية بينه وبين الطعام، وهوس بالوزن والشكل، نطرح فرضية إصابته باضطراب غذائي يحتاج حلاً. الكثير ممن يعانون من الشره المرضي لا يأكلون أي شيء طوال اليوم، أو يأكلون مثلاً كمية قليلة جداً، وحين يعودون إلى المنزل متعبين وجائعين بعد يوم طويل، يدخلون في حالة الأكل المفرط وبدون توقف”.
+
+    تشرف ميليسا رزق على حالات عدد من المرضى الذين يحتاجون لجراحة سمنة، وتقول إن العمل على حل مشكلة الاضطراب الغذائي إن كان موجوداً قبل الجراحة، خيار أفضل، لمساعدة الشخص على تنظيم نمط غذائه.
+
+    وتقول إنها تشرح لكل مريض بوضوح أنه لن يكون قادراً على تناول كميات الطعام التي اعتاد عليها قبل الجراحة، وتساعده على فهم أنواع الطعام التي عليه تفاديها مثل الشوكولا، والبوظة، والكحول، ورقائق البطاطا التي قد تمنعه من خسارة الوزن على المدى الطويل.
+
+    تلفت المعالجة إلى أن رهاب البدانة السائد في المجتمع، والتنمّر والسخرية من الأشخاص البدناء، له نتائج عكسية، “خصوصاً عند الذين يعانون من مشكلة الأكل العاطفي، فزيادة الضغط عليهم تشعرهم بالقلق والغضب، فيأكلون المزيد”.
+
+    تقول: “هناك تيار جميل بدأ في الولايات المتحدة اسمه “الصحة في كل قياس”، والهدف منه الابتعاد عن الهوس بالوزن والشكل، والتركيز على العادات الصحية لدى الأحجام كافة، من خلال تشجيع الأكل الحسّي، وتناول أغذية طبيعية وعضوية وخالية من المواد الحافظة، وبناء نمط حياة متوازن على المدى الطويل يشمل النوم الجيد والحركة والأكل الصحي، عوضاً عن الهوس بفكرة الحمية والنحافة والشكل</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <mutableString key="userLabel">كثرت خلال الأيام الماضية الأسئلة عن أخطار جراحات المعدة، بعد الإعلان عن وفاة وديع، ابن الفنان جورج وسوف، بسبب مضاعفات صحية أصابته عقب إجراء إحدى تلك العمليات، بعدّة أيام.      لم يصدر عن عائلة وسوف أي تأكيد أو نفي حول حدوث خطأ طبي أدى إلى وفاة ابن المغني السوري البكر. ولكن الأسئلة حول ظروف الجراحة ومخاطرها شغلت كثراً على مواقع التواصل، مع انتشار بعض المعلومات الصحية المغلوطة حولها.      الجراحات الهادفة لخسارة الوزن تطورت بشكل كبير خلال العقدين الماضيين، وباتت ضمن البروتوكول الذي يتبعه الأطباء لمساعدة المرضى في تحسين صحتهم ونوعية حياتهم.      ولكن كيف يحدّد الطب حسناتها أو مخاطرها؟ وما هي المعايير التي تؤهل المريض لإجراء تدخل جراحي في معدته؟ وكيف يقيّم الأطباء حالته الجسدية والنفسية قبل الجراحة وبعدها؟ وكيف يمكن تفادي المضاعفات؟      “ليست جراحة تجميلية”      بدأ إجراء جراحات المعدة في خمسينيات القرن الماضي، ومع تطوّر الطب وتقنيات الجراحة، يرى الأطباء أنها باتت من الجراحات الآمنة نسبياً، إذ تتراوح نسبة الوفيات عقبها بين 0.05-2.0 بالمئة، بحسب مجلة “جراحة السمنة” المحكّمة والمختصة بنشر دراسات طبية من حول العالم عن تقنيات جراحات السمنة.      هناك عدة أنواع من جراحات المعدة التي استخدمت خلال العقود الماضية، منها ربط المعدة، تكميم المعدة (Gastric Sleeve)، وتحويل مسار الأمعاء (Gastric Bypass)، ولكن أكثرها شيوعاً هي تكميم المعدة وتحويل المسار، بحسب الجراح جورج الخوري، رئيس قسم جراحة المنظار والسمنة المفرطة، في الجامعة اللبنانية الأمريكية، والتي تحتوي على مستشفى رزق الجامعي في العاصمة بيروت، ومستشفى سان جون الجامعي في مدينة جونيه.      يقول الخوري إن جراحة السمنة تقسم إلى قسمين “قسم لعلاج مرض السمنة المفرطة، وقسم لعلاج أمراض مثل السكري وتشمع الكبد ومضاعفاتهما”. ويوضح الخوري أن الجراحين المختصين بهذا النوع من الجراحات ليسوا “جرّاحي تجميل، بل نحن مختصون بعلاج مرض اسمه السمنة المفرطة، وهو مرض مزمن تماماً كالسكري وغيره من الأمراض المزمنة”.      ويشرح الخوري أنه علينا التمييز “بين البدانة والسمنة المفرطة، فليس كل شخص بدين أو لديه وزن زائد يحتاج لجراحة. حين تصير السمنة خطراً على حياة الإنسان، بمعنى أنها تسبب مضاعفات صحية خطرة، مثل ارتفاع ضغط الدم، صعوبة في التنفس، آلام في المفاصل والظهر، سكري، شحوم في الشرايين، عندها نسميها سمنة مفرطة وننصح بإجراء تدخل جراحي”.      يقول الجراح الذي عاين خلال مسيرته مئات المرضى: “إن زارنا شخص بدين، لا يعاني من مضاعفات خطرة بسبب الوزن، لا ننصحه على الفور بإجراء الجراحة، بل نطلب منه إحداث تغييرات في أسلوب حياته مثل التغذية الصحية والرياضة”.      كذلك يوضح أن الجراحة تجرى لمساعدة المصابين بالسكري أو بأمراض أخرى مثل تشمع الكبد، بغض النظر عن الوزن، لأنها تساعد في تقليل امتصاص الجسم للسكر وتمنع تكدس الدهون، وبالتالي تساعد في منع تدهور حالة المريض.      التقييم الشامل والاحتراز      ربما يوحي الحديث عن شيوع جراحات تصغير المعدة، بأن اتخاذ قرار اجرائها أسهل مما هو في الواقع، وذلك مع توثيق تجارب مرضى تشي بوجود فوضى في المعايير والإجراءات في بعض الأحيان، أو استسهال في التوجه إلى الخيار الجراحي، حتى وإن لم تكن حالة المريض تتطلب ذلك.      فكيف يقيّم المختصون الحالة قبل اتخاذ القرار بإجراء جراحة تكميم المعدة أو عدمه؟      يقول الطبيب جورج الخوري إن جراحة السمنة تقتضي استشارة فريق متكامل من الأطباء، إلى جانب الجراح المختص بجراحات المنظار والسمنة.      “يجب أن يتمتع الجراح بالخبرة اللازمة لاختيار الجراحة التي تتناسب مع حالة المريض، وذلك مع استشارة طبيب جهاز هضمي، طبيب جهاز تنفسي، طبيب بنج، وأخصائي تغذية، إلى جانب طبيب نفسي لكي يقيّم حالة الشخص النفسية ويتأكد من عدم وجود حالات قد تشكل خطراً عليه مثل إدمان الكحول أو المخدرات”.      ويشرح الطبيب أن المريض يحتاج إلى تحضير من قبل الفريق المختص قبل الجراحة، وإلى متابعة دقيقة بعد الجراحة. “كل شخص حالة مختلفة عن الآخر، لا يمكننا التعميم أو وضع الجميع في خانة واحدة، فكل مريض لديه حالة صحية نقيّمها على أساس حاجاته”.      فقبل الجراحة، يوضح الطبيب للشخص ما ينتظره من آلام ومن تغير في نمط الحياة وكميات الطعام التي سيكون قادراً على تناولها، ونوعيات الغذاء التي سيكون عليه تجنبها. فبعد الجراحة يطلب من المريض تناول السوائل لفترة محددة، وبعدها الأطعمة الهشة وسهلة الهضم لأسابيع، بحسب حاجة كل مريض واستجابة معدته للغذاء.      يقول الخوري: “إن كان الشخص يعاني مثلاً من إدمان على الكحول أو المخدرات، نطلب من الطبيب النفسي مساعدته على حل تلك المشاكل قبل الجراحة، كي نضمن تخلصه من عادات تشكل خطراً على حياته، وإن كان لدينا أي شكّ نتريث بإجراء الجراحة”.      وبعد الجراحة، يخضع المريض لمراقبة مكثفة لناحية قياس ضغط الدم، وطريقة التنفس، وحرارة الجسم، إلى جانب منحه إبراً مسيلة للدم لتفادي الجلطات.      يقول الطبيب إن الهدف من هذه الجراحات هو مساعدة المرضى، وليس تعريضهم للخطر، و”كل مريض يستعدّ بشكل جيد ويتبع الإرشادات تكون نسبة إصابته بمضاعفات أقل، ويبقى الاحتراز أولوية”.      صحيح أن أخطار حدوث مضاعفات بعد جراحة المعدة قائمة كأي عمل جراحي آخر، يوضح الخوري أن هناك عدة سيناريوهات قد تكون قاتلة، مثل عدم التزام المريض بالنظام الغذائي المحدد له بعد الجراحة، وتناوله أغذية أو مشروبات ممنوعة.      وهناك أيضاً إهمال بعض الأطباء، الذين يفتقرون للخبرة، ويتجاهلون بعض الأعراض الخطيرة، مثل تسارع دقات القلب، أو ارتفاع الحرارة، خلال الأيام التالية للجراحة.      يقول: “إن اتصل بي مريض قائلاً إنه يشعر بارتفاع حرارة بعد الجراحة، أطلب منه المجيء فوراً إلى المستشفى وأحيله إلى قسم التصوير الشعاعي، ولا أكتفي بأن أقول له أن يتناول حبتي مسكّن. هناك بروتوكول يجب الالتزام به عند حدوث أعراض مماثلة لتفادي أي مضاعفات لا تحمد عقباها”. لذلك ينصح المرضى باختيار المستشفى المناسب المجهز بفريق عمل متكامل يقدر على احتواء أي مضاعفات بالسرعة اللازمة.     هوس الوزن والشكل      يشدّد الجراح المختص على أهمية التقييم النفسي للشخص، قبل إجراء إحدى جراحات السمنة، وذلك ما توافق عليه أيضاً المعالجة النفسية المختصة بالاضطرابات الغذائية ميليسا رزق.      تقول رزق إن ما نعيشه في عصرنا الحالي من هوس اجتماعي وإعلامي بصورة الجسد، “له تأثير كبير على علاقة الأشخاص بأجسادهم، وبالطعام. نحن نعيش في زمن يشهد عبادة للمظهر الخارجي، ويربطه بالجمال، وبالإرادة، وبقدرة الأفراد على السيطرة على أنفسهم، وأحياناً حتى بالمكانة الاجتماعية، ما يشكل ضغطاً علينا جميعاً، لنكون بشكل معين ونخسر الوزن”.      تلاحظ رزق أن موضوع خسارة الوزن بات نقاشاً ثابتاً في حياتنا سواء خرجنا للتبضع، أو إلى السينما، أو دعينا إلى مناسبة اجتماعية “يبقى موضوع الوزن حاضراً”. ولكن، على المقلب الآخر، “هناك ترويج إعلاني دائم للأكل ولصناعة الغذاء التي تنفق مليارات الدولارات للترويج للوجبات السريعة، ونراها في كل مكان على شاشات هواتفنا طوال الوقت، وعلى التلفزيون، وفي اللوحات الإعلانية”.      إلى جانب التحضيرات الصحيّة اللازمة قبل أي جراحة سمنة، تقول المعالجة إنه ينبغي التأكد من أن الشخص لا يعاني من اضطراب غذائي.      تخبرنا: “أكثر اضطراب غذائي شائع لدى المرشحين لإجراء جراحة سمنة، هو “الشره المرضي” أو “اضطراب نهم الطعام” Binge Eating Disorder، ويعني أن الشخص يصاب بحلقة إفراط في تناول الطعام، قد تستمر لنحو ساعتين، يفقد خلالها السيطرة بالكامل، ويشعر بعدها بالندم والذنب، فيحاول التقليل من الأكل”.      يعيش المصابون باضطراب الشره المرضي في حالة اتباع حمية غذائية دائمة، ولكنهم يفشلون في إنقاص أوزانهم، لأنهم يمرون بحلقات شره تكون خارج السيطرة، وتحتاج إلى تدخل من معالج مختص لحلّها.      تقول المعالجة إن هناك عدداً من الاضطرابات الغذائية المختلفة، ولكن بشكل عام فإن ما يجمعها هو الهوس بالوزن والشكل ومحاولة السيطرة عليهما. “هناك أشخاص بدناء غير مصابين باضطراب غذائي، وربما يطلبون استشارة طبية قلقاً على حالتهم الصحية إن شعروا بآلام في المفاصل أو تدهورت صحة القلب والشرايين لديهم”.      توضح: “ليس كل شخص بدين مصاباً بالشره المرضي، ولكن حين نلاحظ وجود علاقة إشكالية بينه وبين الطعام، وهوس بالوزن والشكل، نطرح فرضية إصابته باضطراب غذائي يحتاج حلاً. الكثير ممن يعانون من الشره المرضي لا يأكلون أي شيء طوال اليوم، أو يأكلون مثلاً كمية قليلة جداً، وحين يعودون إلى المنزل متعبين وجائعين بعد يوم طويل، يدخلون في حالة الأكل المفرط وبدون توقف”.      تشرف ميليسا رزق على حالات عدد من المرضى الذين يحتاجون لجراحة سمنة، وتقول إن العمل على حل مشكلة الاضطراب الغذائي إن كان موجوداً قبل الجراحة، خيار أفضل، لمساعدة الشخص على تنظيم نمط غذائه.      وتقول إنها تشرح لكل مريض بوضوح أنه لن يكون قادراً على تناول كميات الطعام التي اعتاد عليها قبل الجراحة، وتساعده على فهم أنواع الطعام التي عليه تفاديها مثل الشوكولا، والبوظة، والكحول، ورقائق البطاطا التي قد تمنعه من خسارة الوزن على المدى الطويل.      تلفت المعالجة إلى أن رهاب البدانة السائد في المجتمع، والتنمّر والسخرية من الأشخاص البدناء، له نتائج عكسية، “خصوصاً عند الذين يعانون من مشكلة الأكل العاطفي، فزيادة الضغط عليهم تشعرهم بالقلق والغضب، فيأكلون المزيد”.      تقول: “هناك تيار جميل بدأ في الولايات المتحدة اسمه “الصحة في كل قياس”، والهدف منه الابتعاد عن الهوس بالوزن والشكل، والتركيز على العادات الصحية لدى الأحجام كافة، من خلال تشجيع الأكل الحسّي، وتناول أغذية طبيعية وعضوية وخالية من المواد الحافظة، وبناء نمط حياة متوازن على المدى الطويل يشمل النوم الجيد والحركة والأكل الصحي، عوضاً عن الهوس بفكرة الحمية والنحافة والشكل</mutableString>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w6s-X8-gjd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xzy-ff-szM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472.51908396946561" y="1595.7746478873241"/>
+        </scene>
+        <!--Post3VC-->
+        <scene sceneID="lhM-qn-Eum">
+            <objects>
+                <viewController id="BFE-gv-h0I" customClass="post3VC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3XU-hD-NoG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rf-fc-GkJ">
+                                <rect key="frame" x="14" y="326" width="361" height="403"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">
+ رحّبوا بالنسخ المحسّنة من مساعدي الذكاء الصناعي وامضوا قدماً نحو الاشتراك في تطبيقات ومنصات تواصل جديدة تتجاوز المنصات المشهورة مثل «تويتر»… كلّ عام؛ نتطلّع إلى معرفة أحدث صيحات التقنية لنتنبّأ بما سيؤثّر على حياتنا منها وما سيتلاشى دون أن نشعر.
+
+    مساعدون افتراضيون
+
+    نقدّم لكم في ما يلي لائحة بالتطوّرات التقنية التي ستجتاح حياتنا في عام 2023:
+
+    * مساعدون افتراضيون ماهرون في المحادثة: صُعق المتبنّون الأوائل لمثل هذه التقنيات من الذين ذُهلوا بالمهارات اللغوية التي يتمتّع بها روبوت المحادثة «تشات جي بي تي ( ChatGPT )»، سريعاً بالأخطاء التي قد يرتكبها؛ لا سيّما في معادلات حسابية بسيطة. ولكن خبراء الذكاء الصناعي يؤكّدون أن الشركات ستعمد هذا العام إلى تحسين مواطن القوى لدى هذه الروبوتات بواسطة أدواتٍ تبسّط الطريقة التي نكتب ونقرأ بها النصوص.
+
+    من المرجّح أن نشهد خلال العام الجديد ميلاد روبوت محادثة يعمل باحثاً مساعداً. تخيّلوا أنّكم تكتبون ورقةً بحثية وتريدون إضافة بعض الحقائق التاريخية عن الحرب العالمية الثانية. يمكنكم مثلاً أن تشاركوا مستند يضمّ 100 صفحة مع الروبوت وأن تطلبوا منه تلخيص نقاطها الأساسية المرتبطة بجانب معيّن في الحرب. عندها؛ سيقرأ الروبوت المستند وسيكتب لكم الملخّص.
+
+    يقول يواف شوهام؛ الأستاذ الفخري في جامعة ستانفورد والمشارك في تقرير «إي آي إندكس» السنوي الذي يتناول تطوّر الذكاء الصناعي: «إذا كنتم ترغبون في إغناء كتاباتكم بحقيقة تاريخية ما، فلن تحتاجوا إلى البحث في شبكة الإنترنت للعثور عليها؛ لأنّها ستكون على بُعد نقرة واحدة منكم».
+
+    ولكنّ هذا الأمر لا يعني أنّنا سنرى دفقاً من تطبيقات الذكاء الصناعي المستقلّة في عام 2023، بل سنتعامل على الأرجح مع تحسينات وإضافات لغوية آلية سيتضمّنها كثير من الأدوات التي نستخدمها اليوم.
+
+    من جهته؛ عدّ روان كورّان، محلّل التقنية في شركة «فوريستر»، أن التطبيقات مثل «مايكروسوفت وورد» و«غوغل شيتس»، ستصبح قريباً مجهّزة بأدوات ذكاء صناعي هدفها تسهيل عمل النّاس.
+
+    مركبات كهربائية
+
+    * سطوع نجم المركبات الكهربائية. ومن أبرز الملامح التقنية هذا العام:
+
+    – تدوير البطارية: مع تنامي مبيعات السيارات والشاحنات الكهربائية، يستعر السباق لإعادة تدوير بطاريات الأيون ليثيوم؛ إلا إنّ القليل منها فقط سيكون قابلاً لإعادة الاستخدام خلال 10 سنوات أو أكثر.
+
+    – شاحنات البريد: في خطوة رابحة لإدارة الرئيس الأميركي جو بايدن، أعلنت الخدمة البريدية للولايات المتحدة أنّها تعتزم إنفاق نحو 10 مليارات دولار لتأسيس أكبر أسطولٍ من الشاحنات الكهربائية المخصصة لتوصيل البريد في البلاد.
+
+    – مزيد من الانتشار: قفزت مبيعات السيارات العاملة بالبطارية الكهربائية في الولايات المتحدة بنسبة 70 في المائة خلال الأشهر التسعة الأولى من العام الماضي؛ خصوصاً أنّ المستخدمين غير الميسورين يميلون إلى الاستثمار في السيارات الكهربائية لتوفير مصاريف الوقود.
+
+    – قوانين تشجيع الاستثمارات في مجال العربات الكهربائية:
+
+    * ظهور موديلات متنوعة من السيارات الكهربائية: حافظت «تسلا» على صدارتها لمبيعات المركبات الكهربائية في 2022، لكنّ العام الجديد قد يكون نقطة تحوّلٍ لهذه الصناعة. فقد انخفضت قيمة أسهم «تسلا» في الفترة الأخيرة، وتلقّت العلامة التجارية ضربة قاصمة منذ استحواذ إيلون ماسك على «تويتر». في الوقت نفسه؛ تشهد سوق العربات الكهربائية استعاراً في المنافسة مع زيادة صناع العربات الكهربائية، مثل «فورد موتور» و«كيا»، و«جنرال موتورز»، و«أودي»، و«ريفيان»، إنتاجها في هذا المجال.
+
+    من جهتها؛ كشفت «تسلا» في نوفمبر (تشرين الثاني) الماضي عن أنّها تعتزم فتح تصميم واصل الشحن الخاص بها ليصبح قابلاً للاستخدام مع سيّارات كهربائية أخرى، مما سيتيح لسائقي أنواع أخرى من السيارات إعادة شحن بطارياتهم في محطّات «تسلا» المخصصة للشحن والتي تعرف بغزارة إنتاجها مقارنة بمصادر الشحن الأخرى.
+
+    علاوةً على ذلك؛ صادقت ولايتا كاليفورنيا ونيويورك على قانون يحظر مبيعات السيارات العاملة بالوقود بحلول عام 2035، مما سيؤدي، دون شكّ، إلى توسّع صناعة السيارات الكهربائية وتجاوزها سيطرة العلامة التجارية الواحدة.
+
+    تقنيات الواقع الافتراضي
+
+    * الواقع الافتراضي أو ما يُعرف بـ«ميتافيرس»: عملت شركات التقنية في جزء كبير من العقد الماضي على الترويج لإكسسوارات الواقع الافتراضي مثل «كويست2» و«HTC فايف» و«سوني بلاي ستيشن في آر» للألعاب الإلكترونية. اليوم؛ ومع تطوّر هذه التقنية لتصبح أكثر قوّة ولاسلكية، تعد الشركات بأنّ هذه الإكسسوارات ستعيد أخيراً تشكيل حياتنا بطريقة تشبه التغيير الذي أحدثته الهواتف الذكية.
+
+    تتخيّل شركة «ميتا» مثلاً أن يصبح الميتافيرس فضاءً افتراضياً يتيح لنا العمل والتعاون والابتكار. فخلال كشفها عن سمّاعة «كويست برو» العام الماضي، تصوّرت الشركة أن تصبح هذه التقنية أداةً قادرة على أداء مهام عدّة للعاملين الذين يضطرون لحضور الاجتماعات ومراجعة بريدهم الإلكتروني وأداء مهام أخرى في وقتٍ واحد. ولكنّ الجهاز حصل بعد إطلاقه على تقييمات حذرة وغير واعدة، ويبقى أن نرى ما إذا كانت «ميتا» ستنجح في تحويل حلمها عن الميتافيرس إلى حقيقة.
+
+    وفي عام 2023، سنسمع قرع طبول الواقع الافتراضي، حيث من المتوقّع أن تطلق شركة «أبل»، التي أكّدت أنّها لن تستخدم أبداً مصطلح «ميتافيرس»، أولى إكسسواراتها للرأس. لم تكشف الشركة عن تفاصيل منتجها المتوقّع بعد، ولكنّ رئيسها التنفيذي، تيم كوك، أعطى بعض التلميحات للتعبير عن حماسه لاستخدام الواقع المعزّز للاستفادة من البيانات الرقمية في العالم الحقيقي.
+
+    وفي لقاء مع طلاب جامعيين في نابولي حضره كوك في سبتمبر (أيلول) الماضي، قال: «ستتساءلون كيف أنّكم عشتم يوماً من دون الواقع المعزّز، تماماً كما تتساءلون اليوم: كيف عاش النّاس في الماضي من دون إنترنت؟».
+
+    ولكنّه، في المقابل، شدّد على أنّ هذه التقنية لن تصبح خارقة بين ليلة وضحاها. لا تزال إكسسوارات الرأس اللاسلكية حتّى اليوم كبيرة الحجم وتُستخدم في الأماكن المقفلة، مما يعني أنّ أوّل إصدارات جهاز «أبل» الجديد سيكون شبيهاً بكثير ممّا سبقه، وسيُستخدم على الأرجح في الألعاب الإلكترونية.
+
+    بمعنى آخر؛ سيستمرّ ويكثر الكلام عن الميتافيرس والنظارات الافتراضية (مدعومة بتقنيات الواقع المعزز أو المختلط ذات المظهر الغريب) خلال 2023 الذي لن يكون غالباً عام انتشار وتوسّع شعبية هذه الإكسسوارات الرأسية، وفق ما رجّحت كارولينا ميلانيزي، المحلّلة المختصة في الإلكترونيات الاستهلاكية بشركة «كرييتف ستراتيجيز» البحثية.
+
+    وأضافت ميلانيزي: «من منظور استهلاكي؛ لم يتضح مطلقاً بعد على ماذا تنفقون آلاف الدولارات عندما تبتاعون إكسسوار للرأس. هل يمكنني أن أحضر اجتماعاً بنظارات واقعٍ افتراضي؟ مع أو من دون القدمين؛ الأمر ليس مهمّاً».
+
+    خيارات التواصل الاجتماعي
+
+    * مزيد من خيارات التواصل الاجتماعي: عاشت منصة «تويتر» حالةً من الفوضى في الجزء الأكبر من عام 2022، ومن المرجّح أن تستمرّ هذه الحالة خلال العام الحالي. لمواجهة الجدل القائم حول المنصّة؛ عمد مالكها الجديد، إيلون ماسك، إلى استبيان آراء متابعيه على «تويتر» حول ما إذا كان ينبغي عليه التنحّي عن رئاسة الشركة. في النتائج؛ صوّت نحو 10 ملايين متابع بـ«نعم»، عادّين أنّه على ماسك التنحي فور عثوره على «شخص مجنون بما يكفي لتولّي هذه الوظيفة».
+
+    بدورها؛ تواجه «تيك توك» بعض المشكلات بعد ما كشفت شركة «بايت دانس» المالكة للمنصّة، عن أنّ تحقيقاً داخلياً رصد موظفين في الشركة حصلوا بطريقة غير لائقة على بيانات مستخدمين أميركيين؛ من بينهم صحافيون. ساهم هذا الأمر في زيادة الضغط على الإدارة الأميركية لدراسة فرض مزيد من الضوابط على التطبيق في الولايات المتحدة.
+
+    ولكن بصرف النظر عن مصير «تويتر» و«تيك توك»، يبدو واضحاً أن صناعة التواصل الاجتماعي على مشارف تحوّلٍ كبير. فقد شهد العام الماضي هجرة كثير من الصحافيين وخبراء التقنية والمؤثرين إلى منصّة «ماستودون» الشبيهة بـ«تويتر». كما بدأ عددٌ كبير من المستخدمين اليافعين استعمال تطبيقات جديدة مثل «بي ريل» التي تتيح لمجموعات الأصدقاء البقاء على تواصل من خلال التقاط ومشاركة صور السيلفي في الوقت نفسه.
+
+    لا نعرف بعد أيّاً من تطبيقات التواصل الاجتماعي سيلمع نجمها في عام 2023 (تواجه خوادم «ماستودون» صعوبة في التعامل مع ارتفاع عدد المستخدمين). ولكنّ المؤكد أنّ النّاس الذين يتوجّسون من «تويتر» يبحثون اليوم عن مكان أكثر أماناً وترفيهاً.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aq6-nW-Ues">
+                                <rect key="frame" x="39" y="127" width="314" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zRE-Ns-ViM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wKr-7k-mfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342.7480916030534" y="1595.7746478873241"/>
+        </scene>
+        <!--Post4VC-->
+        <scene sceneID="KLI-Vl-U20">
+            <objects>
+                <viewController id="A1b-fi-zxi" customClass="Post4VC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pra-U8-H4e">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zp6-xn-fra">
+                                <rect key="frame" x="16" y="354" width="361" height="353"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text"> قررت السلطات الإسبانية تبني لوائح بيئية جديدة أهمها إجبار شركات التبغ على تحمل نفقات تنظيف مخلفاته بالشوارع. كذلك سيتعين على الشركات تذكير المستهلكين بعدم إلقاء مخلفات السجائر بالأماكن العامة.
+
+    ويتم إلقاء الملايين من أعقاب السجائر في شوارع وشواطئ إسبانيا من قبل المدخنين كل عام.
+
+    ولم تحدد السلطات حتى الآن الكيفية التي سيتم بها تنظيف الشوارع والأماكن العامة من مخلفات السجائر أو الكلفة التي ستتحملها الشركات المصنعة. وقدرت دراسة أجرتها منظمة Rezero، التي تعمل على الحد من الفضلات البيئية، كلفة تنظيف مخلفات السجائر في إسبانيا بحوالي مليار يورو سنوياً.
+
+    ومن المتوقع أن ترفع شركات السجائر من أسعار منتجاتها ليتحمل المستهلك التكلفة الجديدة. وكانت إسبانيا قد منعت التدخين في أكثر من 500 شاطئ بهدف الحد منه في الأماكن العامة عام 2021.
+
+    تشمل اللوائح البيئية الجديدة أيضاً حظراً على أدوات المائدة البلاستيكية ذات الاستخدام لمرة واحدة.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZWt-U7-02L">
+                                <rect key="frame" x="39" y="129" width="314" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iZB-3b-fpk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tV1-JO-kY7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2168.7022900763359" y="1595.7746478873241"/>
         </scene>
     </scenes>
     <resources>
         <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="latest-politics" width="340" height="227.66667175292969"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <image name="today-sci" width="279.33334350585938" height="156"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
