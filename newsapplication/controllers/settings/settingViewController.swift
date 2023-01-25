@@ -3,7 +3,7 @@ import UIKit
 
 //use (protocol & delegate) method for navigation between view controllers:
 protocol LabelSelectionDelegate: AnyObject{
-    func didTapLabel(at: IndexPath.Index)
+    func didTapLabel(at index: Int)
 }
 
 
@@ -67,7 +67,7 @@ class settingViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath:IndexPath) {
         let index = arrOptions[indexPath.row]
-        delegate?.didTapLabel(at: index)
+        delegate?.didTapLabel(at: indexPath.row)
         
         
     }
@@ -76,9 +76,9 @@ class settingViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     
     
-    func didTapLabel(at: IndexPath.Index) {
+    func didTapLabel(at index: Int) {
      
-       let index = arrOptions[indexPath.row]
+//       let index = arrOptions[indexPath.row]
         switch index {
         case 0:
             let vc1 = storyboard?.instantiateViewController(withIdentifier: "home") as! homeViewController
