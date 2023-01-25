@@ -11,6 +11,7 @@ class todayNewsCell: UICollectionViewCell {
     
     @IBOutlet weak var imgNews: UIImageView!
     
+    
     @IBOutlet weak var lblTitle: UILabel!
     
     

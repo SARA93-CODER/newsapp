@@ -7,7 +7,15 @@
 
 import UIKit
 
-class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource{
+//protocol ButtonTappedDelegate: AnyObject{
+//    if  == "square.and.arrow.up"{
+//        func ShareBtnSelected(at: Index)
+//    }else {
+//        func SaveBtnSelected(at: Index)
+//    }
+//}
+
+class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDelegate, UITableViewDataSource{
     
 //     var delegate1: ShareButtonDelegate?
 //     var delegate2: SaveButtonDelegate?
@@ -15,13 +23,17 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     
+
+    @IBOutlet weak var pageControl: UIPageControl!
     //collectionView:
     var arrTodaysNews = [Data]()
     
     //tableView:
     var arrItems = [Item]()
     
-    
+
+    var currentCellIndex = 0
+    var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +43,15 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        
+        //to move to next post automatically:
+        startTimer()
+        
+        //pageControl configuration:
+        pageControl.numberOfPages = arrTodaysNews.count
+        
+
         
         tableView.register(todayTableViewCell.self, forCellReuseIdentifier: "todayTableViewCell")
         
@@ -50,9 +71,25 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         
         arrTodaysNews.append(Data(image: UIImage(named: "today-tech")!, title: "ما التقنيات التي ستغزو حياتنا في عام 2023؟"))
         
-//        arrTodaysNews.append(Data(image: UIImage(named: "today-env")!, title: "إسبانيا تجبر شركات التبغ على تحمل تكاليف تنظيف أعقاب السجائر"))
+        arrTodaysNews.append(Data(image: UIImage(named: "today-env")!, title: "إسبانيا تجبر شركات التبغ على تحمل تكاليف تنظيف أعقاب السجائر"))
         
         
+    }
+    
+    func startTimer(){
+        timer = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(moveToNextIndex), userInfo: nil, repeats: true)
+    }
+
+
+    @objc func moveToNextIndex(){
+        
+        if currentCellIndex < arrItems.count - 1{
+            currentCellIndex += 1
+        }else{
+            currentCellIndex = 0
+        }
+        collectionView.scrollToItem(at:IndexPath(item: currentCellIndex, section:0), at: .centeredHorizontally, animated: true)
+        pageControl.currentPage = currentCellIndex
     }
     
 
@@ -68,6 +105,15 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         cell.setupCell(image: data.image, title: data.title)
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width * 0.99, height: collectionView.frame.width * 0.65)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
     
     //MARK: - tableView Data source functions:
@@ -86,6 +132,11 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 //        cell.saveDelegate = self
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 140
+        
     }
     
     

@@ -20,10 +20,12 @@ class todayTableViewCell: UITableViewCell{
     
     let vc = todayVC()
 
+    
     @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var btnShare: UIButton!
-    @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var imgInfo: UIImageView!
+    @IBOutlet weak var lblTitle: UILabel!
+    
     
 //   weak var shareDelegate: ShareButtonDelegate?
 //    weak var saveDelegate: SaveButtonDelegate?

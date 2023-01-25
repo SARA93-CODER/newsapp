@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "today-environment.jpeg",
+      "filename" : "today-env.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "today-environment@2x.jpeg",
+      "filename" : "today-env@2x.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "today-environment@3x.jpeg",
+      "filename" : "today-env@3x.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }
