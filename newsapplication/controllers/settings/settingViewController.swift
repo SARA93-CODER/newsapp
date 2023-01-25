@@ -2,17 +2,17 @@
 import UIKit
 
 //use (protocol & delegate) method for navigation between view controllers:
-//protocol LabelTappedDelegate {
-//    func labelTapped(label: String)
-//}
+protocol LabelTappedDelegate: AnyObject{
+    func labelTapped(at index: Int)
+}
 
 
-class settingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-   
+class settingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, LabelTappedDelegate{
+    
     
     @IBOutlet weak var tableView: UITableView!
     
-//    var delegate: LabelTappedDelegate?
+    weak var delegate: LabelTappedDelegate?
     
     
     var arrOptions = [Option]()
@@ -22,6 +22,8 @@ class settingViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+
         
         
         arrOptions.append(Option(title: "الرئيسية"))
@@ -47,8 +49,6 @@ class settingViewController: UIViewController, UITableViewDelegate, UITableViewD
         let label = arrOptions[indexPath.row]
         cell.initCell(title: label.title)
         
-        //make each cell conforms the protocol:
-//            cell.labelDelegate = self
         
         return cell
     }
@@ -62,46 +62,45 @@ class settingViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath:IndexPath) {
-        let index = arrOptions[indexPath.row]
-//        delegate?.labelTapped(label: LABEL)
+        self.title = title
+        delegate?.labelTapped(at: arrOptions[indexPath.row])
         
         
     }
     
     
     
-//    func labelTapped(label: String){
-//        let label = arrOptions[indexPath.row]
-//        switch label{
-//        case "الرئيسية":
-//            let vc1 = storyboard?.instantiateViewController(withIdentifier: "home") as! homeViewController
-//            navigationController?.pushViewController(vc1, animated: true)
-//            
-//        case "الأقسام":
-//            let vc2 = storyboard?.instantiateViewController(withIdentifier: "shahidVC") as! shahidVC
-//            navigationController?.pushViewController(vc2, animated: true)
-//            
-//        case "شاهد":
-//            let vc3 = storyboard?.instantiateViewController(withIdentifier: "categories") as! categoriesViewController
-//            navigationController?.pushViewController(vc3, animated: true)
-//            
-//        case "المحفوظات":
-//            let vc4 = UIStoryboard(name: "settings", bundle: nil).instantiateViewController(withIdentifier: "savedViewController") as! savedViewController
-//            navigationController?.pushViewController(vc4, animated: true)
-//            
-//        case "صفحات":
-//            let vc5 = UIStoryboard(name: "settings", bundle: nil).instantiateViewController(withIdentifier: "pagesViewController") as! pagesViewController
-//            navigationController?.pushViewController(vc5, animated: true)
-//            
-//        case "عن العين الاخبارية":
-//            let vc6 = UIStoryboard(name: "settings", bundle: nil).instantiateViewController(withIdentifier: "aboutVC") as! aboutVC
-//            navigationController?.pushViewController(vc6, animated: true)
-//            
-//        default:
-//            break
-//        }
-//    }
-//  
+    func labelTapped(at label: Int){
+        let index = arrOptions[indexPath.row]
+        switch index {
+        case 0:
+            let vc1 = storyboard?.instantiateViewController(withIdentifier: "home") as! homeViewController
+            navigationController?.pushViewController(vc1, animated: true)
+
+        case 1:
+            let vc2 = storyboard?.instantiateViewController(withIdentifier: "shahidVC") as! shahidVC
+            navigationController?.pushViewController(vc2, animated: true)
+
+        case 2:
+            let vc3 = storyboard?.instantiateViewController(withIdentifier: "categories") as! categoriesViewController
+            navigationController?.pushViewController(vc3, animated: true)
+
+        case 3:
+            let vc4 = UIStoryboard(name: "settings", bundle: nil).instantiateViewController(withIdentifier: "savedViewController") as! savedViewController
+            navigationController?.pushViewController(vc4, animated: true)
+
+        case 4:
+            let vc5 = UIStoryboard(name: "settings", bundle: nil).instantiateViewController(withIdentifier: "pagesViewController") as! pagesViewController
+            navigationController?.pushViewController(vc5, animated: true)
+
+        case 5:
+            let vc6 = UIStoryboard(name: "settings", bundle: nil).instantiateViewController(withIdentifier: "aboutVC") as! aboutVC
+            navigationController?.pushViewController(vc6, animated: true)
+
+        default:
+            break
+        }
+    }
 }
 
     struct Option{

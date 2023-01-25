@@ -7,35 +7,43 @@
 
 import UIKit
 
-class todayTableViewCell: UITableViewCell {
+//protocol ShareButtonDelegate: AnyObject{
+//    func didTapShare(at index: IndexPath)
+//}
+//
+//protocol SaveButtonDelegate: AnyObject{
+//    func didTapSave(at index: IndexPath)
+//}
+
+class todayTableViewCell: UITableViewCell{
+    
+    
+    let vc = todayVC()
 
     @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var btnShare: UIButton!
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var imgInfo: UIImageView!
     
+//   weak var shareDelegate: ShareButtonDelegate?
+//    weak var saveDelegate: SaveButtonDelegate?
+//
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    @IBAction func btnSavePressed(_ sender: UIButton) {
+        
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBAction func btnSharePressed(_ sender: UIButton) {
+       
     }
     
 
-    
     
     
     func setupCell (image: UIImage, title: String, shareTo: UIButton, save: UIButton){
         imgInfo.image = image
         lblTitle.text = title
-        btnSave.setImage(UIImage(systemName: "bookmark"), for: .normal)
-        btnShare.setImage(UIImage(systemName: "square.and.arrow.up"), for: .normal)
+        self.btnSave = save
+        self.btnShare = shareTo
     }
-    
-
 }

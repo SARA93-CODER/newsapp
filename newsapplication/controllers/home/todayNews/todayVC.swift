@@ -9,6 +9,8 @@ import UIKit
 
 class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource{
     
+//     var delegate1: ShareButtonDelegate?
+//     var delegate2: SaveButtonDelegate?
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
@@ -20,6 +22,7 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     var arrItems = [Item]()
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +31,8 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.register(todayTableViewCell.self, forCellReuseIdentifier: "todayTableViewCell")
         
         //tableView's components:
         arrItems.append(Item(image: UIImage(named: "today-tech")!, title: "ما التقنيات التي ستغزو حياتنا في عام 2023؟", save: UIButton(primaryAction: .none), share: UIButton(primaryAction: .none)))
@@ -76,8 +81,29 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         let item = arrItems[indexPath.row]
         cell.setupCell(image: item.image, title: item.title, shareTo: item.share, save: item.save)
         
+        // let each cell conforms to the share & save delegation protocols:
+//        cell.shareDelegate = self
+//        cell.saveDelegate = self
+        
         return cell
     }
+    
+    
+    //MARK: - tableView Delegation methods:
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        delegate1?.didTapShare(at: indexPath)
+//        delegate2?.didTapSave(at: indexPath)
+//    }
+    
+    
+//    func didTapSave(at index: IndexPath) {
+//        print("this item has tapped!")
+//    }
+//
+//    func didTapShare(at index: IndexPath) {
+//        print("this item has shared!")
+//    }
     
 }
 

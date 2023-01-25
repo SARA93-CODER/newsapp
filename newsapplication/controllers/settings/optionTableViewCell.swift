@@ -15,9 +15,9 @@ class optionTableViewCell: UITableViewCell{
   
     @IBOutlet weak var lblOption: UILabel!
 //    make Cell conforms the protocol:
-//    var labelDelegate: LabelTappedDelegate?
+    var labelDelegate: LabelTappedDelegate?
     
-   
+    
     func initCell(title: String){
         lblOption.text = title
     }
