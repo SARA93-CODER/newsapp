@@ -7,8 +7,16 @@
 
 import UIKit
 
-class homeViewController: UIViewController {
 
+class homeViewController: UIViewController, UISearchBarDelegate{
+    
+    let array = latestNewsVC().arrLatestNews
+    var searchedData = [Info]()
+    var searching = false
+    
+    @IBOutlet weak var imgLogo: UIImageView!
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     @IBOutlet weak var latestNews: UIView!
     @IBOutlet weak var segmentControll: UISegmentedControl!
     
@@ -16,7 +24,8 @@ class homeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         UIView.animate(withDuration: 0, delay: 0) {
 //display latestNews UI at beginning using alpha attribute
             self.latestNews.alpha = 1
@@ -26,6 +35,17 @@ class homeViewController: UIViewController {
         
     }
     
+    
+    //MARK: - searchBar delegate functions:
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchedData = array.filter({$0.title.prefix(searchText.count) == searchText})
+        searching = true
+        latestNewsVC().tableView.reloadData()
+    }
+    
+    
+    
+    //MARK: - segmentedControl functionality:
     @IBAction func segmentDidChanged(_ sender: UISegmentedControl) {
         
         switch sender.selectedSegmentIndex {
