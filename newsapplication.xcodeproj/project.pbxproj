@@ -28,6 +28,7 @@
 		0449DEC62979A5CE00EAE1E2 /* videoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DEC52979A5CE00EAE1E2 /* videoTableViewCell.swift */; };
 		0449DEC92979B10400EAE1E2 /* pictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DEC82979B10400EAE1E2 /* pictureViewController.swift */; };
 		0449DECC2979B9D600EAE1E2 /* shahidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DECB2979B9D600EAE1E2 /* shahidVC.swift */; };
+		0477C7D52983C71D00C0964A /* launchScreenAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C7D42983C71D00C0964A /* launchScreenAnimation.swift */; };
 		0497EE022978344100F0CF76 /* categoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE012978344100F0CF76 /* categoriesViewController.swift */; };
 		0497EE062978354100F0CF76 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE052978354100F0CF76 /* homeViewController.swift */; };
 		0497EE082978356300F0CF76 /* vidoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE072978356300F0CF76 /* vidoesViewController.swift */; };
@@ -96,6 +97,7 @@
 		0449DEC82979B10400EAE1E2 /* pictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = pictureViewController.swift; path = newsapplication/controllers/shahid/pictureViewController.swift; sourceTree = SOURCE_ROOT; };
 		0449DECB2979B9D600EAE1E2 /* shahidVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shahidVC.swift; sourceTree = "<group>"; };
 		0477C7D22983A85F00C0964A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0477C7D42983C71D00C0964A /* launchScreenAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchScreenAnimation.swift; sourceTree = "<group>"; };
 		0497EE012978344100F0CF76 /* categoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesViewController.swift; sourceTree = "<group>"; };
 		0497EE052978354100F0CF76 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		0497EE072978356300F0CF76 /* vidoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vidoesViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				0459321429793A19008B172A /* home */,
 				04593213297939F1008B172A /* categories */,
 				04CDFA992976DA66006AF7CC /* ContainerTabBarController.swift */,
+				0477C7D42983C71D00C0964A /* launchScreenAnimation.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 				04473AA0298018B100D6ABC0 /* latestTableViewCell.swift in Sources */,
 				042BA65829803FA700C5DDB0 /* todayVC.swift in Sources */,
 				0497EE082978356300F0CF76 /* vidoesViewController.swift in Sources */,
+				0477C7D52983C71D00C0964A /* launchScreenAnimation.swift in Sources */,
 				04CDFA9A2976DA66006AF7CC /* ContainerTabBarController.swift in Sources */,
 				043CB1182976A6CE008B6FA7 /* AppDelegate.swift in Sources */,
 				04F7F6BE297E5FA000279425 /* pagesViewController.swift in Sources */,
