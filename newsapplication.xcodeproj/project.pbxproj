@@ -95,6 +95,7 @@
 		0449DEC52979A5CE00EAE1E2 /* videoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoTableViewCell.swift; sourceTree = "<group>"; };
 		0449DEC82979B10400EAE1E2 /* pictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = pictureViewController.swift; path = newsapplication/controllers/shahid/pictureViewController.swift; sourceTree = SOURCE_ROOT; };
 		0449DECB2979B9D600EAE1E2 /* shahidVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shahidVC.swift; sourceTree = "<group>"; };
+		0477C7D22983A85F00C0964A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0497EE012978344100F0CF76 /* categoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesViewController.swift; sourceTree = "<group>"; };
 		0497EE052978354100F0CF76 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		0497EE072978356300F0CF76 /* vidoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vidoesViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +207,7 @@
 				043CB1482976AB8B008B6FA7 /* supportingFiles */,
 				043CB1172976A6CE008B6FA7 /* AppDelegate.swift */,
 				043CB1192976A6CE008B6FA7 /* SceneDelegate.swift */,
+				0477C7D22983A85F00C0964A /* Info.plist */,
 			);
 			path = newsapplication;
 			sourceTree = "<group>";
