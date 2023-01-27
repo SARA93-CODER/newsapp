@@ -8,6 +8,8 @@
 import UIKit
 
 class savedViewController: UIViewController {
+    
+    var delegateSaved: LabelSelectionDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()

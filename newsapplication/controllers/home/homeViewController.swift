@@ -9,6 +9,9 @@ import UIKit
 
 
 class homeViewController: UIViewController, UISearchBarDelegate{
+    //to confor the protocol method:
+    var delegateHome: LabelSelectionDelegate?
+    
     
     let array = latestNewsVC().arrLatestNews
     var searchedData = [Info]()

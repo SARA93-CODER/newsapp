@@ -9,6 +9,8 @@ import UIKit
 
 class pagesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var delegatePages: LabelSelectionDelegate?
+    
     
     @IBOutlet weak var tableView: UITableView!
     

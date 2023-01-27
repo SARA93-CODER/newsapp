@@ -9,8 +9,7 @@ import UIKit
 
 class shahidVC: UIViewController {
     
-//    let picVC = pictureViewController()
-//    let vidVC = vidoesViewController()
+    var delegateShahid: LabelSelectionDelegate?
     
     @IBOutlet weak var picture: UIView!
     @IBOutlet weak var video: UIView!

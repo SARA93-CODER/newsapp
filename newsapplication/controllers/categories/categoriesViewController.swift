@@ -11,6 +11,8 @@ class categoriesViewController: UIViewController, UICollectionViewDelegate, UICo
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var delegateCategories: LabelSelectionDelegate?
+    
     var arrNews = [News]()
     override func viewDidLoad() {
         super.viewDidLoad()

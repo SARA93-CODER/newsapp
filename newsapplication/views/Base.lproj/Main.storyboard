@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9qd-4y-4ze">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yxb-v4-fyj">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -31,7 +31,9 @@
         <!--savedViewController-->
         <scene sceneID="cgn-8j-8rd">
             <objects>
-                <viewControllerPlaceholder storyboardName="settings" referencedIdentifier="savedViewController" id="Tui-X8-TJP" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="settings" referencedIdentifier="savedViewController" id="Tui-X8-TJP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="W44-eg-p11"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TgP-Yn-Ivz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="469" y="1465"/>
@@ -71,7 +73,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="lblOption" destination="TMs-NG-okc" id="eN7-y1-Q0r"/>
-                                            <segue destination="EOa-SE-HGz" kind="show" id="toJ-9a-vlS"/>
+                                            <segue destination="Tui-X8-TJP" kind="show" identifier="toSaved" id="XGY-AZ-zqX"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -86,9 +88,7 @@
                             <constraint firstItem="zU4-1F-5vw" firstAttribute="centerY" secondItem="sgP-Ep-NIS" secondAttribute="centerY" id="veM-hc-JSO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="9HQ-zV-aJa">
-                        <barButtonItem key="backBarButtonItem" image="chevron.backward" catalog="system" id="RGE-Oe-3IQ"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="9HQ-zV-aJa"/>
                     <connections>
                         <outlet property="tableView" destination="zU4-1F-5vw" id="YEc-45-mkI"/>
                     </connections>
@@ -694,7 +694,6 @@
     <resources>
         <image name="al ain 2" width="333.33334350585938" height="333.33334350585938"/>
         <image name="bookmark" catalog="system" width="110" height="128"/>
-        <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <image name="command.square" catalog="system" width="128" height="114"/>
         <image name="culture" width="93.666664123535156" height="59.666667938232422"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>

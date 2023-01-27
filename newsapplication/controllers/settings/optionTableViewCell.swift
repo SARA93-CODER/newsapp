@@ -17,8 +17,9 @@ class optionTableViewCell: UITableViewCell{
     
     //    make Cell conforms the protocol:
     var labelDelegate: LabelSelectionDelegate?
+    
 
-
+    
     
     func initCell(title: String){
         lblOption.text = title
