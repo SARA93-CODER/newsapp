@@ -25,6 +25,7 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     
 
     @IBOutlet weak var pageControl: UIPageControl!
+    
     //collectionView:
     var arrTodaysNews = [Data]()
     
@@ -50,6 +51,10 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         
         //pageControl configuration:
         pageControl.numberOfPages = arrTodaysNews.count
+        self.pageControl.currentPage = 0
+                self.pageControl.tintColor = UIColor.black
+        self.pageControl.pageIndicatorTintColor = UIColor.lightGray // UIColor.gray
+                self.pageControl.currentPageIndicatorTintColor = UIColor.green
         
 
         
@@ -75,6 +80,8 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         
         
     }
+    
+    
     
     func startTimer(){
         timer = Timer.scheduledTimer(timeInterval: 2.5, target: self, selector: #selector(moveToNextIndex), userInfo: nil, repeats: true)
