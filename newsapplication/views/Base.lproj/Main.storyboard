@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yxb-v4-fyj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9qd-4y-4ze">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -162,6 +162,7 @@
                                         <connections>
                                             <outlet property="imgNewsPhoto" destination="UjD-Ov-k69" id="6J5-tR-zQg"/>
                                             <outlet property="lblNewsTitle" destination="7Cs-vT-C1O" id="4xU-QD-klG"/>
+                                            <segue destination="fHQ-iv-4a4" kind="show" id="3xz-L7-4bi"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -445,6 +446,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dQd-OK-eDq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3572" y="1871"/>
+        </scene>
+        <!--sportsVC-->
+        <scene sceneID="mO5-xq-um5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="categories" referencedIdentifier="sportsVC" id="fHQ-iv-4a4" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FN6-eY-J2U"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Qz-WZ-hyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2165" y="1588"/>
         </scene>
         <!--Vidoes View Controller-->
         <scene sceneID="Hcg-rQ-bJc">
