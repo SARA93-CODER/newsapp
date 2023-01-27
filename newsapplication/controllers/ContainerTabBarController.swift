@@ -13,6 +13,7 @@ class ContainerTabBarController: UITabBarController, UITabBarControllerDelegate{
         super.viewDidLoad()
 
 //        tabBarController!.delegate = self
+        selectedIndex = 3
         }
     
 

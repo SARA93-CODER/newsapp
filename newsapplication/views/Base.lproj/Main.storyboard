@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kev-KH-g10">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yxb-v4-fyj">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -41,11 +41,11 @@
             <objects>
                 <viewController storyboardIdentifier="settingsVC" id="wi9-iI-TFx" customClass="settingViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K9S-xk-lKG">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zU4-1F-5vw">
-                                <rect key="frame" x="0.0" y="10" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="21" width="393" height="783"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="optionCell" rowHeight="90" id="GLM-qb-heH" customClass="optionTableViewCell" customModule="newsapplication" customModuleProvider="target">
@@ -100,11 +100,11 @@
             <objects>
                 <viewController storyboardIdentifier="categoriesVC" id="9qd-4y-4ze" customClass="categoriesViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PZA-Dp-2IV">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Z4z-bx-HVO">
-                                <rect key="frame" x="10" y="108" width="373" height="661"/>
+                                <rect key="frame" x="10" y="61" width="373" height="708"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9ez-Ag-Avk">
                                     <size key="itemSize" width="164" height="161"/>
@@ -175,11 +175,11 @@
             <objects>
                 <viewController storyboardIdentifier="shahidVC" id="fr9-yA-yix" customClass="shahidVC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pgk-v6-5c8">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tck-tE-Vrx">
-                                <rect key="frame" x="0.0" y="138" width="393" height="31"/>
+                                <rect key="frame" x="0.0" y="91" width="393" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="War-Ks-IPE"/>
                                 </constraints>
@@ -192,13 +192,13 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbK-j9-9Ns">
-                                <rect key="frame" x="0.0" y="168" width="393" height="601"/>
+                                <rect key="frame" x="0.0" y="121" width="393" height="648"/>
                                 <connections>
                                     <segue destination="K9b-Vg-7yO" kind="embed" id="IC8-Tz-Tt5"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x97-Qf-xtf">
-                                <rect key="frame" x="0.0" y="168" width="393" height="601"/>
+                                <rect key="frame" x="0.0" y="121" width="393" height="648"/>
                                 <connections>
                                     <segue destination="QwQ-P8-Dns" kind="embed" id="cW1-i5-4w0"/>
                                 </connections>
@@ -237,7 +237,7 @@
                 <navigationController id="620-Ae-2a4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="الرئيسية" image="homekit" catalog="system" id="0T1-SZ-ik0"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RbD-vf-Ccr">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -248,10 +248,71 @@
             </objects>
             <point key="canvasLocation" x="4109" y="354"/>
         </scene>
+        <!--InboardingVC-->
+        <scene sceneID="s80-3W-Sqd">
+            <objects>
+                <viewController id="yxb-v4-fyj" customClass="inboardingVC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wuD-LP-ssq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3j-or-Bh4">
+                                <rect key="frame" x="55" y="391" width="283" height="70"/>
+                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="DZK-Ym-UXc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="السماح بإرسال إشعارات">
+                                    <fontDescription key="titleFontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="23"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnNotifications:" destination="yxb-v4-fyj" eventType="touchUpInside" id="uwa-UL-28T"/>
+                                    <segue destination="rJE-at-Yyl" kind="show" identifier="seque1" id="ah6-OQ-a5c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bft-wn-So7">
+                                <rect key="frame" x="55" y="486" width="283" height="70"/>
+                                <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="Anx-Ws-jey"/>
+                                    <constraint firstAttribute="height" constant="70" id="CuA-5h-397"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="تخطي">
+                                    <fontDescription key="titleFontDescription" name=".SFUI-Semibold" family=".AppleSystemUIFont" pointSize="23"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnSkip:" destination="yxb-v4-fyj" eventType="touchUpInside" id="uE7-xe-c9O"/>
+                                    <segue destination="rJE-at-Yyl" kind="show" id="0Gw-c0-2Gg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CoK-qk-3rp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F3j-or-Bh4" firstAttribute="centerX" secondItem="wuD-LP-ssq" secondAttribute="centerX" id="408-We-sh9"/>
+                            <constraint firstItem="CoK-qk-3rp" firstAttribute="trailing" secondItem="F3j-or-Bh4" secondAttribute="trailing" constant="55" id="6Sz-ec-plm"/>
+                            <constraint firstItem="CoK-qk-3rp" firstAttribute="trailing" secondItem="Bft-wn-So7" secondAttribute="trailing" constant="55" id="At8-gD-lJt"/>
+                            <constraint firstItem="F3j-or-Bh4" firstAttribute="leading" secondItem="CoK-qk-3rp" secondAttribute="leading" constant="55" id="KWy-V7-fQh"/>
+                            <constraint firstItem="Bft-wn-So7" firstAttribute="leading" secondItem="CoK-qk-3rp" secondAttribute="leading" constant="55" id="WKo-Kr-rl9"/>
+                            <constraint firstItem="Bft-wn-So7" firstAttribute="top" secondItem="F3j-or-Bh4" secondAttribute="bottom" constant="25" id="bf1-nj-XLS"/>
+                            <constraint firstItem="CoK-qk-3rp" firstAttribute="trailing" secondItem="Bft-wn-So7" secondAttribute="trailing" constant="55" id="prc-FD-cbC"/>
+                            <constraint firstItem="F3j-or-Bh4" firstAttribute="centerY" secondItem="wuD-LP-ssq" secondAttribute="centerY" id="r9j-xa-vQH"/>
+                            <constraint firstItem="Bft-wn-So7" firstAttribute="leading" secondItem="CoK-qk-3rp" secondAttribute="leading" constant="55" id="w8o-ZJ-eLq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82x-m7-A6o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2052.6717557251909" y="-616.19718309859161"/>
+        </scene>
         <!--Container Tab Bar Controller-->
         <scene sceneID="A1C-u2-wVc">
             <objects>
-                <tabBarController storyboardIdentifier="ContainerTabBarController" id="rJE-at-Yyl" customClass="ContainerTabBarController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="ContainerTabBarController" modalPresentationStyle="fullScreen" id="rJE-at-Yyl" customClass="ContainerTabBarController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="ofa-OZ-X85"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bWd-sp-Odc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -274,11 +335,11 @@
             <objects>
                 <viewController storyboardIdentifier="picture" id="K9b-Vg-7yO" customClass="pictureViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dNx-iK-v7l">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="601"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="648"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Qgm-RU-aoq">
-                                <rect key="frame" x="0.0" y="96.333333333333314" width="393" height="527.33333333333348"/>
+                                <rect key="frame" x="0.0" y="99.333333333333314" width="393" height="568.33333333333348"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="pictureCell" rowHeight="258" id="TAn-0C-qWj" customClass="pictureTableViewCell" customModule="newsapplication" customModuleProvider="target">
@@ -360,11 +421,11 @@
             <objects>
                 <viewController storyboardIdentifier="video" automaticallyAdjustsScrollViewInsets="NO" id="QwQ-P8-Dns" customClass="vidoesViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RAc-ya-1kF">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="601"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="648"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sld-dE-F0x">
-                                <rect key="frame" x="-0.66666666666665719" y="87" width="394.33333333333326" height="546"/>
+                                <rect key="frame" x="-0.66666666666665719" y="89" width="394.33333333333326" height="589"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="287" id="I6i-eZ-IVT" customClass="videoTableViewCell" customModule="newsapplication" customModuleProvider="target">
@@ -447,37 +508,37 @@
             <objects>
                 <viewController storyboardIdentifier="home" id="kev-KH-g10" customClass="homeViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vNf-Ir-uGN">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="RSc-qQ-BS7">
-                                <rect key="frame" x="0.0" y="103" width="303" height="44"/>
+                                <rect key="frame" x="0.0" y="56" width="303" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="kev-KH-g10" id="uoF-jv-iZR"/>
                                 </connections>
                             </searchBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="al ain 2" translatesAutoresizingMaskIntoConstraints="NO" id="ede-rz-ufB">
-                                <rect key="frame" x="310" y="90" width="76" height="57"/>
+                                <rect key="frame" x="310" y="43" width="76" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="76" id="Wor-o5-9y1"/>
                                     <constraint firstAttribute="height" constant="57" id="zC5-SP-eiv"/>
                                 </constraints>
                             </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6OG-cs-lve">
-                                <rect key="frame" x="0.0" y="187" width="393" height="582"/>
+                                <rect key="frame" x="0.0" y="140" width="393" height="629"/>
                                 <connections>
                                     <segue destination="kbo-e8-PXJ" kind="embed" id="Zsc-lf-Lai"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srd-FJ-9WW">
-                                <rect key="frame" x="0.0" y="187" width="393" height="582"/>
+                                <rect key="frame" x="0.0" y="140" width="393" height="629"/>
                                 <connections>
                                     <segue destination="ta6-Fv-aCv" kind="embed" id="muo-0K-WDK"/>
                                 </connections>
                             </containerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ea0-yS-h9x">
-                                <rect key="frame" x="0.0" y="155" width="393" height="32"/>
+                                <rect key="frame" x="0.0" y="108" width="393" height="32"/>
                                 <segments>
                                     <segment title="اخر الاخبار"/>
                                     <segment title="العالم اليوم"/>
@@ -546,7 +607,7 @@
                     <tabBarItem key="tabBarItem" title="الاعدادات" image="gearshape" catalog="system" id="EjB-c3-Mqg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6tX-QS-wIr">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -565,7 +626,7 @@
                     <tabBarItem key="tabBarItem" title="شاهد" image="play.rectangle" catalog="system" id="5jA-Tx-Ox7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="00n-Zu-l0r">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -584,7 +645,7 @@
                     <tabBarItem key="tabBarItem" title="الاقسام" image="command.square" catalog="system" id="dWG-gU-9xX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tjo-Qf-CUc">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -597,6 +658,9 @@
             <point key="canvasLocation" x="2434" y="354"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ah6-OQ-a5c"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="al ain 2" width="333.33334350585938" height="333.33334350585938"/>
         <image name="bookmark" catalog="system" width="110" height="128"/>
