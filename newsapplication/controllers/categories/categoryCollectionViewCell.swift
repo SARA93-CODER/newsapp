@@ -13,6 +13,7 @@ class categoryCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var lblNewsTitle: UILabel!
     
     
+    
     func setupCell(photo: UIImage, title: String){
         imgNewsPhoto.image = photo
         lblNewsTitle.text = title

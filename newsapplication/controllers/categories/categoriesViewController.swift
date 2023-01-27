@@ -19,9 +19,9 @@ class categoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionView.dataSource = self
         
         arrNews.append(News(photo: UIImage(named: "culture")!, title: "ثقافة"))
-//        arrNews.append(News(photo: UIImage(named: "sports")!, title: "رياضة"))
+        arrNews.append(News(photo: UIImage(named: "sports")!, title: "رياضة"))
         arrNews.append(News(photo: UIImage(named: "politics")!, title: "سياسة"))
-//        arrNews.append(News(photo: UIImage(named: "science")!, title: "علوم و فضاء"))
+        arrNews.append(News(photo: UIImage(named: "spaceScience")!, title: "علوم و فضاء"))
         arrNews.append(News(photo: UIImage(named: "celebrities")!, title: "فن"))
         arrNews.append(News(photo: UIImage(named: "economy")!, title: "اقتصاد"))
            }
@@ -38,10 +38,12 @@ class categoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         return cell
     }
     
-    //didicating the cell's width and hight
+    //didicating the cell's width:
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: self.view.frame.width * 0.4, height:self.view.frame.width * 0.4)
+        return CGSize(width: self.view.frame.width * 0.9, height:self.view.frame.width * 0.5)
     }
+    
+    
     
     //hirozental spacing between cells
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -50,7 +52,7 @@ class categoriesViewController: UIViewController, UICollectionViewDelegate, UICo
     
     //vertical spacing between cells
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0.1
+        return 0.2
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

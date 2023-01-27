@@ -30,6 +30,7 @@
 		0449DECC2979B9D600EAE1E2 /* shahidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DECB2979B9D600EAE1E2 /* shahidVC.swift */; };
 		0477C7D52983C71D00C0964A /* launchScreenAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C7D42983C71D00C0964A /* launchScreenAnimation.swift */; };
 		0477C7D72983D70E00C0964A /* inboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C7D62983D70E00C0964A /* inboardingVC.swift */; };
+		0477C7D92983FAE600C0964A /* categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477C7D82983FAE600C0964A /* categories.storyboard */; };
 		0497EE022978344100F0CF76 /* categoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE012978344100F0CF76 /* categoriesViewController.swift */; };
 		0497EE062978354100F0CF76 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE052978354100F0CF76 /* homeViewController.swift */; };
 		0497EE082978356300F0CF76 /* vidoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE072978356300F0CF76 /* vidoesViewController.swift */; };
@@ -100,6 +101,7 @@
 		0477C7D22983A85F00C0964A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0477C7D42983C71D00C0964A /* launchScreenAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchScreenAnimation.swift; sourceTree = "<group>"; };
 		0477C7D62983D70E00C0964A /* inboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inboardingVC.swift; sourceTree = "<group>"; };
+		0477C7D82983FAE600C0964A /* categories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = categories.storyboard; sourceTree = "<group>"; };
 		0497EE012978344100F0CF76 /* categoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesViewController.swift; sourceTree = "<group>"; };
 		0497EE052978354100F0CF76 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		0497EE072978356300F0CF76 /* vidoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vidoesViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				043CB11D2976A6CE008B6FA7 /* Main.storyboard */,
 				04F7F6B9297E5DAD00279425 /* settings.storyboard */,
 				0411FC8B297FB96900B3A1D3 /* homePage.storyboard */,
+				0477C7D82983FAE600C0964A /* categories.storyboard */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0477C7D92983FAE600C0964A /* categories.storyboard in Resources */,
 				043CB1242976A6CF008B6FA7 /* LaunchScreen.storyboard in Resources */,
 				0411FC8C297FB96A00B3A1D3 /* homePage.storyboard in Resources */,
 				043CB11F2976A6CE008B6FA7 /* Main.storyboard in Resources */,
@@ -771,6 +775,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = newsapplication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Al-ain News";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -805,6 +810,7 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = newsapplication/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Al-ain News";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
