@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kev-KH-g10">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9qd-4y-4ze">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -129,7 +129,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="365" height="192"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="culture" translatesAutoresizingMaskIntoConstraints="NO" id="UjD-Ov-k69">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="culture" translatesAutoresizingMaskIntoConstraints="NO" id="UjD-Ov-k69">
                                                     <rect key="frame" x="2" y="2" width="361" height="188"/>
                                                 </imageView>
                                                 <label opaque="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ثقافة" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cs-vT-C1O">
@@ -148,10 +148,25 @@
                                                     <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <size key="shadowOffset" width="0.0" height="0.0"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zg7-Yp-CYC">
+                                                    <rect key="frame" x="290" y="15" width="50" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Gaf-1b-Geu"/>
+                                                        <constraint firstAttribute="height" constant="35" id="Kij-vm-MB9"/>
+                                                    </constraints>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="star" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="btnFav:" destination="f7c-n0-Zsi" eventType="touchUpInside" id="cSS-9F-1qo"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="zg7-Yp-CYC" firstAttribute="top" secondItem="f7c-n0-Zsi" secondAttribute="top" constant="15" id="Ehc-6b-YLO"/>
                                             <constraint firstItem="UjD-Ov-k69" firstAttribute="leading" secondItem="f7c-n0-Zsi" secondAttribute="leading" constant="2" id="Hk3-1P-ecv"/>
+                                            <constraint firstAttribute="trailing" secondItem="zg7-Yp-CYC" secondAttribute="trailing" constant="25" id="L2R-Yg-oWD"/>
                                             <constraint firstAttribute="trailing" secondItem="UjD-Ov-k69" secondAttribute="trailing" constant="2" id="M9n-rs-dgO"/>
                                             <constraint firstAttribute="bottom" secondItem="UjD-Ov-k69" secondAttribute="bottom" constant="2" id="UlA-1I-Lq4"/>
                                             <constraint firstItem="7Cs-vT-C1O" firstAttribute="leading" secondItem="f7c-n0-Zsi" secondAttribute="leading" constant="2" id="aXP-Qx-0Lr"/>
@@ -160,6 +175,7 @@
                                         </constraints>
                                         <size key="customSize" width="365" height="192"/>
                                         <connections>
+                                            <outlet property="btnFavourite" destination="zg7-Yp-CYC" id="XvL-tB-9tN"/>
                                             <outlet property="imgNewsPhoto" destination="UjD-Ov-k69" id="6J5-tR-zQg"/>
                                             <outlet property="lblNewsTitle" destination="7Cs-vT-C1O" id="4xU-QD-klG"/>
                                             <segue destination="fHQ-iv-4a4" kind="show" id="3xz-L7-4bi"/>
@@ -711,6 +727,7 @@
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="play.rectangle" catalog="system" width="128" height="93"/>
         <image name="politics1" width="256.66665649414062" height="171"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <image name="tourism" width="256" height="146.33332824707031"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

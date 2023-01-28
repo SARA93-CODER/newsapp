@@ -7,13 +7,7 @@
 
 import UIKit
 
-//protocol ButtonTappedDelegate: AnyObject{
-//    if  == "square.and.arrow.up"{
-//        func ShareBtnSelected(at: Index)
-//    }else {
-//        func SaveBtnSelected(at: Index)
-//    }
-//}
+
 
 class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UITableViewDelegate, UITableViewDataSource{
     
@@ -31,6 +25,7 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     
     //tableView:
     var arrItems = [Item]()
+    var arrSections = ["صحة", "علوم", "تكنولوجيا"]
     
 
     var currentCellIndex = 0
@@ -58,7 +53,7 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         
 
         
-        tableView.register(todayTableViewCell.self, forCellReuseIdentifier: "todayTableViewCell")
+//        tableView.register(todayTableViewCell.self, forCellReuseIdentifier: "todayTableViewCell")
         
         //tableView's components:
         arrItems.append(Item(image: UIImage(named: "today-tech")!, title: "ما التقنيات التي ستغزو حياتنا في عام 2023؟", save: UIButton(primaryAction: .none), share: UIButton(primaryAction: .none)))
@@ -124,6 +119,10 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     }
     
     //MARK: - tableView Data source functions:
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return arrSections.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrItems.count
     }
@@ -139,6 +138,10 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
 //        cell.saveDelegate = self
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return arrSections[section]
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

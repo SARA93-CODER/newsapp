@@ -20,12 +20,12 @@ class categoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionView.delegate = self
         collectionView.dataSource = self
         
-        arrNews.append(News(photo: UIImage(named: "culture")!, title: "ثقافة"))
-        arrNews.append(News(photo: UIImage(named: "sports")!, title: "رياضة"))
-        arrNews.append(News(photo: UIImage(named: "politics")!, title: "سياسة"))
-        arrNews.append(News(photo: UIImage(named: "spaceScience")!, title: "علوم و فضاء"))
-        arrNews.append(News(photo: UIImage(named: "celebrities")!, title: "فن"))
-        arrNews.append(News(photo: UIImage(named: "economy")!, title: "اقتصاد"))
+        arrNews.append(News(photo: UIImage(named: "culture")!, title: "ثقافة", favourite: UIImage(systemName: "star")!))
+        arrNews.append(News(photo: UIImage(named: "sports")!, title: "رياضة", favourite: UIImage(systemName: "star")!))
+        arrNews.append(News(photo: UIImage(named: "politics")!, title: "سياسة",favourite: UIImage(systemName: "star")!))
+        arrNews.append(News(photo: UIImage(named: "spaceScience")!, title: "علوم و فضاء",favourite: UIImage(systemName: "star")!))
+        arrNews.append(News(photo: UIImage(named: "celebrities")!, title: "فن",favourite: UIImage(systemName: "star")!))
+        arrNews.append(News(photo: UIImage(named: "economy")!, title: "اقتصاد",favourite: UIImage(systemName: "star")!))
            }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return arrNews.count
@@ -36,7 +36,7 @@ class categoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         
         let news = arrNews[indexPath.row]
         
-        cell.setupCell(photo: news.photo, title: news.title)
+        cell.setupCell(photo: news.photo, title: news.title, favourite: news.favourite)
         return cell
     }
     
@@ -49,12 +49,12 @@ class categoriesViewController: UIViewController, UICollectionViewDelegate, UICo
     
     //hirozental spacing between cells
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0.2
+        return 0.4
     }
     
     //vertical spacing between cells
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0.2
+        return 0.8
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -65,4 +65,5 @@ class categoriesViewController: UIViewController, UICollectionViewDelegate, UICo
 struct News {
     let photo : UIImage
     let title : String
+    let favourite: UIImage
 }

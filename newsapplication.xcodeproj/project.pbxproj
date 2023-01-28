@@ -28,7 +28,6 @@
 		0449DEC62979A5CE00EAE1E2 /* videoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DEC52979A5CE00EAE1E2 /* videoTableViewCell.swift */; };
 		0449DEC92979B10400EAE1E2 /* pictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DEC82979B10400EAE1E2 /* pictureViewController.swift */; };
 		0449DECC2979B9D600EAE1E2 /* shahidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0449DECB2979B9D600EAE1E2 /* shahidVC.swift */; };
-		0477C7D52983C71D00C0964A /* launchScreenAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C7D42983C71D00C0964A /* launchScreenAnimation.swift */; };
 		0477C7D72983D70E00C0964A /* inboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C7D62983D70E00C0964A /* inboardingVC.swift */; };
 		0477C7D92983FAE600C0964A /* categories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0477C7D82983FAE600C0964A /* categories.storyboard */; };
 		0477C7DB29844AE700C0964A /* sportsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C7DA29844AE700C0964A /* sportsVC.swift */; };
@@ -42,6 +41,12 @@
 		0497EE082978356300F0CF76 /* vidoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE072978356300F0CF76 /* vidoesViewController.swift */; };
 		0497EE0A2978362D00F0CF76 /* categoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE092978362D00F0CF76 /* categoryCollectionViewCell.swift */; };
 		04CDFA9A2976DA66006AF7CC /* ContainerTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CDFA992976DA66006AF7CC /* ContainerTabBarController.swift */; };
+		04CF79E92984E169007E51FA /* sportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF79E82984E169007E51FA /* sportsTableViewCell.swift */; };
+		04CF79EB2984E189007E51FA /* economyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF79EA2984E189007E51FA /* economyTableViewCell.swift */; };
+		04CF79ED2984E1A3007E51FA /* celebrityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF79EC2984E1A3007E51FA /* celebrityTableViewCell.swift */; };
+		04CF79EF2984E1BB007E51FA /* spaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF79EE2984E1BB007E51FA /* spaceTableViewCell.swift */; };
+		04CF79F12984E1D4007E51FA /* politicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF79F02984E1D4007E51FA /* politicsTableViewCell.swift */; };
+		04CF79F32984E1E8007E51FA /* cultureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF79F22984E1E8007E51FA /* cultureTableViewCell.swift */; };
 		04F7F6BA297E5DAD00279425 /* settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F7F6B9297E5DAD00279425 /* settings.storyboard */; };
 		04F7F6BC297E5F8200279425 /* pageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7F6BB297E5F8200279425 /* pageTableViewCell.swift */; };
 		04F7F6BE297E5FA000279425 /* pagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F7F6BD297E5FA000279425 /* pagesViewController.swift */; };
@@ -105,7 +110,6 @@
 		0449DEC82979B10400EAE1E2 /* pictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = pictureViewController.swift; path = newsapplication/controllers/shahid/pictureViewController.swift; sourceTree = SOURCE_ROOT; };
 		0449DECB2979B9D600EAE1E2 /* shahidVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shahidVC.swift; sourceTree = "<group>"; };
 		0477C7D22983A85F00C0964A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0477C7D42983C71D00C0964A /* launchScreenAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = launchScreenAnimation.swift; sourceTree = "<group>"; };
 		0477C7D62983D70E00C0964A /* inboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inboardingVC.swift; sourceTree = "<group>"; };
 		0477C7D82983FAE600C0964A /* categories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = categories.storyboard; sourceTree = "<group>"; };
 		0477C7DA29844AE700C0964A /* sportsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportsVC.swift; sourceTree = "<group>"; };
@@ -119,6 +123,12 @@
 		0497EE072978356300F0CF76 /* vidoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vidoesViewController.swift; sourceTree = "<group>"; };
 		0497EE092978362D00F0CF76 /* categoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		04CDFA992976DA66006AF7CC /* ContainerTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerTabBarController.swift; sourceTree = "<group>"; };
+		04CF79E82984E169007E51FA /* sportsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sportsTableViewCell.swift; sourceTree = "<group>"; };
+		04CF79EA2984E189007E51FA /* economyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = economyTableViewCell.swift; sourceTree = "<group>"; };
+		04CF79EC2984E1A3007E51FA /* celebrityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = celebrityTableViewCell.swift; sourceTree = "<group>"; };
+		04CF79EE2984E1BB007E51FA /* spaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spaceTableViewCell.swift; sourceTree = "<group>"; };
+		04CF79F02984E1D4007E51FA /* politicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = politicsTableViewCell.swift; sourceTree = "<group>"; };
+		04CF79F22984E1E8007E51FA /* cultureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cultureTableViewCell.swift; sourceTree = "<group>"; };
 		04F7F6B9297E5DAD00279425 /* settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = settings.storyboard; sourceTree = "<group>"; };
 		04F7F6BB297E5F8200279425 /* pageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageTableViewCell.swift; sourceTree = "<group>"; };
 		04F7F6BD297E5FA000279425 /* pagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagesViewController.swift; sourceTree = "<group>"; };
@@ -260,7 +270,6 @@
 				0459321429793A19008B172A /* home */,
 				04593213297939F1008B172A /* categories */,
 				04CDFA992976DA66006AF7CC /* ContainerTabBarController.swift */,
-				0477C7D42983C71D00C0964A /* launchScreenAnimation.swift */,
 				0477C7D62983D70E00C0964A /* inboardingVC.swift */,
 			);
 			path = controllers;
@@ -281,14 +290,14 @@
 		04593213297939F1008B172A /* categories */ = {
 			isa = PBXGroup;
 			children = (
+				04CF79E72984E0E7007E51FA /* culture */,
+				04CF79E62984E0E0007E51FA /* politics */,
+				04CF79E52984E0D1007E51FA /* space */,
+				04CF79E42984E0BD007E51FA /* celebrities */,
+				04CF79E32984E0AE007E51FA /* economy */,
+				04CF79E22984E09E007E51FA /* sports */,
 				0497EE092978362D00F0CF76 /* categoryCollectionViewCell.swift */,
 				0497EE012978344100F0CF76 /* categoriesViewController.swift */,
-				0477C7DA29844AE700C0964A /* sportsVC.swift */,
-				0477C7DC29844AFD00C0964A /* economyVC.swift */,
-				0477C7DE29844B1500C0964A /* celebritiesVC.swift */,
-				0477C7E029844B2A00C0964A /* spaceVC.swift */,
-				0477C7E229844B4600C0964A /* politicsVC.swift */,
-				0477C7E429844B5F00C0964A /* cultureVC.swift */,
 			);
 			path = categories;
 			sourceTree = "<group>";
@@ -311,6 +320,60 @@
 				04F7F6BF297E6B9300279425 /* aboutVC.swift */,
 			);
 			path = settings;
+			sourceTree = "<group>";
+		};
+		04CF79E22984E09E007E51FA /* sports */ = {
+			isa = PBXGroup;
+			children = (
+				0477C7DA29844AE700C0964A /* sportsVC.swift */,
+				04CF79E82984E169007E51FA /* sportsTableViewCell.swift */,
+			);
+			path = sports;
+			sourceTree = "<group>";
+		};
+		04CF79E32984E0AE007E51FA /* economy */ = {
+			isa = PBXGroup;
+			children = (
+				0477C7DC29844AFD00C0964A /* economyVC.swift */,
+				04CF79EA2984E189007E51FA /* economyTableViewCell.swift */,
+			);
+			path = economy;
+			sourceTree = "<group>";
+		};
+		04CF79E42984E0BD007E51FA /* celebrities */ = {
+			isa = PBXGroup;
+			children = (
+				0477C7DE29844B1500C0964A /* celebritiesVC.swift */,
+				04CF79EC2984E1A3007E51FA /* celebrityTableViewCell.swift */,
+			);
+			path = celebrities;
+			sourceTree = "<group>";
+		};
+		04CF79E52984E0D1007E51FA /* space */ = {
+			isa = PBXGroup;
+			children = (
+				0477C7E029844B2A00C0964A /* spaceVC.swift */,
+				04CF79EE2984E1BB007E51FA /* spaceTableViewCell.swift */,
+			);
+			path = space;
+			sourceTree = "<group>";
+		};
+		04CF79E62984E0E0007E51FA /* politics */ = {
+			isa = PBXGroup;
+			children = (
+				0477C7E229844B4600C0964A /* politicsVC.swift */,
+				04CF79F02984E1D4007E51FA /* politicsTableViewCell.swift */,
+			);
+			path = politics;
+			sourceTree = "<group>";
+		};
+		04CF79E72984E0E7007E51FA /* culture */ = {
+			isa = PBXGroup;
+			children = (
+				0477C7E429844B5F00C0964A /* cultureVC.swift */,
+				04CF79F22984E1E8007E51FA /* cultureTableViewCell.swift */,
+			);
+			path = culture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -586,11 +649,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0497EE0A2978362D00F0CF76 /* categoryCollectionViewCell.swift in Sources */,
+				04CF79ED2984E1A3007E51FA /* celebrityTableViewCell.swift in Sources */,
 				040B8D5E2980623D00120538 /* todayTableViewCell.swift in Sources */,
 				04F7F6BC297E5F8200279425 /* pageTableViewCell.swift in Sources */,
 				042BA65629803B1600C5DDB0 /* todayNewsCell.swift in Sources */,
 				0477C7DB29844AE700C0964A /* sportsVC.swift in Sources */,
 				0401361A297AA0540094668E /* optionTableViewCell.swift in Sources */,
+				04CF79EB2984E189007E51FA /* economyTableViewCell.swift in Sources */,
 				04F7F6C2297E787A00279425 /* savedViewController.swift in Sources */,
 				0449DECC2979B9D600EAE1E2 /* shahidVC.swift in Sources */,
 				0497EE062978354100F0CF76 /* homeViewController.swift in Sources */,
@@ -599,6 +664,7 @@
 				0497EE022978344100F0CF76 /* categoriesViewController.swift in Sources */,
 				040B8D5929804FC200120538 /* post3VC.swift in Sources */,
 				0477C7E529844B5F00C0964A /* cultureVC.swift in Sources */,
+				04CF79F32984E1E8007E51FA /* cultureTableViewCell.swift in Sources */,
 				0477C7E129844B2A00C0964A /* spaceVC.swift in Sources */,
 				0449DEC92979B10400EAE1E2 /* pictureViewController.swift in Sources */,
 				04473A9E2980155700D6ABC0 /* latestNewsVC.swift in Sources */,
@@ -606,16 +672,18 @@
 				04473AA0298018B100D6ABC0 /* latestTableViewCell.swift in Sources */,
 				042BA65829803FA700C5DDB0 /* todayVC.swift in Sources */,
 				0497EE082978356300F0CF76 /* vidoesViewController.swift in Sources */,
-				0477C7D52983C71D00C0964A /* launchScreenAnimation.swift in Sources */,
 				0477C7E329844B4600C0964A /* politicsVC.swift in Sources */,
 				04CDFA9A2976DA66006AF7CC /* ContainerTabBarController.swift in Sources */,
 				0477C7DF29844B1500C0964A /* celebritiesVC.swift in Sources */,
 				043CB1182976A6CE008B6FA7 /* AppDelegate.swift in Sources */,
+				04CF79EF2984E1BB007E51FA /* spaceTableViewCell.swift in Sources */,
+				04CF79F12984E1D4007E51FA /* politicsTableViewCell.swift in Sources */,
 				04F7F6BE297E5FA000279425 /* pagesViewController.swift in Sources */,
 				043CB11A2976A6CE008B6FA7 /* SceneDelegate.swift in Sources */,
 				0477C7D72983D70E00C0964A /* inboardingVC.swift in Sources */,
 				0401361F297AB7000094668E /* pictureTableViewCell.swift in Sources */,
 				040B8D5529804F6F00120538 /* post1VC.swift in Sources */,
+				04CF79E92984E169007E51FA /* sportsTableViewCell.swift in Sources */,
 				0477C7DD29844AFD00C0964A /* economyVC.swift in Sources */,
 				0401361C297AA28F0094668E /* settingViewController.swift in Sources */,
 				040B8D5729804FAD00120538 /* post2VC.swift in Sources */,

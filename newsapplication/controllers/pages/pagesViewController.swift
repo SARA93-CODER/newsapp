@@ -38,6 +38,8 @@ class pagesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
 
+    
+    //MARK: - table view data source functions:
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrPages.count
     }
@@ -50,6 +52,9 @@ class pagesViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     
 }
 struct Cell{
