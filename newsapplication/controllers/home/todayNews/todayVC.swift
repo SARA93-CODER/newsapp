@@ -46,7 +46,9 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         
         //pageControl configuration:
         pageControl.numberOfPages = arrTodaysNews.count
-        self.pageControl.currentPage = 0
+        pageControl.currentPage = 0
+        pageControl.translatesAutoresizingMaskIntoConstraints = false
+        
                
         
 

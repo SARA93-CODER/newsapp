@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8kE-2l-OBP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Jn-ub-9M6">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NNj-93-4F7">
-                                <rect key="frame" x="0.0" y="91" width="393" height="707"/>
+                                <rect key="frame" x="0.0" y="135" width="393" height="663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="163" id="ZzZ-iB-8Xi" customClass="latestTableViewCell" customModule="newsapplication" customModuleProvider="target">
@@ -90,6 +90,7 @@
                                             <outlet property="btnShareTo" destination="THz-X0-Weu" id="kYH-Tg-kgA"/>
                                             <outlet property="imgLatest" destination="FDd-2N-dFy" id="61Z-y6-tpP"/>
                                             <outlet property="lblLatest" destination="flg-Ex-egr" id="0Ce-jo-YSJ"/>
+                                            <segue destination="4Jn-ub-9M6" kind="show" id="EdJ-zR-xCP"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -104,13 +105,14 @@
                             <constraint firstItem="NNj-93-4F7" firstAttribute="top" secondItem="W6F-VZ-nWT" secondAttribute="top" constant="32" id="yuP-wr-ybs"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="TMv-nL-YfI"/>
                     <connections>
                         <outlet property="tableView" destination="NNj-93-4F7" id="zHL-c8-qra"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wCb-Nf-vxW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-367.17557251908397" y="761.26760563380287"/>
+            <point key="canvasLocation" x="-1408.3969465648854" y="360.56338028169017"/>
         </scene>
         <!--TodayVC-->
         <scene sceneID="Zxy-d7-OCP">
@@ -285,7 +287,245 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUE-0S-KsZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="620.61068702290072" y="761.97183098591552"/>
+            <point key="canvasLocation" x="2165.6488549618321" y="803.52112676056345"/>
+        </scene>
+        <!--Latest1VC-->
+        <scene sceneID="GZt-zH-bgb">
+            <objects>
+                <viewController storyboardIdentifier="latest1VC" modalPresentationStyle="fullScreen" id="4Jn-ub-9M6" customClass="latest1VC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hmB-P1-Kx3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="latest-politics" translatesAutoresizingMaskIntoConstraints="NO" id="eNE-OA-lRK">
+                                <rect key="frame" x="16" y="222" width="361" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="FB0-4w-17O"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="تركيا.. أردوغان يرد على `طاولة الستة` بإجراء الانتخابات قبل موعدها" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRS-Xf-L0F">
+                                <rect key="frame" x="61" y="118" width="271" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="ytp-I9-kHk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k85-vT-JB0">
+                                <rect key="frame" x="26" y="452" width="341" height="255"/>
+                                <string key="text">قبل شهر من الموعد الذي أعلن سابقا، لمّح الرئيس التركي رجب طيب إردوغان، الأربعاء إلى أن الانتخابات الرئاسية والنيابية ستجرى في 14 مايو/أيار المقبل.
+ولم يعلن أردوغان التاريخ المحدد للانتخابات المرتقبة، لكنّه لمّح إلى أنها ستجرى في ذكرى مرور "73 عامًا" على فوز الحزب الديمقراطي (محافظ) في أول انتخابات حرّة شهدتها تركيا المعاصرة في العام 1950.
+تقريب الموعد
+وكانت الانتخابات مقرّرة في 18 يونيو/حزيران المقبل، لكن مراقبين كثرا توقّعوا تقريب الموعد، فيما أشار صحفيون أتراك إلى أسباب دعت لاتّخاذ خيار تقريب الموعد، بينها الاقتصاد المتدهور والعطل المدرسية وامتحانات دخول الجامعات المقرّرة في يونيو/حزيران المقبل.
+وفي 14 مايو/أيار 1950، فاز الحزب الديمقراطي، الذي أسسه في العام 1946 عدنان مندريس وأنصاره المنشقّون عن حزب مصطفى كمال "أتاتورك"، في الانتخابات.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YX1-WD-GE5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YX1-WD-GE5" firstAttribute="bottom" secondItem="k85-vT-JB0" secondAttribute="bottom" constant="111" id="CdZ-ei-76L"/>
+                            <constraint firstItem="eNE-OA-lRK" firstAttribute="trailing" secondItem="hmB-P1-Kx3" secondAttribute="trailingMargin" id="Ejw-X6-5Pg"/>
+                            <constraint firstItem="xRS-Xf-L0F" firstAttribute="centerX" secondItem="eNE-OA-lRK" secondAttribute="centerX" id="N5d-xo-H9B"/>
+                            <constraint firstItem="k85-vT-JB0" firstAttribute="leading" secondItem="YX1-WD-GE5" secondAttribute="leading" constant="26" id="N8C-SD-LE1"/>
+                            <constraint firstItem="k85-vT-JB0" firstAttribute="top" secondItem="eNE-OA-lRK" secondAttribute="bottom" constant="8" symbolic="YES" id="d5n-Gb-gio"/>
+                            <constraint firstItem="eNE-OA-lRK" firstAttribute="top" secondItem="xRS-Xf-L0F" secondAttribute="bottom" constant="8" symbolic="YES" id="fDo-Dv-kZ4"/>
+                            <constraint firstItem="eNE-OA-lRK" firstAttribute="leading" secondItem="hmB-P1-Kx3" secondAttribute="leadingMargin" id="heN-sl-PAr"/>
+                            <constraint firstItem="xRS-Xf-L0F" firstAttribute="top" secondItem="YX1-WD-GE5" secondAttribute="top" constant="59" id="i1d-sA-xv5"/>
+                            <constraint firstItem="eNE-OA-lRK" firstAttribute="centerX" secondItem="k85-vT-JB0" secondAttribute="centerX" id="lAj-rO-wLF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NWY-HH-pTX"/>
+                    <connections>
+                        <outlet property="imgLatest" destination="eNE-OA-lRK" id="l0u-ob-8GS"/>
+                        <outlet property="lblText" destination="k85-vT-JB0" id="bIb-Cn-296"/>
+                        <outlet property="lblTitle" destination="xRS-Xf-L0F" id="33H-d4-bbd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PrX-g3-C4R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3312.2137404580153" y="1130.2816901408451"/>
+        </scene>
+        <!--Latest2VC-->
+        <scene sceneID="hCU-kW-i8M">
+            <objects>
+                <viewController storyboardIdentifier="latest2VC" id="QbB-gw-Mid" customClass="latest2VC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="exd-CF-Y30">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="latest-economy" translatesAutoresizingMaskIntoConstraints="NO" id="T8B-DU-AWj">
+                                <rect key="frame" x="16" y="182" width="361" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="lzk-hZ-t28"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="للعام الخامس على التوالي.. `أدنوك` العلامة التجارية الأولى في الإمارات" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDa-Sv-SRT">
+                                <rect key="frame" x="61" y="122" width="271" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="tQi-TP-XTc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRg-bW-GbG">
+                                <rect key="frame" x="26" y="412" width="341" height="299"/>
+                                <string key="text">قبل شهر من الموعد الذي أعلن سابقا، لمّح الرئيس التركي رجب طيب إردوغان، الأربعاء إلى أن الانتخابات الرئاسية والنيابية ستجرى في 14 مايو/أيار المقبل.
+ولم يعلن أردوغان التاريخ المحدد للانتخابات المرتقبة، لكنّه لمّح إلى أنها ستجرى في ذكرى مرور "73 عامًا" على فوز الحزب الديمقراطي (محافظ) في أول انتخابات حرّة شهدتها تركيا المعاصرة في العام 1950.
+تقريب الموعد
+وكانت الانتخابات مقرّرة في 18 يونيو/حزيران المقبل، لكن مراقبين كثرا توقّعوا تقريب الموعد، فيما أشار صحفيون أتراك إلى أسباب دعت لاتّخاذ خيار تقريب الموعد، بينها الاقتصاد المتدهور والعطل المدرسية وامتحانات دخول الجامعات المقرّرة في يونيو/حزيران المقبل.
+وفي 14 مايو/أيار 1950، فاز الحزب الديمقراطي، الذي أسسه في العام 1946 عدنان مندريس وأنصاره المنشقّون عن حزب مصطفى كمال "أتاتورك"، في الانتخابات.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aLT-DQ-Mpf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tRg-bW-GbG" firstAttribute="leading" secondItem="aLT-DQ-Mpf" secondAttribute="leading" constant="26" id="4as-Es-ZLF"/>
+                            <constraint firstItem="T8B-DU-AWj" firstAttribute="trailing" secondItem="exd-CF-Y30" secondAttribute="trailingMargin" id="7Ae-Wg-jm7"/>
+                            <constraint firstItem="lDa-Sv-SRT" firstAttribute="top" secondItem="aLT-DQ-Mpf" secondAttribute="top" constant="63" id="Adl-T9-MQT"/>
+                            <constraint firstItem="tRg-bW-GbG" firstAttribute="top" secondItem="T8B-DU-AWj" secondAttribute="bottom" constant="8" symbolic="YES" id="E9z-q8-GMd"/>
+                            <constraint firstItem="lDa-Sv-SRT" firstAttribute="centerX" secondItem="T8B-DU-AWj" secondAttribute="centerX" id="GDK-cs-L0C"/>
+                            <constraint firstItem="T8B-DU-AWj" firstAttribute="centerX" secondItem="tRg-bW-GbG" secondAttribute="centerX" id="Ikd-i0-cAe"/>
+                            <constraint firstItem="T8B-DU-AWj" firstAttribute="top" secondItem="lDa-Sv-SRT" secondAttribute="bottom" constant="8" symbolic="YES" id="Thb-UA-Kjj"/>
+                            <constraint firstItem="T8B-DU-AWj" firstAttribute="leading" secondItem="exd-CF-Y30" secondAttribute="leadingMargin" id="cA8-dv-ZDE"/>
+                            <constraint firstItem="lDa-Sv-SRT" firstAttribute="leading" secondItem="aLT-DQ-Mpf" secondAttribute="leading" constant="61" id="lot-EW-k5v"/>
+                            <constraint firstItem="aLT-DQ-Mpf" firstAttribute="bottom" secondItem="tRg-bW-GbG" secondAttribute="bottom" constant="107" id="uDZ-5q-9VE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgLatest" destination="T8B-DU-AWj" id="ysJ-uB-cHm"/>
+                        <outlet property="lblText" destination="tRg-bW-GbG" id="wLh-pW-W7f"/>
+                        <outlet property="lblTitle" destination="lDa-Sv-SRT" id="q9f-vr-m0V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xAc-GM-XqC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2628" y="1131"/>
+        </scene>
+        <!--Latest3VC-->
+        <scene sceneID="O6h-CI-sG6">
+            <objects>
+                <viewController storyboardIdentifier="latest3VC" id="Rq8-Nz-BrK" customClass="latest3VC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CXY-aL-ckH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="latest-sports" translatesAutoresizingMaskIntoConstraints="NO" id="GrS-Yq-i0Z">
+                                <rect key="frame" x="16" y="179" width="361" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="Czm-At-S63"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="بسبب كأس العالم للأندية.. الوداد المغربي يحرم نجمه من العودة لأوروبا" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMa-TB-r3A">
+                                <rect key="frame" x="61" y="119" width="271" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="zZY-ms-VBF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Pz-aA-UUq">
+                                <rect key="frame" x="26" y="409" width="341" height="299"/>
+                                <string key="text">يتمسك نادي الوداد البيضاوي المغربي بكل نجومه، استعدادا للمشاركة في كأس العالم للأندية 2023 المقررة بداية الشهر المقبل.
+وتقام النسخة الجديدة من بطولة كأس العالم للأندية في المغرب خلال الفترة من 1 إلى 11 فبراير/ شباط المقبل.
+ويفتتح الوداد، منظم البطولة، مشواره بمواجهة عربية ضد الهلال السعودي، والفائز منهما يتأهل لمواجهة فلامنجو البرازيلي في الدور قبل النهائي.
+وكشفت شبكة "فوت ميركاتو" الفرنسية أن يحيى عطية الله، الظهير الأيسر للوداد، بات يحظى باهتمام عدد من الأندية الأوروبية بعد تألقه مع منتخب المغرب في كأس العالم 2022.
+وأضافت أن عطية الله (27 عاما) شارك في 6 مباريات بمسيرة منتخب المغرب التاريخية في مونديال قطر 2022، وصنع هدف الفوز على البرتغال في دور الثمانية.
+وتابعت الشبكة بأن اللاعب المغربي لفت أنظار أندية مونبيلييه الفرنسي، وبشكتاش التركي، وأولمبياكوس اليوناني، علما بأن تعاقده مع الوداد ينتهي بنهاية الموسم الحالي.
+وأكدت "فوت ميركاتو" أن الوداد يتمسك ببقاء يحيى عطية الله ليشارك مع الفريق في بطولة كأس العالم للأندية بالمغرب.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ai9-oE-q8O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cMa-TB-r3A" firstAttribute="leading" secondItem="Ai9-oE-q8O" secondAttribute="leading" constant="61" id="2V7-oM-SmU"/>
+                            <constraint firstItem="GrS-Yq-i0Z" firstAttribute="leading" secondItem="CXY-aL-ckH" secondAttribute="leadingMargin" id="FaF-bH-c2r"/>
+                            <constraint firstItem="cMa-TB-r3A" firstAttribute="centerX" secondItem="GrS-Yq-i0Z" secondAttribute="centerX" id="RQv-gS-KUm"/>
+                            <constraint firstItem="2Pz-aA-UUq" firstAttribute="top" secondItem="GrS-Yq-i0Z" secondAttribute="bottom" constant="8" symbolic="YES" id="T0b-q8-dGq"/>
+                            <constraint firstItem="cMa-TB-r3A" firstAttribute="top" secondItem="Ai9-oE-q8O" secondAttribute="top" constant="60" id="T24-Wz-OCI"/>
+                            <constraint firstItem="GrS-Yq-i0Z" firstAttribute="trailing" secondItem="CXY-aL-ckH" secondAttribute="trailingMargin" id="Z1f-YL-MaG"/>
+                            <constraint firstItem="GrS-Yq-i0Z" firstAttribute="centerX" secondItem="2Pz-aA-UUq" secondAttribute="centerX" id="dRI-fD-KmF"/>
+                            <constraint firstItem="Ai9-oE-q8O" firstAttribute="bottom" secondItem="2Pz-aA-UUq" secondAttribute="bottom" constant="110" id="xst-yw-6LM"/>
+                            <constraint firstItem="GrS-Yq-i0Z" firstAttribute="top" secondItem="cMa-TB-r3A" secondAttribute="bottom" constant="8" symbolic="YES" id="zMO-8h-w3L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgLatest" destination="GrS-Yq-i0Z" id="bxd-SF-2dY"/>
+                        <outlet property="lblText" destination="2Pz-aA-UUq" id="zOf-hP-33d"/>
+                        <outlet property="lblTitle" destination="cMa-TB-r3A" id="EnP-Uf-DD4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wXC-mm-mwr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1947" y="1131"/>
+        </scene>
+        <!--Latest4VC-->
+        <scene sceneID="OFk-YG-h6A">
+            <objects>
+                <viewController storyboardIdentifier="latest4VC" id="ncp-uF-yl8" customClass="latest4VC" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ORM-4c-LAU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="latest-culture" translatesAutoresizingMaskIntoConstraints="NO" id="Ig5-kN-3BD">
+                                <rect key="frame" x="16" y="192" width="361" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="222" id="1Pu-S8-TBQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="معرض جدة للكتاب.. 900 دار نشر و400 جناح معرفي" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wf-ld-WaD">
+                                <rect key="frame" x="61" y="132" width="271" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="HA9-to-z3Y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhL-Rz-Yme">
+                                <rect key="frame" x="26" y="422" width="341" height="299"/>
+                                <string key="text">انطلقت الخميس فعاليات معرض جدة للكتاب، بالمملكة العربية السعودية، بمشاركة 900 دار نشر و400 جناح معرفي، وبرنامج ثقافي حافل.
+ويقام المعرض في مركز "سوبر دوم" بمدينة جدة، ويستمر حتى السبت 17 ديسمبر/ كانون الأول، وتنظمه هيئة الأدب والنشر والترجمة، ويُقام على هامشه مؤتمران نوعيان؛ أولهما للنشر الرقمي، والثاني للخيال العلمي، وهما الأولان من نوعهما في المملكة.
+وأكد الرئيس التنفيذي لهيئة الأدب والنشر والترجمة الدكتور محمد حسن علوان، بحسب وكالة الأنباء السعودية "واس"، أن معرض جدة للكتاب سيشكل محطة أدبية تثري المشهد الثقافي السعودي؛ حيث تسعى الهيئة إلى تمكين صناعة الكتب والنشر وتشجيع التبادل الثقافي، وإثراء تجربة الجمهور.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bGv-4f-I2u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ig5-kN-3BD" firstAttribute="trailing" secondItem="ORM-4c-LAU" secondAttribute="trailingMargin" id="3ny-2Q-Nse"/>
+                            <constraint firstItem="Ig5-kN-3BD" firstAttribute="top" secondItem="7Wf-ld-WaD" secondAttribute="bottom" constant="8" symbolic="YES" id="Dya-mO-OmW"/>
+                            <constraint firstItem="7Wf-ld-WaD" firstAttribute="leading" secondItem="bGv-4f-I2u" secondAttribute="leading" constant="61" id="Idd-Uo-EgM"/>
+                            <constraint firstItem="7Wf-ld-WaD" firstAttribute="centerX" secondItem="Ig5-kN-3BD" secondAttribute="centerX" id="RRy-VF-kJ0"/>
+                            <constraint firstItem="GhL-Rz-Yme" firstAttribute="top" secondItem="Ig5-kN-3BD" secondAttribute="bottom" constant="8" symbolic="YES" id="TCU-La-EiF"/>
+                            <constraint firstItem="bGv-4f-I2u" firstAttribute="bottom" secondItem="GhL-Rz-Yme" secondAttribute="bottom" constant="97" id="g0A-sj-tRt"/>
+                            <constraint firstItem="Ig5-kN-3BD" firstAttribute="centerX" secondItem="GhL-Rz-Yme" secondAttribute="centerX" id="hsx-7I-jbW"/>
+                            <constraint firstItem="7Wf-ld-WaD" firstAttribute="top" secondItem="bGv-4f-I2u" secondAttribute="top" constant="73" id="kFF-vk-ze2"/>
+                            <constraint firstItem="Ig5-kN-3BD" firstAttribute="leading" secondItem="ORM-4c-LAU" secondAttribute="leadingMargin" id="wtl-b5-7CE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgLatest" destination="Ig5-kN-3BD" id="hfG-Fk-lrm"/>
+                        <outlet property="lblText" destination="GhL-Rz-Yme" id="TxC-B7-EUN"/>
+                        <outlet property="lblTitle" destination="7Wf-ld-WaD" id="dMG-0s-Qz5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3H-DI-HfN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1251" y="1131"/>
         </scene>
         <!--Post1VC-->
         <scene sceneID="fXd-hf-41y">
@@ -334,7 +574,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UG-hT-JVf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-367.17557251908397" y="1595.7746478873241"/>
+            <point key="canvasLocation" x="30" y="1530"/>
         </scene>
         <!--Post2VC-->
         <scene sceneID="NTY-Za-eN9">
@@ -442,7 +682,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xzy-ff-szM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="472.51908396946561" y="1595.7746478873241"/>
+            <point key="canvasLocation" x="761" y="1530"/>
         </scene>
         <!--Post3VC-->
         <scene sceneID="lhM-qn-Eum">
@@ -541,7 +781,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wKr-7k-mfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1342.7480916030534" y="1595.7746478873241"/>
+            <point key="canvasLocation" x="1550" y="1530"/>
         </scene>
         <!--Post4VC-->
         <scene sceneID="KLI-Vl-U20">
@@ -591,12 +831,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tV1-JO-kY7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2168.7022900763359" y="1595.7746478873241"/>
+            <point key="canvasLocation" x="2327" y="1530"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xeD-6L-3pK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t0Y-0T-ZOT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VGN-GN-l5R">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xfd-zd-fxe" kind="relationship" relationship="rootViewController" id="2Dm-KJ-guc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2rz-V0-eor" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2335.1145038167938" y="360.56338028169017"/>
         </scene>
     </scenes>
     <resources>
         <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="latest-culture" width="256" height="170"/>
+        <image name="latest-economy" width="100" height="56"/>
         <image name="latest-politics" width="340" height="227.66667175292969"/>
+        <image name="latest-sports" width="256" height="146.33332824707031"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <image name="today-environment" width="257.66665649414062" height="145"/>
         <image name="today-health" width="250" height="214.66667175292969"/>

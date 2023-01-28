@@ -73,7 +73,7 @@ class settingViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     
     func didTapLabel(at index: Int) {
-//        let index == arrOptions[indexPath]
+//        let index = arrOptions[indexPath.row]
         switch index {
         case 0:
             let vc1 = storyboard?.instantiateViewController(withIdentifier: "home") as! homeViewController

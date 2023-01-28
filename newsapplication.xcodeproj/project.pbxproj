@@ -36,6 +36,10 @@
 		0477C7E129844B2A00C0964A /* spaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C7E029844B2A00C0964A /* spaceVC.swift */; };
 		0477C7E329844B4600C0964A /* politicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C7E229844B4600C0964A /* politicsVC.swift */; };
 		0477C7E529844B5F00C0964A /* cultureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0477C7E429844B5F00C0964A /* cultureVC.swift */; };
+		0496FB2829856E6A004C88FE /* latest1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496FB2729856E6A004C88FE /* latest1VC.swift */; };
+		0496FB2A29856F8C004C88FE /* latest2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496FB2929856F8C004C88FE /* latest2VC.swift */; };
+		0496FB2C29856FAB004C88FE /* latest3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496FB2B29856FAB004C88FE /* latest3VC.swift */; };
+		0496FB2E29856FDD004C88FE /* latest4VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496FB2D29856FDD004C88FE /* latest4VC.swift */; };
 		0497EE022978344100F0CF76 /* categoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE012978344100F0CF76 /* categoriesViewController.swift */; };
 		0497EE062978354100F0CF76 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE052978354100F0CF76 /* homeViewController.swift */; };
 		0497EE082978356300F0CF76 /* vidoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0497EE072978356300F0CF76 /* vidoesViewController.swift */; };
@@ -118,6 +122,10 @@
 		0477C7E029844B2A00C0964A /* spaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spaceVC.swift; sourceTree = "<group>"; };
 		0477C7E229844B4600C0964A /* politicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = politicsVC.swift; sourceTree = "<group>"; };
 		0477C7E429844B5F00C0964A /* cultureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cultureVC.swift; sourceTree = "<group>"; };
+		0496FB2729856E6A004C88FE /* latest1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = latest1VC.swift; sourceTree = "<group>"; };
+		0496FB2929856F8C004C88FE /* latest2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = latest2VC.swift; sourceTree = "<group>"; };
+		0496FB2B29856FAB004C88FE /* latest3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = latest3VC.swift; sourceTree = "<group>"; };
+		0496FB2D29856FDD004C88FE /* latest4VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = latest4VC.swift; sourceTree = "<group>"; };
 		0497EE012978344100F0CF76 /* categoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesViewController.swift; sourceTree = "<group>"; };
 		0497EE052978354100F0CF76 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		0497EE072978356300F0CF76 /* vidoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = vidoesViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +200,7 @@
 		042BA6512980343200C5DDB0 /* latestNews */ = {
 			isa = PBXGroup;
 			children = (
+				0496FB2629856E1E004C88FE /* latestPosts */,
 				04473A9D2980155700D6ABC0 /* latestNewsVC.swift */,
 				04473A9F298018B100D6ABC0 /* latestTableViewCell.swift */,
 			);
@@ -320,6 +329,17 @@
 				04F7F6BF297E6B9300279425 /* aboutVC.swift */,
 			);
 			path = settings;
+			sourceTree = "<group>";
+		};
+		0496FB2629856E1E004C88FE /* latestPosts */ = {
+			isa = PBXGroup;
+			children = (
+				0496FB2729856E6A004C88FE /* latest1VC.swift */,
+				0496FB2929856F8C004C88FE /* latest2VC.swift */,
+				0496FB2B29856FAB004C88FE /* latest3VC.swift */,
+				0496FB2D29856FDD004C88FE /* latest4VC.swift */,
+			);
+			path = latestPosts;
 			sourceTree = "<group>";
 		};
 		04CF79E22984E09E007E51FA /* sports */ = {
@@ -649,16 +669,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0497EE0A2978362D00F0CF76 /* categoryCollectionViewCell.swift in Sources */,
+				0496FB2829856E6A004C88FE /* latest1VC.swift in Sources */,
 				04CF79ED2984E1A3007E51FA /* celebrityTableViewCell.swift in Sources */,
 				040B8D5E2980623D00120538 /* todayTableViewCell.swift in Sources */,
 				04F7F6BC297E5F8200279425 /* pageTableViewCell.swift in Sources */,
 				042BA65629803B1600C5DDB0 /* todayNewsCell.swift in Sources */,
 				0477C7DB29844AE700C0964A /* sportsVC.swift in Sources */,
+				0496FB2A29856F8C004C88FE /* latest2VC.swift in Sources */,
 				0401361A297AA0540094668E /* optionTableViewCell.swift in Sources */,
+				0496FB2E29856FDD004C88FE /* latest4VC.swift in Sources */,
 				04CF79EB2984E189007E51FA /* economyTableViewCell.swift in Sources */,
 				04F7F6C2297E787A00279425 /* savedViewController.swift in Sources */,
 				0449DECC2979B9D600EAE1E2 /* shahidVC.swift in Sources */,
 				0497EE062978354100F0CF76 /* homeViewController.swift in Sources */,
+				0496FB2C29856FAB004C88FE /* latest3VC.swift in Sources */,
 				0449DEC62979A5CE00EAE1E2 /* videoTableViewCell.swift in Sources */,
 				04F7F6C0297E6B9300279425 /* aboutVC.swift in Sources */,
 				0497EE022978344100F0CF76 /* categoriesViewController.swift in Sources */,

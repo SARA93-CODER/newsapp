@@ -9,6 +9,8 @@ import UIKit
 
 class latestTableViewCell: UITableViewCell {
     
+  var labelDelegate: LatestCellDelegate?
+    
     @IBOutlet weak var imgLatest: UIImageView!
     @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var btnShareTo: UIButton!
