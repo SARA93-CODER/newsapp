@@ -47,20 +47,18 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         //pageControl configuration:
         pageControl.numberOfPages = arrTodaysNews.count
         self.pageControl.currentPage = 0
-                self.pageControl.tintColor = UIColor.black
-        self.pageControl.pageIndicatorTintColor = UIColor.lightGray // UIColor.gray
-                self.pageControl.currentPageIndicatorTintColor = UIColor.green
+               
         
 
         
 //        tableView.register(todayTableViewCell.self, forCellReuseIdentifier: "todayTableViewCell")
         
         //tableView's components:
-        arrItems.append(Item(image: UIImage(named: "today-tech")!, title: "ما التقنيات التي ستغزو حياتنا في عام 2023؟", save: UIButton(primaryAction: .none), share: UIButton(primaryAction: .none)))
+        arrItems.append(Item(image: UIImage(named:"today-tech")!, title: "ما التقنيات التي ستغزو حياتنا في عام 2023؟", save:UIButton(), share: UIButton()))
         
-        arrItems.append(Item(image: UIImage(named: "today-sci")!, title: "التلوّث الضوئي يتزايد بوتيرة سريعة", save: UIButton(primaryAction: .none), share: UIButton(primaryAction: .none)))
+        arrItems.append(Item(image: UIImage(named: "today-sci")!, title: "التلوّث الضوئي يتزايد بوتيرة سريعة", save:UIButton(), share: UIButton()))
         
-        arrItems.append(Item(image: UIImage(named: "today-health")!, title: "جراحة تكميم المعدة: متى ينصح الطب بإجراء جراحة السمنة؟ وما فوائدها ومخاطرها؟", save: UIButton(primaryAction: .none), share: UIButton(primaryAction: .none)))
+        arrItems.append(Item(image: UIImage(named: "today-health")!, title: "جراحة تكميم المعدة: متى ينصح الطب بإجراء جراحة السمنة؟ وما فوائدها ومخاطرها؟", save: UIButton(), share: UIButton()))
         
         
         

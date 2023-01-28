@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9qd-4y-4ze">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yxb-v4-fyj">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -226,7 +226,7 @@
                                 </connections>
                             </segmentedControl>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbK-j9-9Ns">
-                                <rect key="frame" x="0.0" y="150" width="393" height="630"/>
+                                <rect key="frame" x="0.0" y="145" width="393" height="630"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="630" id="GFY-Y8-v7P"/>
                                 </constraints>
@@ -235,7 +235,7 @@
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x97-Qf-xtf">
-                                <rect key="frame" x="0.0" y="150" width="393" height="630"/>
+                                <rect key="frame" x="0.0" y="145" width="393" height="630"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="630" id="lpx-rd-uYM"/>
                                 </constraints>
@@ -256,12 +256,12 @@
                         <constraints>
                             <constraint firstItem="x97-Qf-xtf" firstAttribute="leading" secondItem="V2z-IY-bpm" secondAttribute="leading" id="5ly-OG-jh3"/>
                             <constraint firstItem="ukQ-8q-Z1s" firstAttribute="top" secondItem="pgk-v6-5c8" secondAttribute="top" constant="40" id="Giq-xa-gYa"/>
-                            <constraint firstItem="tbK-j9-9Ns" firstAttribute="top" secondItem="ukQ-8q-Z1s" secondAttribute="bottom" constant="45" id="Ixs-Nm-lPL"/>
+                            <constraint firstItem="tbK-j9-9Ns" firstAttribute="top" secondItem="ukQ-8q-Z1s" secondAttribute="bottom" constant="40" id="Ixs-Nm-lPL"/>
                             <constraint firstItem="x97-Qf-xtf" firstAttribute="trailing" secondItem="V2z-IY-bpm" secondAttribute="trailing" id="KNL-Uc-F2t"/>
                             <constraint firstItem="tck-tE-Vrx" firstAttribute="top" secondItem="ukQ-8q-Z1s" secondAttribute="bottom" constant="5" id="bbr-Mm-K7f"/>
                             <constraint firstItem="V2z-IY-bpm" firstAttribute="trailing" secondItem="ukQ-8q-Z1s" secondAttribute="trailing" constant="150" id="dQx-VS-L1c"/>
                             <constraint firstItem="tbK-j9-9Ns" firstAttribute="leading" secondItem="V2z-IY-bpm" secondAttribute="leading" id="hKh-qS-Ccz"/>
-                            <constraint firstItem="x97-Qf-xtf" firstAttribute="top" secondItem="ukQ-8q-Z1s" secondAttribute="bottom" constant="45" id="p2z-Mi-MBm"/>
+                            <constraint firstItem="x97-Qf-xtf" firstAttribute="top" secondItem="ukQ-8q-Z1s" secondAttribute="bottom" constant="40" id="p2z-Mi-MBm"/>
                             <constraint firstItem="tbK-j9-9Ns" firstAttribute="trailing" secondItem="V2z-IY-bpm" secondAttribute="trailing" id="pMZ-8x-Nvh"/>
                             <constraint firstItem="tck-tE-Vrx" firstAttribute="trailing" secondItem="V2z-IY-bpm" secondAttribute="trailing" id="tQd-CN-jRy"/>
                             <constraint firstItem="tck-tE-Vrx" firstAttribute="leading" secondItem="V2z-IY-bpm" secondAttribute="leading" id="wd2-gT-2iC"/>
@@ -277,23 +277,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRa-7b-lgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3275.5725190839694" y="1122.5352112676057"/>
-        </scene>
-        <!--الرئيسية-->
-        <scene sceneID="c8R-L5-lbJ">
-            <objects>
-                <navigationController id="620-Ae-2a4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="الرئيسية" image="homekit" catalog="system" id="0T1-SZ-ik0"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RbD-vf-Ccr">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="kev-KH-g10" kind="relationship" relationship="rootViewController" id="5is-9n-KIv"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eca-O3-rfI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4109" y="354"/>
         </scene>
         <!--InboardingVC-->
         <scene sceneID="s80-3W-Sqd">
@@ -370,7 +353,7 @@
                         <segue destination="7no-qa-mkj" kind="relationship" relationship="viewControllers" id="Zl4-O7-EZJ"/>
                         <segue destination="E6b-5k-ikD" kind="relationship" relationship="viewControllers" id="inL-Bz-S2u"/>
                         <segue destination="ush-At-7bm" kind="relationship" relationship="viewControllers" id="zEr-bC-6ef"/>
-                        <segue destination="620-Ae-2a4" kind="relationship" relationship="viewControllers" id="j4M-lO-X7G"/>
+                        <segue destination="prf-lg-jnI" kind="relationship" relationship="viewControllers" id="74g-AH-hLc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Cf-lL-1Kj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -560,42 +543,31 @@
             </objects>
             <point key="canvasLocation" x="2868" y="1871"/>
         </scene>
-        <!--الرئيسية-->
+        <!--Home View Controller-->
         <scene sceneID="VfA-qB-tZZ">
             <objects>
-                <viewController storyboardIdentifier="home" id="kev-KH-g10" customClass="homeViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" modalPresentationStyle="fullScreen" id="kev-KH-g10" customClass="homeViewController" customModule="newsapplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vNf-Ir-uGN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="RSc-qQ-BS7">
-                                <rect key="frame" x="0.0" y="56" width="303" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="kev-KH-g10" id="uoF-jv-iZR"/>
-                                </connections>
-                            </searchBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="al ain 2" translatesAutoresizingMaskIntoConstraints="NO" id="ede-rz-ufB">
-                                <rect key="frame" x="310" y="43" width="76" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="76" id="Wor-o5-9y1"/>
-                                    <constraint firstAttribute="height" constant="57" id="zC5-SP-eiv"/>
-                                </constraints>
-                            </imageView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6OG-cs-lve">
-                                <rect key="frame" x="0.0" y="140" width="393" height="629"/>
+                                <rect key="frame" x="0.0" y="91" width="393" height="678"/>
                                 <connections>
                                     <segue destination="kbo-e8-PXJ" kind="embed" id="Zsc-lf-Lai"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="srd-FJ-9WW">
-                                <rect key="frame" x="0.0" y="140" width="393" height="629"/>
+                                <rect key="frame" x="0.0" y="91" width="393" height="678"/>
                                 <connections>
                                     <segue destination="ta6-Fv-aCv" kind="embed" id="muo-0K-WDK"/>
                                 </connections>
                             </containerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ea0-yS-h9x">
-                                <rect key="frame" x="0.0" y="108" width="393" height="32"/>
+                                <rect key="frame" x="0.0" y="86" width="393" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="OEp-wb-4Uw"/>
+                                </constraints>
                                 <segments>
                                     <segment title="اخر الاخبار"/>
                                     <segment title="العالم اليوم"/>
@@ -608,38 +580,29 @@
                         <viewLayoutGuide key="safeArea" id="ft6-lU-Laj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RSc-qQ-BS7" firstAttribute="bottom" secondItem="ede-rz-ufB" secondAttribute="bottom" id="186-VP-ckI"/>
-                            <constraint firstItem="ea0-yS-h9x" firstAttribute="trailing" secondItem="6OG-cs-lve" secondAttribute="trailing" id="3cf-Hf-zU3"/>
-                            <constraint firstItem="ea0-yS-h9x" firstAttribute="leading" secondItem="vNf-Ir-uGN" secondAttribute="leading" id="6FY-eI-1Ec"/>
-                            <constraint firstItem="ea0-yS-h9x" firstAttribute="top" secondItem="ede-rz-ufB" secondAttribute="bottom" constant="8" symbolic="YES" id="8fx-ZW-LVs"/>
-                            <constraint firstItem="srd-FJ-9WW" firstAttribute="trailing" secondItem="6OG-cs-lve" secondAttribute="trailing" id="AAy-9Q-h6Y"/>
-                            <constraint firstItem="ede-rz-ufB" firstAttribute="top" secondItem="vNf-Ir-uGN" secondAttribute="topMargin" constant="-13" id="Fdw-WU-vKe"/>
-                            <constraint firstItem="srd-FJ-9WW" firstAttribute="leading" secondItem="6OG-cs-lve" secondAttribute="leading" id="KU9-D5-mAr"/>
-                            <constraint firstItem="RSc-qQ-BS7" firstAttribute="top" secondItem="ft6-lU-Laj" secondAttribute="top" id="Pcf-wH-nbI"/>
-                            <constraint firstItem="ede-rz-ufB" firstAttribute="leading" secondItem="RSc-qQ-BS7" secondAttribute="trailing" constant="7" id="Zqr-EO-U3K"/>
-                            <constraint firstItem="6OG-cs-lve" firstAttribute="top" secondItem="ea0-yS-h9x" secondAttribute="bottom" constant="1" id="aE4-5O-hFd"/>
-                            <constraint firstItem="srd-FJ-9WW" firstAttribute="bottom" secondItem="6OG-cs-lve" secondAttribute="bottom" id="dVH-zH-emg"/>
-                            <constraint firstItem="ea0-yS-h9x" firstAttribute="leading" secondItem="6OG-cs-lve" secondAttribute="leading" id="ewJ-xN-Tod"/>
-                            <constraint firstAttribute="trailing" secondItem="ea0-yS-h9x" secondAttribute="trailing" id="iLN-43-ocy"/>
-                            <constraint firstItem="ft6-lU-Laj" firstAttribute="trailing" secondItem="ede-rz-ufB" secondAttribute="trailing" constant="7" id="nf6-8M-8hb"/>
-                            <constraint firstItem="RSc-qQ-BS7" firstAttribute="leading" secondItem="ea0-yS-h9x" secondAttribute="leading" id="oHf-xz-K7Q"/>
-                            <constraint firstItem="srd-FJ-9WW" firstAttribute="top" secondItem="6OG-cs-lve" secondAttribute="top" id="sKc-cg-pZE"/>
-                            <constraint firstItem="srd-FJ-9WW" firstAttribute="bottom" secondItem="ft6-lU-Laj" secondAttribute="bottom" id="zBe-dZ-PEF"/>
+                            <constraint firstItem="6OG-cs-lve" firstAttribute="trailing" secondItem="ft6-lU-Laj" secondAttribute="trailing" id="2pu-Iq-5JI"/>
+                            <constraint firstItem="srd-FJ-9WW" firstAttribute="top" secondItem="ft6-lU-Laj" secondAttribute="top" constant="35" id="7eP-PY-lOE"/>
+                            <constraint firstItem="6OG-cs-lve" firstAttribute="top" secondItem="ft6-lU-Laj" secondAttribute="top" constant="35" id="9iz-2g-hZj"/>
+                            <constraint firstItem="srd-FJ-9WW" firstAttribute="bottom" secondItem="ft6-lU-Laj" secondAttribute="bottom" id="ASj-0b-6qY"/>
+                            <constraint firstItem="ea0-yS-h9x" firstAttribute="leading" secondItem="ft6-lU-Laj" secondAttribute="leading" id="Jfq-LU-Ffk"/>
+                            <constraint firstItem="ea0-yS-h9x" firstAttribute="top" secondItem="ft6-lU-Laj" secondAttribute="top" constant="30" id="LcM-KA-Wem"/>
+                            <constraint firstItem="ea0-yS-h9x" firstAttribute="trailing" secondItem="ft6-lU-Laj" secondAttribute="trailing" id="P0i-9d-bkm"/>
+                            <constraint firstItem="6OG-cs-lve" firstAttribute="bottom" secondItem="ft6-lU-Laj" secondAttribute="bottom" id="ROi-jM-iey"/>
+                            <constraint firstItem="6OG-cs-lve" firstAttribute="leading" secondItem="ft6-lU-Laj" secondAttribute="leading" id="RuS-ui-6eV"/>
+                            <constraint firstItem="srd-FJ-9WW" firstAttribute="trailing" secondItem="ft6-lU-Laj" secondAttribute="trailing" id="Wav-fL-Rwa"/>
+                            <constraint firstItem="srd-FJ-9WW" firstAttribute="leading" secondItem="ft6-lU-Laj" secondAttribute="leading" id="cJg-rH-6t8"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="الرئيسية" image="homekit" catalog="system" id="tiL-s4-M3x"/>
                     <navigationItem key="navigationItem" id="Irq-Iw-Zf9"/>
                     <connections>
-                        <outlet property="imgLogo" destination="ede-rz-ufB" id="KQT-R4-3cP"/>
                         <outlet property="latestNews" destination="6OG-cs-lve" id="7Iz-8K-Tlz"/>
-                        <outlet property="searchBar" destination="RSc-qQ-BS7" id="dpm-9D-s7v"/>
                         <outlet property="segmentControll" destination="ea0-yS-h9x" id="7ul-wf-Lr3"/>
                         <outlet property="todayNews" destination="srd-FJ-9WW" id="Pa3-lg-SId"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLS-zn-afq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4107.6335877862593" y="1122.5352112676057"/>
+            <point key="canvasLocation" x="4307.6335877862593" y="1131.6901408450706"/>
         </scene>
         <!--latestNewsVC-->
         <scene sceneID="cwq-fU-1wA">
@@ -647,7 +610,7 @@
                 <viewControllerPlaceholder storyboardName="homePage" referencedIdentifier="latestNewsVC" id="kbo-e8-PXJ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqa-cq-wj2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4847" y="1020"/>
+            <point key="canvasLocation" x="5773.2824427480909" y="1019.7183098591549"/>
         </scene>
         <!--todayVC-->
         <scene sceneID="jlN-8l-wTc">
@@ -655,7 +618,7 @@
                 <viewControllerPlaceholder storyboardName="homePage" referencedIdentifier="todayVC" id="ta6-Fv-aCv" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="caM-kS-OzD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4846" y="1191"/>
+            <point key="canvasLocation" x="5772.5190839694651" y="1190.8450704225352"/>
         </scene>
         <!--الاعدادات-->
         <scene sceneID="sya-VP-e0M">
@@ -713,6 +676,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d10-sd-tF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2434" y="354"/>
+        </scene>
+        <!--الرئيسية-->
+        <scene sceneID="QpT-ju-4AR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="prf-lg-jnI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="الرئيسية" image="homekit" catalog="system" id="tiL-s4-M3x"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JyK-Ho-JLp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.92430606304399121" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kev-KH-g10" kind="relationship" relationship="rootViewController" id="YBp-bq-cfR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lK8-3g-RbN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4308" y="354"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

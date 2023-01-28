@@ -7,43 +7,59 @@
 
 import UIKit
 
+//Create view controller for the search results:
+class ResultVC: UIViewController{
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .systemGray
+    }
+}
 
-class homeViewController: UIViewController, UISearchBarDelegate{
+class homeViewController: UIViewController, UISearchBarDelegate, UISearchResultsUpdating{
+    
+    
     //to confor the protocol method:
     var delegateHome: LabelSelectionDelegate?
-    
-    
-    let array = latestNewsVC().arrLatestNews
-    var searchedData = [Info]()
-    var searching = false
-    
-    @IBOutlet weak var imgLogo: UIImageView!
-    @IBOutlet weak var searchBar: UISearchBar!
-    
+   
+
     @IBOutlet weak var latestNews: UIView!
     @IBOutlet weak var segmentControll: UISegmentedControl!
     
     @IBOutlet weak var todayNews: UIView!
     
+    let searchController = UISearchController(searchResultsController: ResultVC())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //searchController configuration:
+        searchController.searchBar.delegate = self
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
+
+      
         
         UIView.animate(withDuration: 0, delay: 0) {
-//display latestNews UI at beginning using alpha attribute
+            //display latestNews UI at beginning using alpha attribute
             self.latestNews.alpha = 1
             self.todayNews.alpha = 0
         }
-        
-        
     }
     
     
+    
+
+    
     //MARK: - searchBar delegate functions:
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchedData = array.filter({$0.title.prefix(searchText.count) == searchText})
-        searching = true
-        latestNewsVC().tableView.reloadData()
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else {
+            return
+        }
+        let vc = searchController.searchResultsController as? ResultVC
+        vc?.view.backgroundColor = .white
+        
+        print(text)
     }
     
     
@@ -69,9 +85,8 @@ class homeViewController: UIViewController, UISearchBarDelegate{
     
     
 
-
-    
-  
      
 
 }
+
+
