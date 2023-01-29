@@ -47,7 +47,7 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
         //pageControl configuration:
         pageControl.numberOfPages = arrTodaysNews.count
         pageControl.currentPage = 0
-        pageControl.translatesAutoresizingMaskIntoConstraints = false
+        pageControl.backgroundStyle = .minimal
         
                
         
@@ -110,13 +110,17 @@ class todayVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width * 0.99, height: collectionView.frame.width * 0.65)
+        return CGSize(width: collectionView.frame.width * 0.9998, height: collectionView.frame.width * 0.65)
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
+    
+    //MARK: - PageControl functions:
+    
+    
     
     //MARK: - tableView Data source functions:
     func numberOfSections(in collectionView: UICollectionView) -> Int {
