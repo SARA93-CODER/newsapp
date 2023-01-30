@@ -25,13 +25,6 @@ class videoTableViewCell: UITableViewCell {
     }
     
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
-    
     func customInit(photo: UIImage, title: String){
         self.imgVideoNews.image = photo
         self.lblVideoTitle.text = title

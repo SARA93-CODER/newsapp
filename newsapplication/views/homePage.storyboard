@@ -298,23 +298,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="latest-politics" translatesAutoresizingMaskIntoConstraints="NO" id="eNE-OA-lRK">
-                                <rect key="frame" x="16" y="222" width="361" height="222"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تركيا.. أردوغان يرد على `طاولة الستة` بإجراء الانتخابات قبل موعدها" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRS-Xf-L0F">
+                                <rect key="frame" x="30" y="128" width="343" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="222" id="FB0-4w-17O"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="تركيا.. أردوغان يرد على `طاولة الستة` بإجراء الانتخابات قبل موعدها" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRS-Xf-L0F">
-                                <rect key="frame" x="61" y="118" width="271" height="52"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="ytp-I9-kHk"/>
+                                    <constraint firstAttribute="height" constant="50" id="Y2S-rO-n9h"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="latest-politics" translatesAutoresizingMaskIntoConstraints="NO" id="eNE-OA-lRK">
+                                <rect key="frame" x="15" y="198" width="363" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Ofo-oe-ZdV"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k85-vT-JB0">
-                                <rect key="frame" x="26" y="452" width="341" height="255"/>
+                                <rect key="frame" x="20" y="453" width="353" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="255" id="zuJ-MU-gyX"/>
+                                </constraints>
                                 <string key="text">قبل شهر من الموعد الذي أعلن سابقا، لمّح الرئيس التركي رجب طيب إردوغان، الأربعاء إلى أن الانتخابات الرئاسية والنيابية ستجرى في 14 مايو/أيار المقبل.
 ولم يعلن أردوغان التاريخ المحدد للانتخابات المرتقبة، لكنّه لمّح إلى أنها ستجرى في ذكرى مرور "73 عامًا" على فوز الحزب الديمقراطي (محافظ) في أول انتخابات حرّة شهدتها تركيا المعاصرة في العام 1950.
 تقريب الموعد
@@ -328,15 +331,18 @@
                         <viewLayoutGuide key="safeArea" id="YX1-WD-GE5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="YX1-WD-GE5" firstAttribute="bottom" secondItem="k85-vT-JB0" secondAttribute="bottom" constant="111" id="CdZ-ei-76L"/>
-                            <constraint firstItem="eNE-OA-lRK" firstAttribute="trailing" secondItem="hmB-P1-Kx3" secondAttribute="trailingMargin" id="Ejw-X6-5Pg"/>
-                            <constraint firstItem="xRS-Xf-L0F" firstAttribute="centerX" secondItem="eNE-OA-lRK" secondAttribute="centerX" id="N5d-xo-H9B"/>
-                            <constraint firstItem="k85-vT-JB0" firstAttribute="leading" secondItem="YX1-WD-GE5" secondAttribute="leading" constant="26" id="N8C-SD-LE1"/>
-                            <constraint firstItem="k85-vT-JB0" firstAttribute="top" secondItem="eNE-OA-lRK" secondAttribute="bottom" constant="8" symbolic="YES" id="d5n-Gb-gio"/>
-                            <constraint firstItem="eNE-OA-lRK" firstAttribute="top" secondItem="xRS-Xf-L0F" secondAttribute="bottom" constant="8" symbolic="YES" id="fDo-Dv-kZ4"/>
-                            <constraint firstItem="eNE-OA-lRK" firstAttribute="leading" secondItem="hmB-P1-Kx3" secondAttribute="leadingMargin" id="heN-sl-PAr"/>
-                            <constraint firstItem="xRS-Xf-L0F" firstAttribute="top" secondItem="YX1-WD-GE5" secondAttribute="top" constant="59" id="i1d-sA-xv5"/>
-                            <constraint firstItem="eNE-OA-lRK" firstAttribute="centerX" secondItem="k85-vT-JB0" secondAttribute="centerX" id="lAj-rO-wLF"/>
+                            <constraint firstItem="k85-vT-JB0" firstAttribute="top" secondItem="eNE-OA-lRK" secondAttribute="bottom" constant="35" id="1uJ-xe-Vhe"/>
+                            <constraint firstItem="xRS-Xf-L0F" firstAttribute="leading" secondItem="YX1-WD-GE5" secondAttribute="leading" constant="20" id="EAb-dI-4g1"/>
+                            <constraint firstItem="eNE-OA-lRK" firstAttribute="top" secondItem="xRS-Xf-L0F" secondAttribute="bottom" constant="10" id="U9i-hA-9U3"/>
+                            <constraint firstItem="YX1-WD-GE5" firstAttribute="trailing" secondItem="xRS-Xf-L0F" secondAttribute="trailing" constant="30" id="WDt-h2-42J"/>
+                            <constraint firstItem="YX1-WD-GE5" firstAttribute="trailing" secondItem="xRS-Xf-L0F" secondAttribute="trailing" constant="20" id="XdR-0D-5f0"/>
+                            <constraint firstItem="YX1-WD-GE5" firstAttribute="trailing" secondItem="k85-vT-JB0" secondAttribute="trailing" constant="20" id="dNv-Sh-Ddc"/>
+                            <constraint firstItem="xRS-Xf-L0F" firstAttribute="leading" secondItem="YX1-WD-GE5" secondAttribute="leading" constant="30" id="nmr-ue-EPk"/>
+                            <constraint firstItem="k85-vT-JB0" firstAttribute="leading" secondItem="YX1-WD-GE5" secondAttribute="leading" constant="20" id="pv1-QM-Io6"/>
+                            <constraint firstItem="xRS-Xf-L0F" firstAttribute="top" secondItem="YX1-WD-GE5" secondAttribute="top" constant="25" id="qNa-um-jQ6"/>
+                            <constraint firstItem="eNE-OA-lRK" firstAttribute="leading" secondItem="YX1-WD-GE5" secondAttribute="leading" constant="15" id="swT-0A-7bd"/>
+                            <constraint firstItem="eNE-OA-lRK" firstAttribute="top" secondItem="xRS-Xf-L0F" secondAttribute="bottom" constant="20" id="vBh-cA-EQT"/>
+                            <constraint firstItem="YX1-WD-GE5" firstAttribute="trailing" secondItem="eNE-OA-lRK" secondAttribute="trailing" constant="15" id="wuw-uo-U65"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="NWY-HH-pTX"/>

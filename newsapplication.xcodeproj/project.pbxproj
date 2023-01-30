@@ -111,7 +111,7 @@
 		04473A9F298018B100D6ABC0 /* latestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = latestTableViewCell.swift; sourceTree = "<group>"; };
 		0449DEAF297953E000EAE1E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0449DEC52979A5CE00EAE1E2 /* videoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoTableViewCell.swift; sourceTree = "<group>"; };
-		0449DEC82979B10400EAE1E2 /* pictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = pictureViewController.swift; path = newsapplication/controllers/shahid/pictureViewController.swift; sourceTree = SOURCE_ROOT; };
+		0449DEC82979B10400EAE1E2 /* pictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = pictureViewController.swift; path = newsapplication/controllers/shahid/picture/pictureViewController.swift; sourceTree = SOURCE_ROOT; };
 		0449DECB2979B9D600EAE1E2 /* shahidVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shahidVC.swift; sourceTree = "<group>"; };
 		0477C7D22983A85F00C0964A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0477C7D62983D70E00C0964A /* inboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inboardingVC.swift; sourceTree = "<group>"; };
@@ -287,10 +287,8 @@
 		0449DECA2979B95800EAE1E2 /* shahid */ = {
 			isa = PBXGroup;
 			children = (
-				0449DEC52979A5CE00EAE1E2 /* videoTableViewCell.swift */,
-				0497EE072978356300F0CF76 /* vidoesViewController.swift */,
-				0449DEC82979B10400EAE1E2 /* pictureViewController.swift */,
-				0401361E297AB7000094668E /* pictureTableViewCell.swift */,
+				04BFFE6A2987AF8A00AC22E5 /* picture */,
+				04BFFE692987AF7500AC22E5 /* video */,
 				0449DECB2979B9D600EAE1E2 /* shahidVC.swift */,
 			);
 			path = shahid;
@@ -340,6 +338,24 @@
 				0496FB2D29856FDD004C88FE /* latest4VC.swift */,
 			);
 			path = latestPosts;
+			sourceTree = "<group>";
+		};
+		04BFFE692987AF7500AC22E5 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				0497EE072978356300F0CF76 /* vidoesViewController.swift */,
+				0449DEC52979A5CE00EAE1E2 /* videoTableViewCell.swift */,
+			);
+			path = video;
+			sourceTree = "<group>";
+		};
+		04BFFE6A2987AF8A00AC22E5 /* picture */ = {
+			isa = PBXGroup;
+			children = (
+				0401361E297AB7000094668E /* pictureTableViewCell.swift */,
+				0449DEC82979B10400EAE1E2 /* pictureViewController.swift */,
+			);
+			path = picture;
 			sourceTree = "<group>";
 		};
 		04CF79E22984E09E007E51FA /* sports */ = {

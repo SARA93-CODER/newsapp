@@ -29,7 +29,9 @@ class pictureViewController: UIViewController, UITableViewDataSource{
     }
     
 
-   
+ 
+    //MARK: - tableView data source functions:
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrPictures.count
     }

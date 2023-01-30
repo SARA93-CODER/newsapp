@@ -73,7 +73,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="lblOption" destination="TMs-NG-okc" id="eN7-y1-Q0r"/>
-                                            <segue destination="Tui-X8-TJP" kind="show" identifier="toSaved" id="XGY-AZ-zqX"/>
+                                            <segue destination="BX3-AO-kXW" kind="show" identifier="toAbout" id="YCG-jR-GtT"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

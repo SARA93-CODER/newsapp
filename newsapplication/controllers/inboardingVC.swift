@@ -20,14 +20,11 @@ class inboardingVC: UIViewController {
     
     @IBAction func btnNotifications(_ sender: UIButton) {
         
-        //    set up the local notification for authorization from user:
+        // set up the local notification for authorization from user:
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
             if granted {
-                                print("granted")
+                print("granted")
                 self.schedualeNotification()
-//                self.performSegue(withIdentifier: "seque1", sender: self)
-//                let homeVC = storyboard?.instantiateViewController(withIdentifier: "ContainerTabBarController") as! ContainerTabBarController
-//                navigationController?.pushViewController(homeVC, animated: true)
             }else{
                 print("denied")
             }
